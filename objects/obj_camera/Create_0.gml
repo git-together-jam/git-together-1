@@ -3,6 +3,9 @@
 marginHorz = 45;
 marginVert = 30;
 
+targetX = x;
+targetY = y;
+
 // subpixel/zoom
 var _spz = subpixelsEnabled ? zoom : 1;
 

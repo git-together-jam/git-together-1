@@ -18,3 +18,5 @@ ds_grid_set_region(grid, _r, _t, _r, _b, WorldCell.stone);
 ds_grid_set_region(grid, _l, _b, _r, _b, WorldCell.stone);
 	
 #endregion;
+
+world_toggle_editor(editorActive);

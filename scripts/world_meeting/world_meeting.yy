@@ -1,8 +1,8 @@
 {
-    "id": "54b76eee-25c3-405d-a8f6-f3c349e2f65b",
+    "id": "30c3032d-7d3b-4318-ac34-86fc3a9df4c4",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "collide_with",
+    "name": "world_meeting",
     "IsCompatibility": false,
     "IsDnD": false
 }

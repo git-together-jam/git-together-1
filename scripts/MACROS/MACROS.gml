@@ -6,6 +6,11 @@
 #macro VIEW_INDEX 0
 #macro VIEW view_camera[VIEW_INDEX]
 
+enum CamFollowMode {
+	smooth,
+	screenClamp
+}
+
 // Player object
 #macro PLAYER obj_player
 

@@ -121,9 +121,9 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "\"smooth\"",
+            "value": "CamFollowMode.smooth",
             "varName": "followMode",
-            "varType": 6
+            "varType": 1
         },
         {
             "id": "f6c18a93-153e-4adc-9dbf-f7940a1dbfb9",
@@ -137,6 +137,34 @@
             "resourceFilter": 1023,
             "value": "0",
             "varName": "roomClamp",
+            "varType": 3
+        },
+        {
+            "id": "807959f5-a0ff-4ece-9864-809a34902610",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "obj_player",
+            "varName": "target",
+            "varType": 5
+        },
+        {
+            "id": "cc72f7db-9ba4-4350-96c0-a74747decd06",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "True",
+            "varName": "followTarget",
             "varType": 3
         }
     ],
