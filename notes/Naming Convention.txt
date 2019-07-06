@@ -23,7 +23,9 @@ These are not of equal importance to the naming convention
 - Variable Definitions tab
 	The Variable Definitions tab for objects helps modularize objects. Most
 	variables should be defined in the variable definitions tab. See obj_camera
-	as an example
+	as an example. If a variable is defined as the result of an expression, it
+	probably doesn't need to be in the variable definitions tab. (see: 
+	obj_world.grid)
 - JSDoc
 	* Use `/// @desc <description>` for every event, script and shader in the 
 	  project.

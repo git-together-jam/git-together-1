@@ -8,3 +8,10 @@
 
 // Player object
 #macro PLAYER obj_player
+
+// World grid
+enum WorldCell {
+	void,	// Empty cell
+	stone,	// The thing in the ground
+	SIZE	// Length of enum, not an actual value
+}
