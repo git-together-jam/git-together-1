@@ -63,34 +63,6 @@
     "physicsStartAwake": true,
     "properties": [
         {
-            "id": "aa73f4cf-145a-4f9c-a21f-05ce39f37a07",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "480",
-            "varName": "width",
-            "varType": 0
-        },
-        {
-            "id": "e9f6ddc0-b772-4d90-a051-ff6770f3a606",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "270",
-            "varName": "height",
-            "varType": 0
-        },
-        {
             "id": "545cb061-8763-401a-bbd0-6ef352ccf45d",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
@@ -117,23 +89,6 @@
             "value": "True",
             "varName": "subpixelsEnabled",
             "varType": 3
-        },
-        {
-            "id": "b6d44aa5-5580-47fb-b6e4-5766985656e6",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": [
-                "\"screen_clamp\"",
-                "\"smooth\""
-            ],
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "CamFollowMode.smooth",
-            "varName": "followMode",
-            "varType": 1
         },
         {
             "id": "f6c18a93-153e-4adc-9dbf-f7940a1dbfb9",

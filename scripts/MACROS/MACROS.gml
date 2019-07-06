@@ -8,7 +8,8 @@
 
 enum CamFollowMode {
 	smooth,
-	screenClamp
+	screenClamp,
+	keyboard
 }
 
 // Player object
