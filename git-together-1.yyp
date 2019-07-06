@@ -55,10 +55,18 @@
             }
         },
         {
+            "Key": "17dea398-fe1b-43aa-aa56-7bd243cf13e1",
+            "Value": {
+                "id": "176a3a69-e710-41f0-bba8-597ef5055b60",
+                "resourcePath": "notes\\Naming Convention.yy",
+                "resourceType": "GMNotes"
+            }
+        },
+        {
             "Key": "1d1fd449-018f-4fde-b3e1-c72d623f65b4",
             "Value": {
                 "id": "90ed8a29-cb97-4b62-ab84-b155ba4fbdc6",
-                "resourcePath": "sprites\\sPlayer\\sPlayer.yy",
+                "resourcePath": "sprites\\spr_player\\spr_player.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -90,7 +98,7 @@
             "Key": "481f0192-ae86-4a47-bd49-8b1433d857ac",
             "Value": {
                 "id": "0b6b16d6-7a17-4b22-8529-49a75b7ac905",
-                "resourcePath": "rooms\\room0\\room0.yy",
+                "resourcePath": "rooms\\rm_room_dummy\\rm_room_dummy.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -98,7 +106,7 @@
             "Key": "54b76eee-25c3-405d-a8f6-f3c349e2f65b",
             "Value": {
                 "id": "b71c9945-3a8e-4c69-8469-4fbd9caffc79",
-                "resourcePath": "scripts\\CollideWith\\CollideWith.yy",
+                "resourcePath": "scripts\\collide_with\\collide_with.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -114,7 +122,7 @@
             "Key": "5a31a1be-2239-4788-9a13-ff06ddd3c501",
             "Value": {
                 "id": "c902da94-06d3-41f5-84b2-39a77bd9db4a",
-                "resourcePath": "objects\\oPlayer\\oPlayer.yy",
+                "resourcePath": "objects\\obj_player\\obj_player.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -130,7 +138,7 @@
             "Key": "78a368b3-a39e-4220-aa3a-28862292170d",
             "Value": {
                 "id": "0f62d952-a9b2-4af4-a049-c02f7542534b",
-                "resourcePath": "objects\\oWall\\oWall.yy",
+                "resourcePath": "objects\\obj_wall\\obj_wall.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -226,7 +234,7 @@
             "Key": "fbabc8f2-82a2-4c91-a648-976cd2023d68",
             "Value": {
                 "id": "f98cf7c0-a814-4d0c-a906-46a0d4962174",
-                "resourcePath": "sprites\\sWall\\sWall.yy",
+                "resourcePath": "sprites\\spr_wall\\spr_wall.yy",
                 "resourceType": "GMSprite"
             }
         }
