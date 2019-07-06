@@ -1,8 +1,3 @@
-enum PlayerState {
-	idle,
-	user_controlled
-}
-
 movementSpeed = 2;
 
 xvel = 0;

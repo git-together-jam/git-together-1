@@ -15,6 +15,12 @@ enum CamFollowMode {
 // Player object
 #macro PLAYER obj_player
 
+// Player state
+enum PlayerState {
+	idle,
+	user_controlled
+}
+
 // World grid
 enum WorldCell {
 	void,	// Empty cell
