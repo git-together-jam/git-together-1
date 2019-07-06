@@ -1,26 +1,26 @@
 var collider = argument0;
 
-if(place_meeting(x + hspeed,y,collider))
+if(place_meeting(x + hspd,y,collider))
 {
 	var breakcount = 0;
-	while(!place_meeting(x + sign(hspeed),y,collider))
+	while(!place_meeting(x + sign(hspd),y,collider))
 	{
-		x += sign(hspeed);
-		if(breakcount++ > abs(hspeed))
+		x += sign(hspd);
+		if(breakcount++ > abs(hspd))
 			break;
 	}
-	hspeed = 0;
+	hspd = 0;
 }
 
 
-if(place_meeting(x,y + vspeed,collider))
+if(place_meeting(x,y + vspd,collider))
 {
 	var breakcount = 0;
-	while(!place_meeting(x,y + sign(vspeed),collider))
+	while(!place_meeting(x,y + sign(vspd),collider))
 	{
-		y += sign(vspeed);
-		if(breakcount++ > abs(vspeed))
+		y += sign(vspd);
+		if(breakcount++ > abs(vspd))
 			break;
 	}
-	vspeed = 0;
+	vspd = 0;
 }

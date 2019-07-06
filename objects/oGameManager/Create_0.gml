@@ -1,0 +1,1 @@
+global.DeltaTime = 0;
