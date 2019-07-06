@@ -30,4 +30,16 @@ hover_y = 0;
 lTool = WorldCell.stone; // left  mouse button tool
 rTool = WorldCell.void;  // right mouse button tool
 
+#region GUI Constants
+
+toolGUISize = 16;
+
+lToolGUIOffX = 1;
+lToolGUIOffY = 1;
+
+rToolGUIOffX = 39;
+rToolGUIOffY = 1;
+
+#endregion;
+
 #endregion;

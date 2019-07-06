@@ -4,7 +4,7 @@
     "mvc": "1.0",
     "IsDnDProject": false,
     "configs": [
-
+        
     ],
     "option_ecma": false,
     "parentProject": {
@@ -25,7 +25,7 @@
             }
         ],
         "hiddenResources": [
-
+            
         ],
         "projectPath": "${base_project}"
     },
@@ -63,6 +63,14 @@
             }
         },
         {
+            "Key": "190604a2-6b06-4bf8-b6d6-0e3c5350316b",
+            "Value": {
+                "id": "b0831760-594d-4b39-a64c-06509bb0d9a1",
+                "resourcePath": "views\\190604a2-6b06-4bf8-b6d6-0e3c5350316b.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "1d1fd449-018f-4fde-b3e1-c72d623f65b4",
             "Value": {
                 "id": "90ed8a29-cb97-4b62-ab84-b155ba4fbdc6",
@@ -87,6 +95,14 @@
             }
         },
         {
+            "Key": "2e8129a7-c382-47ab-901e-965ee7822af6",
+            "Value": {
+                "id": "a71ac67c-a430-4951-991c-308c6248457d",
+                "resourcePath": "rooms\\rm_main_menu\\rm_main_menu.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "30c3032d-7d3b-4318-ac34-86fc3a9df4c4",
             "Value": {
                 "id": "59c62c95-f89e-4605-874e-bfe3c02232e4",
@@ -95,11 +111,11 @@
             }
         },
         {
-            "Key": "2e8129a7-c382-47ab-901e-965ee7822af6",
+            "Key": "366d68ac-2d7f-4181-8057-642373b1a6fa",
             "Value": {
-                "id": "a71ac67c-a430-4951-991c-308c6248457d",
-                "resourcePath": "rooms\\rm_main_menu\\rm_main_menu.yy",
-                "resourceType": "GMRoom"
+                "id": "ec8e75c4-a094-496f-a4b3-70092f01e200",
+                "resourcePath": "sprites\\spr_gui_no_tool\\spr_gui_no_tool.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -308,6 +324,14 @@
                 "id": "2d36ccbc-52c7-4724-b78e-8ae1e0ebfd1b",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "d2af5573-9e8c-4f6e-8a24-7046d5824e2b",
+            "Value": {
+                "id": "fb9fce3b-e541-4192-92de-af2a8ee85026",
+                "resourcePath": "sprites\\spr_gui_mouse_tool\\spr_gui_mouse_tool.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
