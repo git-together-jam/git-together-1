@@ -10,33 +10,49 @@ if (followTarget && instance_exists(target)) {
 
 switch (followMode) {
 	
-	case CamFollowMode.screenClamp: #region;
+	case CamFollowMode.screenClamp:
+		#region
 	
-		// Keep camera on player
-		if (instance_exists(target)) {	
-			x = clamp(
-				x,
-				targetX - marginHorz, //Right border
-				targetX + marginHorz //Left border
-			);
+			// Keep camera on player
+			if (instance_exists(target)) {	
+				x = clamp(
+					x,
+					targetX - marginHorz, //Right border
+					targetX + marginHorz //Left border
+				);
 			
-			y = clamp(
-				y,
-				targetY - marginVert, //Bottom border
-				targetY + marginVert //Top border
-			);
-		}
+				y = clamp(
+					y,
+					targetY - marginVert, //Bottom border
+					targetY + marginVert //Top border
+				);
+			}
+		#endregion
+	break;
 		
-	break; #endregion;
-		
-	case CamFollowMode.smooth: #region;
-	
+	case CamFollowMode.smooth:
+		#region
 		if (instance_exists(PLAYER)) {	
 			x = lerp(x, targetX, .1);
 			y = lerp(y, targetY, .1);
 		}
+		#endregion
+	break;
 	
-	break; #endregion;
+	case CamFollowMode.keyboard:
+		#region
+		var _spd = 2;
+		x +=  (
+			(keyboard_check(vk_right) || keyboard_check(ord("D"))) -
+			(keyboard_check(vk_left ) || keyboard_check(ord("A")))
+		) * _spd;
+		   
+		y += (
+			(keyboard_check(vk_down ) || keyboard_check(ord("S"))) -
+			(keyboard_check(vk_up   ) || keyboard_check(ord("W")))
+		) * _spd;
+		#endregion
+	break;
 }
 
 if (roomClamp) {

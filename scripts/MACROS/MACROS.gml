@@ -1,6 +1,6 @@
 // Game Dimensions
-#macro GAME_WIDTH  obj_camera.width
-#macro GAME_HEIGHT obj_camera.height
+#macro GAME_WIDTH  320
+#macro GAME_HEIGHT 180
 
 // Camera stuff
 #macro VIEW_INDEX 0
@@ -8,7 +8,8 @@
 
 enum CamFollowMode {
 	smooth,
-	screenClamp
+	screenClamp,
+	keyboard
 }
 
 // Player object
