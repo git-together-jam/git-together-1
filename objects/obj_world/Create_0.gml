@@ -20,3 +20,11 @@ ds_grid_set_region(grid, _l, _b, _r, _b, WorldCell.stone);
 #endregion;
 
 world_toggle_editor(editorActive);
+
+#region Internal Editor Variables
+
+// Hover is cursor. Allows subpixels. Eases toward cursor every step
+hover_x = 0;
+hover_y = 0;
+
+#endregion;
