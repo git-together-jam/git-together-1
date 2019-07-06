@@ -1,4 +1,4 @@
-////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
 ----------------------------- NAMING CONVENTION -------------------------------
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -11,3 +11,50 @@ We will try to follow this naming convention for everyone's welfare.
 - global.GlobalVariable
 - EnumName.value
 - MACRO_NAME
+
+///////////////////////////////////////////////////////////////////////////////
+---------------------------- RECOMMENDED ACTIONS ------------------------------
+///////////////////////////////////////////////////////////////////////////////
+
+Some conventions are not 100% neccesary, but can really help modularize, and 
+standarize systems, making the project overall easier to work with.
+These are not of equal importance to the naming convention
+
+- Variable Definitions tab
+	The Variable Definitions tab for objects helps modularize objects. Most
+	variables should be defined in the variable definitions tab. See obj_camera
+	as an example
+- JSDoc
+	* Use `/// @desc <description>` for every event, script and shader in the 
+	  project.
+	* Use `/// @arg <argument name>` to define script arguments
+	* Use `/// @returns {<datatype>}` for every script (notice the {}). If it 
+	  does not return anything, do not include this line.
+- Line wrapping
+	Try to avoid any overly-long lines of code. Scrolling horizontally is a
+	massive chore, and contributes to less readable code. A good rule of thumb 
+	for line width is to keep every line shorter than the width of the default 
+	code window. If you end up needing to wrap a line of code to circumvent 
+	this issue, wrap it like the example below:
+	```gml
+	draw_sprite_ext(
+		sprite_index,
+		image_index,
+		x,
+		y - 4,
+		image_xscale,
+		image_yscale,
+		image_angle + 12,
+		image_blend,
+		image_alpha * .8
+	);
+	```
+- Ambiguous naming
+	Try to avoid naming scripts, resources, variables etc ambiguous names. A 
+	longer scipt name will help people understand what it means. This is also 
+	to avoid namespace pollution. Say someone makes a script, `follow`. Now 
+	people can't use that as a variable name, and no one really knows what it 
+	does until they've opened the script and read it through. A better name in 
+	this case would be `instance_follow_astar`. Now you know it's a script for 
+	instances to follow eachother using A* pathfinding. Still a bit ambiguous, 
+	but it's much clearer.
