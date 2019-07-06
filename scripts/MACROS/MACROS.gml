@@ -1,6 +1,6 @@
 // Game Dimensions
-#macro GAME_WIDTH 480
-#macro GAME_HEIGHT 320
+#macro GAME_WIDTH  obj_camera.width
+#macro GAME_HEIGHT obj_camera.height
 
 // Camera stuff
 #macro VIEW_INDEX 0
