@@ -9,7 +9,7 @@
         "d2af5573-9e8c-4f6e-8a24-7046d5824e2b"
     ],
     "filterType": "GMSprite",
-    "folderName": "ui",
+    "folderName": "UI",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

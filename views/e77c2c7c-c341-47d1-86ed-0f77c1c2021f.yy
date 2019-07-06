@@ -8,7 +8,7 @@
         "460118cf-001b-45bc-a57f-e2f5bdc90bc4"
     ],
     "filterType": "GMObject",
-    "folderName": "ui",
+    "folderName": "UI",
     "isDefaultView": false,
     "localisedFolderName": ""
 }
