@@ -1,13 +1,29 @@
-/// @desc Update the view
-camera_set_view_size(cam, view_width, view_height);
+///@description Update view position
 
-if (instance_exists(Leo_objPlayer)) {
-	var _x = camera_get_view_x(cam);
-	var _y = camera_get_view_y(cam);
-	
-	var _xx = clamp(Leo_objPlayer.x-view_width/2, 0, room_width-view_width);
-	var _yy = clamp(Leo_objPlayer.y-view_height/2, 0, room_width-view_height);
-	
-	var _spd = 0.2;
-	camera_set_view_pos(cam, lerp(_x, _xx, _spd), lerp(_y, _yy, _spd));
+var _half_cam_width = camera_get_view_width(VIEW)/2;
+var _half_cam_height = camera_get_view_height(VIEW)/2;
+
+// Keep camera on player
+if (instance_exists(PLAYER)) {	
+	x = clamp(x,
+		PLAYER.x - marginHorz, //Right border
+		PLAYER.x + marginHorz //Left border
+	);
+	y = clamp(y,
+		PLAYER.y - marginVert, //Bottom border
+		PLAYER.y + marginVert //Top border
+	);
 }
+
+// Lock camera to room
+var _half_rmw = room_width/2;
+var _half_rmh = room_height/2;
+	
+var _view_offset_x = _half_rmw - _half_cam_width;
+var _view_offset_y = _half_rmh - _half_cam_height;
+
+x = clamp(x, (_half_rmw - _view_offset_x), (_half_rmw + _view_offset_x));
+y = clamp(y, (_half_rmh - _view_offset_y), (_half_rmh + _view_offset_y));
+
+// Reposition camera
+camera_set_view_pos(VIEW, x - _half_cam_width, y - _half_cam_height);
