@@ -1,4 +1,5 @@
-/// @desc Enable the view in the room
+///@description Initialize room's camera
+
 view_enabled = true;
-view_visible[0] = true;
-view_set_camera(0, cam);
+view_visible[VIEW_INDEX] = true;
+camera_set_view_size(VIEW, GAME_WIDTH, GAME_HEIGHT);

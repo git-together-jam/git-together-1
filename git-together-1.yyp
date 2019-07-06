@@ -127,19 +127,19 @@
             }
         },
         {
+            "Key": "7283d3f3-acb6-44c7-8c4e-4dc532087fad",
+            "Value": {
+                "id": "499fe3e4-ed20-4f55-8780-801489f840bf",
+                "resourcePath": "rooms\\rm_boot\\rm_boot.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "72ea7f1a-87a4-4bac-ae9c-d5fdff71a71b",
             "Value": {
                 "id": "f354dd85-5286-40a8-a626-7cbf00084872",
                 "resourcePath": "views\\72ea7f1a-87a4-4bac-ae9c-d5fdff71a71b.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "75ac291e-7061-4bcb-8e8a-3b3545332d41",
-            "Value": {
-                "id": "68c189cb-594b-4598-a253-248d110793e8",
-                "resourcePath": "options\\html5\\options_html5.yy",
-                "resourceType": "GMHtml5Options"
             }
         },
         {
@@ -172,6 +172,14 @@
                 "id": "31fb480f-196b-4d7e-a26f-80775f6c33ae",
                 "resourcePath": "views\\90adcdb9-d856-4a63-8175-8cc634a4544b.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "919b86d2-f449-4a44-a786-9b466a7826c6",
+            "Value": {
+                "id": "b69afa0a-08b1-4770-8e3c-1d3346b7e509",
+                "resourcePath": "scripts\\MACROS\\MACROS.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -256,6 +264,7 @@
         }
     ],
     "script_order": [
+        "919b86d2-f449-4a44-a786-9b466a7826c6",
         "54b76eee-25c3-405d-a8f6-f3c349e2f65b"
     ],
     "tutorial": ""

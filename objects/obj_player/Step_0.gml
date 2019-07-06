@@ -25,4 +25,4 @@ if(keyboard_check(vk_down))
 	vspeed = movementSpeed;
 }
 
-CollideWith(oWall);
+collide_with(obj_wall);
