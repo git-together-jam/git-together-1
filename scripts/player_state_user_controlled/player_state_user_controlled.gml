@@ -3,7 +3,7 @@ xvel = (
 	(keyboard_check(vk_left ) || keyboard_check(ord("A")))
 ) * movementSpeed;
 
-if (keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("Z"))) yvel = -jvel;
+if (keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W"))) yvel = -jvel;
 
 if (yvel < yvelMax) yvel += grav;
 	else yvel = yvelMax;
