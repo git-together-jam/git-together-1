@@ -16,14 +16,8 @@ if (instance_exists(PLAYER)) {
 }
 
 // Lock camera to room
-var _half_rmw = room_width/2;
-var _half_rmh = room_height/2;
-	
-var _view_offset_x = _half_rmw - _half_cam_width;
-var _view_offset_y = _half_rmh - _half_cam_height;
-
-x = clamp(x, (_half_rmw - _view_offset_x), (_half_rmw + _view_offset_x));
-y = clamp(y, (_half_rmh - _view_offset_y), (_half_rmh + _view_offset_y));
+x = clamp(x, _half_cam_width, room_width - _half_cam_width);
+y = clamp(y, _half_cam_height, room_height - _half_cam_height);
 
 // Reposition camera
 camera_set_view_pos(VIEW, x - _half_cam_width, y - _half_cam_height);
