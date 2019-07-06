@@ -6,10 +6,6 @@ marginVert = 30;
 targetX = x;
 targetY = y;
 
-width = GAME_WIDTH;
-height = GAME_HEIGHT;
-followMode = CamFollowMode.smooth;
-
 // subpixel/zoom
 var _spz = subpixelsEnabled ? zoom : 1;
 
