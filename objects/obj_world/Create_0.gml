@@ -27,4 +27,7 @@ world_toggle_editor(editorActive);
 hover_x = 0;
 hover_y = 0;
 
+lTool = WorldCell.stone; // left  mouse button tool
+rTool = WorldCell.void;  // right mouse button tool
+
 #endregion;
