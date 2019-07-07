@@ -18,7 +18,8 @@ enum CamFollowMode {
 // Player state
 enum PlayerState {
 	idle,
-	user_controlled
+	user_controlled,
+	game_controlled
 }
 
 // World grid
