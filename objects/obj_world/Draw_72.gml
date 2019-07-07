@@ -8,7 +8,12 @@ for (var i = 0; i < _len; i++) {
 	var _x = i  %  grid_width;
 	var _y = i div grid_width;
 	
-	if (grid[# _x, _y] == WorldCell.stone) {
-		draw_sprite(spr_wall, 0, _x * CELL_WIDTH, _y * CELL_HEIGHT)	
+	switch (grid[# _x, _y]) {
+		case WorldCell.stone:
+			draw_sprite(spr_wall, 0, _x * CELL_WIDTH, _y * CELL_HEIGHT);
+			break;
+		case WorldCell.start:
+			draw_sprite(spr_start, 0, _x * CELL_WIDTH, _y * CELL_HEIGHT);
+			break;
 	}
 }
