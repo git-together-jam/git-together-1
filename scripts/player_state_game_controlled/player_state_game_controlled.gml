@@ -1,4 +1,18 @@
-xvel = (rightCommand - leftCommand) * movementSpeed;
+if place_meeting(x,y+1,obj_slime){
+	fric=.75
+	movementSpeed=1
+}
+if place_meeting(x,y+1,obj_ice){
+	fric=.25
+} else {fric=.5;movementSpeed=2}
+
+
+if rightCommand - leftCommand !=0{ //Hey if we are moving do regular moving
+    xvel = (rightCommand - leftCommand) * movementSpeed;
+} else {
+    xvel = lerp(xvel*movementSpeed,0,fric) //If we aren't moving, then just slow down our movement until we stop based on fric
+}
+//xvel = (rightCommand - leftCommand) * movementSpeed;
 
 var _scaleSign = sign(xvel);
 _scaleSign = _scaleSign == 0 ? image_xscale : _scaleSign 

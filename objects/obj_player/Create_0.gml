@@ -11,6 +11,8 @@ jumpCommand = false;
 
 grav = .6;
 
+fric = .5
+
 state = undefined;
 player_state_set(PlayerState.game_controlled);
 
