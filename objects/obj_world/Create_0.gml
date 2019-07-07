@@ -11,8 +11,8 @@ grid_start_y = ds_grid_value_y(grid, 0, 0, grid_width-1, grid_height-1, WorldCel
 
 // Create the player.
 instance_create_layer(
-	grid_start_x * CELL_WIDTH,
-	grid_start_y * CELL_HEIGHT,
+	grid_start_x * CELL_WIDTH + CELL_WIDTH/2,
+	grid_start_y * CELL_HEIGHT - 1,
 	"Instances",
 	obj_player
 );
