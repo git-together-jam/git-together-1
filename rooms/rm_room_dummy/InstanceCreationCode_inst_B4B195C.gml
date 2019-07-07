@@ -1,0 +1,12 @@
+command_add(command_right);
+command_add(command_wait, 60);
+command_add(command_stop);
+command_add(command_wait, 60);
+command_add(command_jump);
+command_add(command_wait, 60);
+command_add(command_left);
+command_add(command_wait, 60);
+command_add(command_stop);
+command_add(command_wait, 60);
+command_add(command_right);
+command_add(command_wait, 60);
