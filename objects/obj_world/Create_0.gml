@@ -1,11 +1,14 @@
 /// @desc Initialize world grid
 
+// Determine which cells are "collidable".
+global.collide_with = ds_list_create();
+ds_list_add(global.collide_with, WorldCell.stone);
+
+// Retrieve the stage and set local grid.
 var _stage = global.SelectedStage;
 grid = script_execute(_stage[?"create_script"]);
-
 grid_width = ds_grid_width(grid);
 grid_height = ds_grid_height(grid);
-
 grid_start_x = ds_grid_value_x(grid, 0, 0, grid_width-1, grid_height-1, WorldCell.start);
 grid_start_y = ds_grid_value_y(grid, 0, 0, grid_width-1, grid_height-1, WorldCell.start);
 

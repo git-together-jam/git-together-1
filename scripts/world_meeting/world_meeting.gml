@@ -16,10 +16,10 @@ if (!_collision && instance_exists(obj_world)) {
 	var _b = floor(bbox_bottom / CELL_HEIGHT);
 	
 	_collision |= (
-		_grid[# _l, _t] != WorldCell.void ||
-		_grid[# _l, _b] != WorldCell.void ||
-		_grid[# _r, _b] != WorldCell.void ||
-		_grid[# _r, _t] != WorldCell.void
+		ds_list_find_index(global.collide_with, _grid[# _l, _t]) != -1 ||
+		ds_list_find_index(global.collide_with, _grid[# _l, _b]) != -1 ||
+		ds_list_find_index(global.collide_with, _grid[# _r, _b]) != -1 ||
+		ds_list_find_index(global.collide_with, _grid[# _r, _t]) != -1
 	);
 }
 
