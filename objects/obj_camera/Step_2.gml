@@ -1,7 +1,7 @@
 ///@description Update view position
 
-var _half_cam_width  = width  / 2;
-var _half_cam_height = height / 2;
+var _halfCamWidth  = width  / 2;
+var _halfCamHeight = height / 2;
 
 if (followTarget && instance_exists(target)) {
 	targetX = target.x;
@@ -57,9 +57,9 @@ switch (followMode) {
 
 if (roomClamp) {
 	// Lock camera to room
-	x = clamp(x, _half_cam_width,  room_width  - _half_cam_width );
-	y = clamp(y, _half_cam_height, room_height - _half_cam_height);
+	x = clamp(x, _halfCamWidth,  room_width  - _halfCamWidth );
+	y = clamp(y, _halfCamHeight, room_height - _halfCamHeight);
 }
 
 // Reposition camera
-camera_set_view_pos(VIEW, x - _half_cam_width, y - _half_cam_height);
+camera_set_view_pos(VIEW, x - _halfCamWidth, y - _halfCamHeight);
