@@ -13,3 +13,5 @@ grav = .6;
 
 state = undefined;
 player_state_set(PlayerState.game_controlled);
+
+trail = ds_list_create();

@@ -1,5 +1,9 @@
 xvel = (rightCommand - leftCommand) * movementSpeed;
 
+var _scaleSign = sign(xvel);
+_scaleSign = _scaleSign == 0 ? image_xscale : _scaleSign 
+image_xscale = _scaleSign;
+
 if (jumpCommand) yvel = -jvel;
 
 if (yvel < yvelMax) yvel += grav;
