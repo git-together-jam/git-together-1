@@ -1,3 +1,3 @@
 /// @description Backup command stack
 
-ds_stack_copy(commandStackBack, commandStack);
+ds_list_copy(commandListBack, commandList);

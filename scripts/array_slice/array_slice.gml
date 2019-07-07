@@ -4,8 +4,11 @@
 /// @param  left
 /// @param  right
 
-if (argument1 > argument2) return [];
+var l = max(0, argument1);
+var r = min(array_length_1d(argument0) - 1, argument2);
 
-var a = array_create(argument2 - argument1 + 1);
-for (var i = argument1; i <= argument2; i++) a[i - argument1] = argument0[i];
+if (l > r) return [];
+
+var a = array_create(r - l + 1);
+for (var i = l; i <= r; i++) a[i - l] = argument0[i];
 return a;

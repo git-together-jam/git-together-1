@@ -1,7 +1,7 @@
 /// @description Initialize command stack
 
-commandStack = ds_stack_create();
-commandStackBack = ds_stack_create();
+commandList = ds_list_create();
+commandListBack = ds_list_create();
 
 wait = false;
 executing = true;
