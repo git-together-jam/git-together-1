@@ -1,7 +1,7 @@
 /// @description Execute commands
 
 if (executing && !wait) {
-	var _currentCommand = ds_stack_pop(commandStack);
+	var _currentCommand = ds_list_pop(commandList, ds_list_size(commandList) - 1);
 	
 	// Execute command if it exists
 	if (!is_undefined(_currentCommand)) {
@@ -9,7 +9,7 @@ if (executing && !wait) {
 		
 	// Otherwise, reset
 	} else {
-		ds_stack_copy(commandStack, commandStackBack);
+		ds_list_copy(commandList, commandListBack);
 		wait = false;
 		executing = true;
 	}
