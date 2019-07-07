@@ -6,8 +6,8 @@ with (obj_camera) {
 	y = room_height / 2;
 }
 
-var offset_x = room_width / 2;
-var offset_y = 80;
+var offset_x = 20;
+var offset_y = 70;
 var vspacing = 24;
 var _self = self;
 
