@@ -1,23 +1,21 @@
 /// @desc Initialize world grid
 
-grid = ds_grid_create(width, height);
-ds_grid_clear(grid, WorldCell.void);
+var _stage = global.SelectedStage;
+grid = script_execute(_stage[?"create_script"]);
 
-#region Fill borders (placeholder)
+grid_width = ds_grid_width(grid);
+grid_height = ds_grid_height(grid);
 
-var _r = width - 1;
-var _t = 0;
-var _l = 0;
-var _b = height - 1;
+grid_start_x = ds_grid_value_x(grid, 0, 0, grid_width-1, grid_height-1, WorldCell.start);
+grid_start_y = ds_grid_value_y(grid, 0, 0, grid_width-1, grid_height-1, WorldCell.start);
 
-// Left border
-ds_grid_set_region(grid, _l, _t, _l, _b, WorldCell.stone);
-// Right border
-ds_grid_set_region(grid, _r, _t, _r, _b, WorldCell.stone);
-// Bottom border
-ds_grid_set_region(grid, _l, _b, _r, _b, WorldCell.stone);
-	
-#endregion;
+// Create the player.
+instance_create_layer(
+	grid_start_x * CELL_WIDTH,
+	grid_start_y * CELL_HEIGHT,
+	"Instances",
+	obj_player
+);
 
 world_toggle_editor(editorActive);
 

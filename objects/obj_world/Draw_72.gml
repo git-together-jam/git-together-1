@@ -3,12 +3,12 @@
 // Fill background color
 draw_clear($251c1c);
 
-var _len = width * height;
+var _len = grid_width * grid_height;
 for (var i = 0; i < _len; i++) {
-	var _x = i  %  width;
-	var _y = i div width;
+	var _x = i  %  grid_width;
+	var _y = i div grid_width;
 	
 	if (grid[# _x, _y] == WorldCell.stone) {
-		draw_sprite(spr_wall, 0, _x * cellSize, _y * cellSize)	
+		draw_sprite(spr_wall, 0, _x * CELL_WIDTH, _y * CELL_HEIGHT)	
 	}
 }

@@ -24,7 +24,15 @@ enum PlayerState {
 
 // World grid
 enum WorldCell {
-	void,	// Empty cell
-	stone,	// The thing in the ground
+	void,
+	start,
+	finish,
+	stone,
 	SIZE	// Length of enum, not an actual value
 }
+
+#macro CELL_WIDTH 16
+#macro CELL_HEIGHT 16
+
+// Stages
+#macro STAGES stages_init()
