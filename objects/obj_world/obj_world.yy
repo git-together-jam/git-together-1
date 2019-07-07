@@ -73,48 +73,6 @@
     "physicsStartAwake": true,
     "properties": [
         {
-            "id": "6bf2f475-2d47-496f-a562-b4743f11e757",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "16",
-            "varName": "cellSize",
-            "varType": 0
-        },
-        {
-            "id": "71985883-39ae-46cf-9438-95ad1ceb8d4d",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "30",
-            "varName": "width",
-            "varType": 0
-        },
-        {
-            "id": "c3994c5e-8a8d-4733-b0eb-4f254b4d61f4",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "16",
-            "varName": "height",
-            "varType": 0
-        },
-        {
             "id": "fbc9eea3-91ad-43bd-9516-24e8744600f9",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",

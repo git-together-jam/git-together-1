@@ -1,3 +1,3 @@
 /// @description Start game
 
-room_goto(rm_room_dummy);
+room_goto(rm_stage_selection);
