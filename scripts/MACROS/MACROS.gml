@@ -23,6 +23,7 @@ enum PlayerState {
 }
 
 // World grid
+// Don't change the order of the enum values!!! It will break the stages.
 enum WorldCell {
 	void,
 	start,
