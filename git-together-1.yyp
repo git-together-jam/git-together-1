@@ -645,6 +645,14 @@
                 "resourcePath": "sprites\\spr_logo\\spr_logo.yy",
                 "resourceType": "GMSprite"
             }
+        },
+        {
+            "Key": "fce045cb-62f9-48d7-80cc-d3bf18d466f4",
+            "Value": {
+                "id": "6d089d9a-66d3-47a6-9e33-de60718fc204",
+                "resourcePath": "fonts\\fnt_button\\fnt_button.yy",
+                "resourceType": "GMFont"
+            }
         }
     ],
     "script_order": [
