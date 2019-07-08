@@ -1,9 +1,9 @@
 /// @description Insert description here
 
-var num_of_stages = ds_list_size(STAGES);
+var num_of_stages = ds_list_size(global.Stages);
 
 for (var i = 0; i < num_of_stages; i ++) {
-	var _stage = ds_list_find_value(STAGES, i);
+	var _stage = ds_list_find_value(global.Stages, i);
 	
 	var stage_btn = instance_create_depth(
 		_stage[?"selection_x"],
