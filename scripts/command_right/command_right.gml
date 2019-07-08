@@ -1,1 +1,0 @@
-PLAYER.rightCommand = true;
