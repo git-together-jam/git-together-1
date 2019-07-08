@@ -463,6 +463,14 @@
             }
         },
         {
+            "Key": "b74179ce-3340-4ba7-b8f4-79b041185f94",
+            "Value": {
+                "id": "c432c10b-8fb1-4846-a74b-b1c6d25f29a4",
+                "resourcePath": "sprites\\spr_flamebox\\spr_flamebox.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b98c3ade-179e-46d9-8e5b-579a5c01158a",
             "Value": {
                 "id": "05082704-7ee8-4775-b675-9bd3217c11d2",
