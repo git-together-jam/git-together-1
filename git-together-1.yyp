@@ -527,14 +527,6 @@
             }
         },
         {
-            "Key": "bc9a2a76-1846-42f6-ba9d-536681a9ec9b",
-            "Value": {
-                "id": "0e2dd147-9592-4e1e-b7a4-aace80176006",
-                "resourcePath": "scripts\\stages_init\\stages_init.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "c4c5e5c9-0cd0-4c97-a8ed-b860fad992aa",
             "Value": {
                 "id": "1b8c671b-5f3b-40b4-881e-50f8c70a676d",
@@ -548,6 +540,14 @@
                 "id": "2d36ccbc-52c7-4724-b78e-8ae1e0ebfd1b",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "cef63569-7a47-429e-a41d-c5c9fe88043f",
+            "Value": {
+                "id": "f91f1244-4ea6-4d2a-bda0-f21111864ce9",
+                "resourcePath": "scripts\\draw_text_shadow\\draw_text_shadow.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -698,7 +698,6 @@
     "script_order": [
         "919b86d2-f449-4a44-a786-9b466a7826c6",
         "24e6f4ac-02dd-47b5-af71-1793cd187413",
-        "bc9a2a76-1846-42f6-ba9d-536681a9ec9b",
         "7cc217c2-0228-440b-9682-74b8663ea529",
         "30c3032d-7d3b-4318-ac34-86fc3a9df4c4",
         "e662c4f4-8cde-451d-b691-8071fbce03e1",
@@ -709,6 +708,7 @@
         "c4c5e5c9-0cd0-4c97-a8ed-b860fad992aa",
         "46397535-4223-4def-bf45-bf455d66a520",
         "3e8856ff-37c4-4c5a-a711-2030e55fccc3",
+        "cef63569-7a47-429e-a41d-c5c9fe88043f",
         "6362864a-8a5a-4e4b-a868-ce2a47fb378d",
         "99f77afe-0f71-4fe7-a00c-118c44db9d20"
     ],
