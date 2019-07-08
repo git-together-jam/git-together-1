@@ -14,6 +14,9 @@ instance_create_layer(
 	obj_player
 );
 
+// Create edit selection.
+instance_create_layer(0, 0, "Instances", obj_editor);
+
 world_toggle_editor(editorActive);
 
 #region Internal Editor Variables

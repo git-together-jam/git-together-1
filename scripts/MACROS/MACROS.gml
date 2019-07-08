@@ -32,5 +32,7 @@ enum WorldCell {
 	SIZE	// Length of enum, not an actual value
 }
 
+//enum World
+
 #macro CELL_WIDTH 16
 #macro CELL_HEIGHT 16

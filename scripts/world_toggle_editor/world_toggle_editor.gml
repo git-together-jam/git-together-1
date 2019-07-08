@@ -16,3 +16,9 @@ with (obj_camera) {
 		followTarget = true;
 	}
 }
+
+if (argument0) {
+	instance_activate_object(obj_editor);
+} else {
+	instance_deactivate_object(obj_editor);
+}
