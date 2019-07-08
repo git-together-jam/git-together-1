@@ -34,6 +34,3 @@ enum WorldCell {
 
 #macro CELL_WIDTH 16
 #macro CELL_HEIGHT 16
-
-// Stages
-#macro STAGES stages_init()

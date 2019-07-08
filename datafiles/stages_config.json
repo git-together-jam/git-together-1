@@ -1,0 +1,16 @@
+{
+  "stages": [
+    {
+      "name": "Let's get started",
+      "stage_csv": "stage_1_1.csv",
+      "selection_x": 60,
+      "selection_y": 60
+    },
+    {
+      "name": "And continue on",
+      "stage_csv": "stage_1_2.csv",
+      "selection_x": 100,
+      "selection_y": 90
+    }
+  ]
+}
