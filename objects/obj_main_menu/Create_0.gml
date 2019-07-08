@@ -2,13 +2,13 @@
 
 // Center the camera.
 with (obj_camera) {
-	x = room_width / 2;
-	y = room_height / 2;
+	x = room_width div 2;
+	y = room_height div 2;
 }
 
 var offset_x = 20;
 var offset_y = 70;
-var vspacing = 24;
+var vspacing = 27;
 var _self = self;
 
 var start_btn = instance_create_layer(offset_x, offset_y, "Instances", obj_button_large)
@@ -25,19 +25,10 @@ with (instructions_btn) {
 }
 offset_y += vspacing;
 
-
-fullscreen_btn = instance_create_layer(offset_x, offset_y, "Instances", obj_button_large)
-with (fullscreen_btn) {
-	text = "Fullscreen ON";
-	scope = _self;
-	user_event = 1;
-}
-offset_y += vspacing;
-
 var quit_btn = instance_create_layer(offset_x, offset_y, "Instances", obj_button_large)
 with (quit_btn) {
 	text = "Quit";
 	scope = _self;
-	user_event = 2;
+	user_event = 1;
 }
 offset_y += 24;
