@@ -14,8 +14,8 @@ if (editorActive) {
 	
 	var _click = mouse_check_button(mb_left) | mouse_check_button(mb_right) * 2;
 	
-	// Click inside world grid
+	// Click inside world global.StageGrid
 	if (_click && _mgx >= 0 && _mgx < grid_width && _mgy >= 0 && _mgy < grid_height) {
-		grid[# _mgx, _mgy] = _click & 1 ? lTool : rTool;
+		global.StageGrid[# _mgx, _mgy] = _click & 1 ? lTool : rTool;
 	}
 }
