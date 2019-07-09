@@ -271,6 +271,14 @@
             }
         },
         {
+            "Key": "6c016337-baaa-47af-ae65-d53147f0232d",
+            "Value": {
+                "id": "3fdbc2e8-c907-4085-b9c6-6255de0249fd",
+                "resourcePath": "tilesets\\tileset_main\\tileset_main.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "7283d3f3-acb6-44c7-8c4e-4dc532087fad",
             "Value": {
                 "id": "499fe3e4-ed20-4f55-8780-801489f840bf",
@@ -596,6 +604,15 @@
                 "id": "c12e597f-6a75-439e-9ea0-43a63dd54541",
                 "resourcePath": "rooms\\rm_tiletest\\rm_tiletest.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "f1ef81cb-4e04-49db-830f-188e8deafc20",
+            "Value": {
+                "id": "1fee20cc-0e27-4b46-ad74-49f958f71068",
+                "resourcePath": "sprites\\spr_tileset_main\\spr_tileset_main.yy",
+                "resourceType": "GMSprite"
+
             }
         },
         {
