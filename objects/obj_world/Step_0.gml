@@ -14,11 +14,7 @@ if (editorActive) {
 	
 	// Early return if no click;
 	var _click = mouse_check_button(mb_left) | mouse_check_button(mb_right) * 2;
-	if (!_click) return;
-	
-	// Early return if click outside world.
-	var _click_inside_world = (_mgx >= 0 && _mgx < grid_width && _mgy >= 0 && _mgy < grid_height);
-	if  (!_click_inside_world) return;
+	if (!_click) exit;
 	
 	if (_click & 1) {
 		// Place block.

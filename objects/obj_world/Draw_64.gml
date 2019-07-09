@@ -13,7 +13,7 @@ if (editorActive) {
 	var _gsy = _camH - _sprH - _pad;
 	
 	draw_sprite(
-		lTool == WorldCell.stone ? spr_wall : spr_gui_no_tool,
+		spr_gui_no_tool,
 		0,
 		_gsx + lToolGUIOffX,
 		_gsy + lToolGUIOffY

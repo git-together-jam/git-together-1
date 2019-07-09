@@ -119,14 +119,6 @@
             }
         },
         {
-            "Key": "24e6f4ac-02dd-47b5-af71-1793cd187413",
-            "Value": {
-                "id": "35fee714-116a-4ddd-a226-e9a702e1e2dd",
-                "resourcePath": "scripts\\BOOT\\BOOT.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "281a99a8-e54a-4431-a024-f114a2baedda",
             "Value": {
                 "id": "29a8f022-876e-49b8-8a3c-b27ba43566eb",
@@ -673,7 +665,6 @@
     ],
     "script_order": [
         "919b86d2-f449-4a44-a786-9b466a7826c6",
-        "24e6f4ac-02dd-47b5-af71-1793cd187413",
         "7cc217c2-0228-440b-9682-74b8663ea529",
         "e662c4f4-8cde-451d-b691-8071fbce03e1",
         "42c34a55-9f16-4b9a-a9c9-8cd09ed3aec1",
