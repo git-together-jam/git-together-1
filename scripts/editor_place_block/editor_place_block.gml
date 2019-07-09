@@ -25,6 +25,7 @@ global.SelectedBlock[? "num"]--;
 // Remove blocks if no more left.
 if (global.SelectedBlock[? "num"] == 0) {
 	var i = ds_list_find_index(available_blocks, global.SelectedBlock);
+	ds_map_destroy(available_blocks[| i]);
 	ds_list_delete(available_blocks, i);
 	
 	global.SelectedBlock = undefined;
