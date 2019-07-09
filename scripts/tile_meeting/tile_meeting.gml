@@ -9,7 +9,8 @@ var _xx, _yy, _layer, _tilemap, _tileType, _xp, _yp, _meeting;
 _xx = argument[0];
 _yy = argument[1];
 _layer = argument[2];
-_tileType = argument_count > 3 ? argument[3] : Tile.any;
+if (argument_count > 3) _tileType = argument[3];
+else _tileType = Tile.any;
 
 _tilemap = layer_tilemap_get_id(_layer);
 
@@ -22,14 +23,24 @@ _yp = y;
 x = _xx;
 y = _yy;
 
-//Check for collision on all four corners of the bounding box
-_meeting =		tilemap_get_at_pixel(_tilemap, bbox_right, bbox_top)
+//Check for collision on all four corners of the collision mask
+if (_tileType == Tile.any)
+	_meeting =	tilemap_get_at_pixel(_tilemap, bbox_left, bbox_top)
 				||
-				tilemap_get_at_pixel(_tilemap, bbox_right, bbox_bottom)
+				tilemap_get_at_pixel(_tilemap, bbox_left, bbox_bottom)
 				||
-				tilemap_get_at_pixel(_tilemap, bbox_left, bbox_top)
+				tilemap_get_at_pixel(_tilemap, bbox_right, bbox_top)
 				||
-				tilemap_get_at_pixel(_tilemap, bbox_left, bbox_bottom);
+				tilemap_get_at_pixel(_tilemap, bbox_right, bbox_bottom);			
+else
+	_meeting =	(tile_position(bbox_left, bbox_top, _layer) == _tileType)
+				||
+				(tile_position(bbox_left, bbox_bottom, _layer) == _tileType)
+				||
+				(tile_position(bbox_right, bbox_top, _layer) == _tileType)
+				||
+				(tile_position(bbox_right, bbox_bottom, _layer) == _tileType);
+
 
 //Move back to the original position
 x = _xp;
