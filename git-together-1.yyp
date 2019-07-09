@@ -130,7 +130,7 @@
             "Key": "25579063-d4c6-4ebe-b9a7-01632a9d05f9",
             "Value": {
                 "id": "a8f973bd-28ff-4792-955e-c40ee36c3b88",
-                "resourcePath": "scripts\\tile_position\\tile_position.yy",
+                "resourcePath": "scripts\\tile_at_position\\tile_at_position.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -300,6 +300,14 @@
                 "id": "f354dd85-5286-40a8-a626-7cbf00084872",
                 "resourcePath": "views\\72ea7f1a-87a4-4bac-ae9c-d5fdff71a71b.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "75ac291e-7061-4bcb-8e8a-3b3545332d41",
+            "Value": {
+                "id": "4989b4f5-5c1f-446e-916a-03c751379a5b",
+                "resourcePath": "options\\html5\\options_html5.yy",
+                "resourceType": "GMHtml5Options"
             }
         },
         {
