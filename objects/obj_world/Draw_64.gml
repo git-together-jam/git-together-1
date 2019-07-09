@@ -12,12 +12,19 @@ if (editorActive) {
 	var _gsx = _camW - _sprW - _pad;
 	var _gsy = _camH - _sprH - _pad;
 	
-	draw_sprite(
-		spr_gui_no_tool,
-		0,
-		_gsx + lToolGUIOffX,
-		_gsy + lToolGUIOffY
-	);
+	if (!is_undefined(global.SelectedBlock)) {
+		draw_tile(
+			tileset_main, global.SelectedBlock[? "id"], 0,
+			_gsx + lToolGUIOffX, _gsy + lToolGUIOffY
+		);
+	} else {
+		draw_sprite(
+			spr_gui_no_tool,
+			0,
+			_gsx + lToolGUIOffX,
+			_gsy + lToolGUIOffY
+		);
+	}
 	
 	draw_sprite(spr_gui_mouse_tool, 0, _gsx, _gsy);
 }
