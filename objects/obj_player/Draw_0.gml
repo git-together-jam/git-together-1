@@ -1,5 +1,5 @@
 // Draw player trails
-if(obj_world.editorActive)
+if (global.GameState == GameState.edit)
 {
 	for(var i = 0; i < ds_list_size(trail); ++i)
 	{

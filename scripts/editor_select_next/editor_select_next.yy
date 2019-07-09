@@ -1,8 +1,8 @@
 {
-    "id": "42c34a55-9f16-4b9a-a9c9-8cd09ed3aec1",
+    "id": "4c2e351a-710b-4854-82d5-61d7c3c517ca",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "editor_erase_block",
+    "name": "editor_select_next",
     "IsCompatibility": false,
     "IsDnD": false
 }

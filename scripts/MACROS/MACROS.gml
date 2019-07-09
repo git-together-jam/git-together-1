@@ -2,6 +2,12 @@
 #macro GAME_WIDTH  320
 #macro GAME_HEIGHT 180
 
+// Game state
+enum GameState {
+	play,
+	edit
+}
+
 // Camera stuff
 #macro VIEW_INDEX 0
 #macro VIEW view_camera[VIEW_INDEX]
@@ -34,3 +40,6 @@ enum Tile {
 	slime,
 	ice
 }
+
+// There's not way to get the total number or tiles in the tile set, so here it is.
+#macro NUM_OF_TILES 24
