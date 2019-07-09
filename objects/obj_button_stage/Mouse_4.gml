@@ -1,1 +1,1 @@
-room_goto(rm_stage);
+room_goto(stage);
