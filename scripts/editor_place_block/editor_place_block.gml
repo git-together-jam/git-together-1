@@ -1,6 +1,10 @@
 var _x = argument0;
 var _y = argument1;
 
+// Stop if outside editable area
+var _canEdit = tile_at_cell("Editable_Area", _x, _y);
+if (!_canEdit) return;
+
 var _lay_id = layer_get_id("Tiles");
 var _map_id = layer_tilemap_get_id(_lay_id);
 var _data = tilemap_get(_map_id, _x, _y);
