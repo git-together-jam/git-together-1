@@ -9,11 +9,11 @@ var _ind = tile_get_index(_data);
 // No block is selected, so stop!
 if (is_undefined(global.SelectedBlock)) return;
 
+// if block isn't void, stop!
+if (_ind) return;
+
 // Block is already placed, so stop!
 if (_ind == global.SelectedBlock[? "id"]) return;
-
-// Erase block first if not void.
-if (!_ind) editor_erase_block(_x, _y);
 
 tilemap_set(
 	_map_id,
