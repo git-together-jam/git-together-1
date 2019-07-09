@@ -4,9 +4,6 @@ switch (state) {
 	case PlayerState.user_controlled:
 		player_state_user_controlled();
 		break;
-	case PlayerState.game_controlled:
-		player_state_game_controlled();
-		break;
 }
 var _trailSize = ds_list_size(trail) ;
 if(_trailSize > 0)
