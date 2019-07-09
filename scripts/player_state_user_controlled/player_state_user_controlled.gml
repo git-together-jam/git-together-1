@@ -10,16 +10,16 @@ if (yvel < yvelMax) yvel += grav;
 
 #region Move collide world
 	
-if (world_meeting(x + xvel, y)) {
+if (tile_meeting(x + xvel, y, "Tiles")) {
 	var _sign = sign(xvel);
-	while (!world_meeting(x + _sign, y)) x += _sign;
+	while (!tile_meeting(x + _sign, y, "Tiles")) x += _sign;
 	xvel = 0;
 }
 x += xvel;
 
-if (world_meeting(x, y + yvel)) {
+if (tile_meeting(x, y + yvel, "Tiles")) {
 	var _sign = sign(yvel);
-	while (!world_meeting(x, y + _sign)) y += _sign;
+	while (!tile_meeting(x, y + _sign, "Tiles")) y += _sign;
 	yvel = 0;
 }
 y += yvel;
