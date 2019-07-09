@@ -1,7 +1,7 @@
 /// @desc Initialize world
 
 // Create edit selection.
-instance_create_layer(0, 0, "Instances", obj_editor);
+//instance_create_layer(0, 0, "Instances", obj_editor);
 
 world_toggle_editor(editorActive);
 
@@ -22,6 +22,6 @@ lToolGUIOffY = 1;
 rToolGUIOffX = 39;
 rToolGUIOffY = 1;
 
-#endregion;
+#endregion
 
-#endregion;
+#endregion
