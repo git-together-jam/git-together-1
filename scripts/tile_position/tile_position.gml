@@ -1,5 +1,5 @@
-/// @desc tile_meeting(x, y, layer, tileType);
-/// @func tile_meeting
+/// @desc tile_position(x, y, layer);
+/// @func tile_position
 /// @arg x
 /// @arg y
 /// @arg layer

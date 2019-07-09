@@ -26,3 +26,12 @@ enum PlayerState {
 
 #macro CELL_WIDTH 16
 #macro CELL_HEIGHT 16
+
+//Tiles
+
+enum Tile {
+	any,
+	one,
+	two,
+	three
+}
