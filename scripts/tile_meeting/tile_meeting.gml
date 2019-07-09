@@ -1,36 +1,35 @@
-/// @description tile_meeting(x, y, tilemap_element_id);
-/// @function tile_meeting
-/// @param x
-/// @param  y
-/// @param  tilemap_element_id
-//Source: https://www.youtube.com/watch?v=Q_L7DGEv3_8&feature=youtu.be
+/// @desc tile__meeting(x, y, layer);
+/// @func tile__meeting
+/// @arg x
+/// @arg y
+/// @arg layer
 
-var xx, yy, tilemap, xp, yp, meeting;
+var _xx, _yy, _tilemap, _xp, _yp, _meeting;
 
-xx = argument0;
-yy = argument1;
-tilemap = argument2;
+_xx = argument0;
+_yy = argument1;
+_tilemap = layer_tilemap_get_id(argument2);
 
-//save our current position
-xp = x;
-yp = y;
+//Save our current position
+_xp = x;
+_yp = y;
 
-//move to the position where we wanna check for a tile collision
-x = xx;
-y = yy;
+//Move to the position where we want to check for a tile collision
+x = _xx;
+y = _yy;
 
-//check for collision on all four corners of the collision mask
-meeting =		tilemap_get_at_pixel(tilemap, bbox_right, bbox_top)
+//Check for collision on all four corners of the bounding box
+_meeting =		tilemap_get_at_pixel(_tilemap, bbox_right, bbox_top)
 				||
-				tilemap_get_at_pixel(tilemap, bbox_right, bbox_bottom)
+				tilemap_get_at_pixel(_tilemap, bbox_right, bbox_bottom)
 				||
-				tilemap_get_at_pixel(tilemap, bbox_left, bbox_top)
+				tilemap_get_at_pixel(_tilemap, bbox_left, bbox_top)
 				||
-				tilemap_get_at_pixel(tilemap, bbox_left, bbox_bottom);
+				tilemap_get_at_pixel(_tilemap, bbox_left, bbox_bottom);
 
 //Move back to the original position
-x = xp;
-y = yp;
+x = _xp;
+y = _yp;
 
 //Return wether or not there was a collision
-return(meeting);
+return(_meeting);
