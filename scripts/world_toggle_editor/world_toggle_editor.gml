@@ -17,6 +17,8 @@ with (obj_camera) {
 	}
 }
 
+PLAYER.image_speed = !argument0;
+
 if (argument0) {
 	instance_activate_object(obj_editor);
 } else {

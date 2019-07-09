@@ -28,5 +28,8 @@ if (tile_meeting(x, y + vspd, "Tiles")) {
 	vspd = 0;
 }
 y += vspd;
-	
+
+if (bool(abs(hspd))) image_xscale = sign(hspd);
+else image_index = 0;
+
 #endregion
