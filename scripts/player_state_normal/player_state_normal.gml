@@ -3,11 +3,13 @@ var key_right = keyboard_check(vk_right) || keyboard_check(ord("D"));
 var key_left = keyboard_check(vk_left ) || keyboard_check(ord("A"));
 var key_jump = keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W"));
 
+var _fric = fric;
 var _moveSpeed = movementSpeed;
 if (tile_at_position(x, y + 1, "Tiles") == Tile.slime) _moveSpeed *= 0.5;
-else if (tile_at_position(x, y + 1, "Tiles") == Tile.ice) _moveSpeed *= 1.5;
+else if (tile_at_position(x, y + 1, "Tiles") == Tile.ice) _fric *= 0.05;
 
-hspd = (key_right - key_left) * _moveSpeed;
+var _hspd = (key_right - key_left) * _moveSpeed;
+hspd = lerp(hspd, _hspd, _fric);
 
 // Apply gravity in air and check for jump on ground
 if (!tile_meeting(x, y + 1, "Tiles"))
@@ -33,7 +35,7 @@ if (tile_meeting(x, y + vspd, "Tiles")) {
 }
 y += vspd;
 
-if (hspd != 0) xscale = sign(hspd);
+if (_hspd != 0) xscale = sign(_hspd);
 else image_index = 0;
 
 #endregion
