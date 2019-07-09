@@ -1,8 +1,8 @@
 {
-    "id": "24e6f4ac-02dd-47b5-af71-1793cd187413",
+    "id": "1afdebff-9214-49a7-8925-59ce0de83d4d",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "BOOT",
+    "name": "room_get_stage_name",
     "IsCompatibility": false,
     "IsDnD": false
 }

@@ -22,17 +22,16 @@ enum PlayerState {
 	game_controlled
 }
 
-// World grid
-// Don't change the order of the enum values!!! It will break the stages.
-enum WorldCell {
-	void,
-	start,
-	finish,
-	stone,
-	SIZE	// Length of enum, not an actual value
-}
-
 //enum World
 
 #macro CELL_WIDTH 16
 #macro CELL_HEIGHT 16
+
+//Tiles
+
+enum Tile {
+	any,
+	one,
+	two,
+	three
+}

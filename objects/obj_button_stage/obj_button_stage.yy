@@ -51,7 +51,22 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "properties": null,
+    "properties": [
+        {
+            "id": "56ca3a43-a01a-446d-967c-7c3cb5ae8f7d",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "undefined",
+            "varName": "stage",
+            "varType": 5
+        }
+    ],
     "solid": false,
     "spriteId": "f25fcd26-9b91-4e83-a5ef-d32f2e8ed73e",
     "visible": true

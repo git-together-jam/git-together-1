@@ -1,31 +1,34 @@
 var _x = argument0;
 var _y = argument1;
 
+var _lay_id = layer_get_id("Tiles");
+var _map_id = layer_tilemap_get_id(_lay_id);
+var _data = tilemap_get(_map_id, _x, _y);
+var _ind = tile_get_index(_data);
+
 // No block is selected, so stop!
-if (is_undefined(global.SelectedBlock)) {
-	return;
-}
+if (is_undefined(global.SelectedBlock)) return;
+
+// if block isn't void, stop!
+if (_ind) return;
 
 // Block is already placed, so stop!
-if (global.StageGrid[# _x, _y] == global.SelectedBlock[?"id"]) {
-	return;
-}
+if (_ind == global.SelectedBlock[? "id"]) return;
 
-// Erase block first if not void.
-if (global.StageGrid[# _x, _y] != WorldCell.void) {
-	editor_erase_block(_x, _y);
-}
-
-global.StageGrid[# _x, _y] = global.SelectedBlock[?"id"];
-global.SelectedBlock[?"num"] --;
+tilemap_set(
+	_map_id,
+	tile_set_index(_data, global.SelectedBlock[? "id"]),
+	_x, _y
+);
+global.SelectedBlock[? "num"]--;
 
 // Remove blocks if no more left.
-if (global.SelectedBlock[?"num"] == 0) {
+if (global.SelectedBlock[? "num"] == 0) {
 	var i = ds_list_find_index(available_blocks, global.SelectedBlock);
 	ds_list_delete(available_blocks, i);
 	
 	global.SelectedBlock = undefined;
 	if (ds_list_size(available_blocks) > 0) {
-		global.SelectedBlock = available_blocks[|0];
+		global.SelectedBlock = available_blocks[| 0];
 	}
 }
