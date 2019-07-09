@@ -1,10 +1,18 @@
+/// @desc Player logic
 if (instance_exists(obj_world) && obj_world.editorActive) exit;
 
+
+// States
 switch (state) {
-	case PlayerState.user_controlled:
-		player_state_user_controlled();
+	case PlayerState.normal:
+		player_state_normal();
+		break;
+	case PlayerState.editing:
+		// editing state
 		break;
 }
+
+// Player trails
 var _trailSize = ds_list_size(trail) ;
 if(_trailSize > 0)
 {
