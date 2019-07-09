@@ -1,9 +1,9 @@
 movementSpeed = 2;
+jumpSpeed = 8;
 
-xvel = 0;
-yvel = 0;
-yvelMax = 12;
-jvel = 8;		// Jump velocity
+hspd = 0;
+vspd = 0;
+vspdMax = 12;
 
 rightCommand = false;
 leftCommand = false;
@@ -16,4 +16,4 @@ fric = .5
 state = undefined;
 player_state_set(PlayerState.user_controlled);
 
-trail = ds_list_create();
+//trail = ds_list_create();

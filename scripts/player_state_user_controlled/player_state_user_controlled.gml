@@ -1,27 +1,32 @@
-xvel = (
-	(keyboard_check(vk_right) || keyboard_check(ord("D"))) -
-	(keyboard_check(vk_left ) || keyboard_check(ord("A")))
-) * movementSpeed;
+// Input
+var key_right = keyboard_check(vk_right) || keyboard_check(ord("D"));
+var key_left = keyboard_check(vk_left ) || keyboard_check(ord("A"));
+var key_jump = keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W"));
 
-if (keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W"))) yvel = -jvel;
+hspd = (key_right - key_left) * movementSpeed;
 
-if (yvel < yvelMax) yvel += grav;
-	else yvel = yvelMax;
+// Apply gravity in air and check for jump on ground
+if (!tile_meeting(x, y + 1, "Tiles"))
+	vspd = min(vspd + grav, vspdMax);
+else if (key_jump)
+	vspd = -jumpSpeed;
 
-#region Move collide world
+#region Collisions
 	
-if (tile_meeting(x + xvel, y, "Tiles")) {
-	var _sign = sign(xvel);
+if (tile_meeting(x + hspd, y, "Tiles")) {
+	x = floor(x);
+	var _sign = sign(hspd);
 	while (!tile_meeting(x + _sign, y, "Tiles")) x += _sign;
-	xvel = 0;
+	hspd = 0;
 }
-x += xvel;
+x += hspd;
 
-if (tile_meeting(x, y + yvel, "Tiles")) {
-	var _sign = sign(yvel);
+if (tile_meeting(x, y + vspd, "Tiles")) {
+	y = floor(y);
+	var _sign = sign(vspd);
 	while (!tile_meeting(x, y + _sign, "Tiles")) y += _sign;
-	yvel = 0;
+	vspd = 0;
 }
-y += yvel;
+y += vspd;
 	
 #endregion

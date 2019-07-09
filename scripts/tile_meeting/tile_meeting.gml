@@ -4,11 +4,13 @@
 /// @arg y
 /// @arg layer
 
-var _xx, _yy, _tilemap, _xp, _yp, _meeting;
+var _xx, _yy, _layer, _tilemap, _xp, _yp, _meeting;
 
 _xx = argument0;
 _yy = argument1;
-_tilemap = layer_tilemap_get_id(argument2);
+_layer = argument2;
+
+_tilemap = layer_tilemap_get_id(_layer);
 
 //Save our current position
 _xp = x;
