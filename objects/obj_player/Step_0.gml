@@ -1,4 +1,7 @@
-if (instance_exists(obj_world) && obj_world.editorActive) exit;
+image_speed = (global.GameState == GameState.play);
+
+// Don't do anything when not in play mode.
+if (global.GameState != GameState.play) exit;
 
 switch (state) {
 	case PlayerState.user_controlled:
