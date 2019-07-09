@@ -33,13 +33,13 @@ if (_tileType == Tile.any)
 				||
 				tilemap_get_at_pixel(_tilemap, bbox_right, bbox_bottom);			
 else
-	_meeting =	(tile_position(bbox_left, bbox_top, _layer) == _tileType)
+	_meeting =	(tile_at_position(bbox_left, bbox_top, _layer) == _tileType)
 				||
-				(tile_position(bbox_left, bbox_bottom, _layer) == _tileType)
+				(tile_at_position(bbox_left, bbox_bottom, _layer) == _tileType)
 				||
-				(tile_position(bbox_right, bbox_top, _layer) == _tileType)
+				(tile_at_position(bbox_right, bbox_top, _layer) == _tileType)
 				||
-				(tile_position(bbox_right, bbox_bottom, _layer) == _tileType);
+				(tile_at_position(bbox_right, bbox_bottom, _layer) == _tileType);
 
 
 //Move back to the original position
