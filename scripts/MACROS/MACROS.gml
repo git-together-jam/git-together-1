@@ -17,8 +17,8 @@ enum CamFollowMode {
 
 // Player state
 enum PlayerState {
-	idle,
-	user_controlled
+	normal,
+	editing
 }
 
 //enum World
@@ -30,7 +30,7 @@ enum PlayerState {
 
 enum Tile {
 	any,
-	one,
-	two,
-	three
+	wall,
+	slime,
+	ice
 }
