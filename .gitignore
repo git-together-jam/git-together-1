@@ -1,2 +1,5 @@
 
 options/html5/options_html5.yy
+options/linux/options_linux.yy
+options/mac/options_mac.yy
+options/windows/options_windows.yy

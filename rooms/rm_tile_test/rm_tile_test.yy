@@ -1,6 +1,6 @@
 
 {
-    "name": "rm_tiletest",
+    "name": "rm_tile_test",
     "id": "f0582112-2882-4ce5-b3c3-064705997ed5",
     "creationCodeFile": "",
     "inheritCode": false,

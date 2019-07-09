@@ -1,1 +1,0 @@
-stage = rm_getting_started;
