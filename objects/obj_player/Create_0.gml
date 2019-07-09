@@ -16,4 +16,4 @@ fric = .5
 state = undefined;
 player_state_set(PlayerState.user_controlled);
 
-//trail = ds_list_create();
+trail = ds_list_create();

@@ -1,7 +1,7 @@
 /// @desc Initialize world
 
 // Create edit selection.
-//instance_create_layer(0, 0, "Instances", obj_editor);
+instance_create_layer(0, 0, "Instances", obj_editor);
 
 world_toggle_editor(editorActive);
 

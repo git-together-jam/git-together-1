@@ -8,7 +8,7 @@ switch (state) {
 		player_state_game_controlled();
 		break;
 }
-/*var _trailSize = ds_list_size(trail) ;
+var _trailSize = ds_list_size(trail) ;
 if(_trailSize > 0)
 {
 		var _trailEnd = trail[| _trailSize-1];
@@ -26,4 +26,4 @@ if(_trailSize == 0 || distance_to_point(_trailEnd[? "x"], _trailEnd[? "y"]) > 16
 
 if(_trailSize > 10)
 	ds_list_delete(trail,0);
-*/
+
