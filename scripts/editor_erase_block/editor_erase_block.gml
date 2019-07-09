@@ -26,7 +26,7 @@ for (var i = 0; i < num_of_blocks; i ++) {
 var block_entry = ds_map_create();
 ds_map_add(block_entry, "id", previous_block_id);
 ds_map_add(block_entry, "num", 1);
-ds_list_add(available_blocks, block_entry);
+ds_list_add_map(available_blocks, block_entry);
 
 // And select it if needed.
 if (is_undefined(global.SelectedBlock)) {
