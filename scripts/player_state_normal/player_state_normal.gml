@@ -1,8 +1,3 @@
-// Input
-var key_left = keyboard_check(LEFT_KEY) || keyboard_check(vk_left);
-var key_right = keyboard_check(RIGHT_KEY) || keyboard_check(vk_right);
-var key_jump = keyboard_check_pressed(JUMP_KEY) || keyboard_check_pressed(vk_up);
-
 var _onGround = tile_meeting(x, y + 1, "Tiles");
 
 // Apply tile effects

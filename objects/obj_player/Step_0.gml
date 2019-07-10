@@ -1,18 +1,40 @@
 /// @desc Player logic
+
+// Stop animation when not in play mode
 image_speed = (global.GameState == GameState.play);
 
 // Don't do anything when not in play mode.
 if (global.GameState != GameState.play) exit;
 
+#region Input
 
-// States
+key_left = keyboard_check(LEFT_KEY) || keyboard_check(vk_left);
+key_right = keyboard_check(RIGHT_KEY) || keyboard_check(vk_right);
+key_jump = keyboard_check_pressed(JUMP_KEY) || keyboard_check_pressed(vk_up);
+
+#endregion
+
+#region States
 switch (state) {
+	case PlayerState.idle:
+		player_state_idle();
+		break;
+	case PlayerState.walking:
+		player_state_walking();
+		break;
+	case PlayerState.in_air:
+		player_state_in_air();
+		break;
+	case PlayerState.hurt:
+		player_state_hurt();
+		break;
 	case PlayerState.normal:
 		player_state_normal();
 		break;
 }
+#endregion
 
-// Player trails
+#region Player trails
 var _trailSize = ds_list_size(trail) ;
 if(_trailSize > 0)
 {
@@ -31,4 +53,7 @@ if(_trailSize == 0 || distance_to_point(_trailEnd[? "x"], _trailEnd[? "y"]) > 16
 }
 
 if (_trailSize > 10) ds_list_delete(trail, 0);
+#endregion
+
+// Animation
 

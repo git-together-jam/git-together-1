@@ -25,6 +25,10 @@ enum CamFollowMode {
 // Player state
 enum PlayerState {
 	normal,
+	idle,
+	walking,
+	in_air,
+	hurt,
 }
 
 // Controls
