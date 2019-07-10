@@ -13,7 +13,7 @@ var _fric = fric;
 if (_onGround) {
 	switch(tile_at_position(x, y + 1, "Tiles")) {
 		case Tile.slime:
-			_moveSpeed *= .5;
+			_moveSpeed *= 0.5;
 			break;
 		case Tile.ice:
 			_moveSpeed += 0.1;
