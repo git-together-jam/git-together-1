@@ -831,6 +831,14 @@
             }
         },
         {
+            "Key": "e8d3d931-71e1-4fad-a3d3-db78322f0dcc",
+            "Value": {
+                "id": "b9459693-b47f-4123-896f-3475b18a3426",
+                "resourcePath": "rooms\\rm_bauk\\rm_bauk.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "f0582112-2882-4ce5-b3c3-064705997ed5",
             "Value": {
                 "id": "c12e597f-6a75-439e-9ea0-43a63dd54541",
