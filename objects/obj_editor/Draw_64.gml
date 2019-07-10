@@ -21,7 +21,7 @@ for (var tile_ind = 0; tile_ind < NUM_OF_TILES; tile_ind ++) {
 	}
 	
 	// Draw the sprite and number of available tiles.
-	draw_tile(tileset_main, tile_ind, 0, offset_x, offset_y);
+	draw_tile(layer_tilemap_get_tileset("Tiles"), tile_ind, 0, offset_x, offset_y);
 	draw_set_valign(fa_center);
 	draw_set_halign(fa_left);
 	draw_set_font(fnt_button);
@@ -36,7 +36,7 @@ var graphic_x = obj_camera.width - sprite_get_width(spr_gui_mouse_tool) - ui_pad
 var graphic_y = obj_camera.height - sprite_get_height(spr_gui_mouse_tool) - ui_padding;
 
 if (!is_undefined(global.SelectedTile)) {
-	draw_tile(tileset_main, global.SelectedTile, 0, graphic_x + 1, graphic_y + 1);
+	draw_tile(layer_tilemap_get_tileset("Tiles"), global.SelectedTile, 0, graphic_x + 1, graphic_y + 1);
 } else {
 	draw_sprite(spr_gui_no_tool, 0, graphic_x + 1, graphic_y + 1);
 }
