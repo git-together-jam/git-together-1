@@ -3,7 +3,8 @@ movementSpeed = 2.3;
 jumpSpeed = 6;
 
 acc = .4; // acceleration
-fric = .4; // base friction
+fric = .4; // base friction, used in air
+fricGround =.4; // base ground friction
 
 grav = .55;
 
@@ -12,10 +13,10 @@ hspd = 0;
 vspd = 0;
 vspdMax = 12;
 
-// States
-state = undefined;
-player_state_set(PlayerState.normal);
+// State
+state = PlayerState.on_ground;
 
+// Ds_list for player trail
 trail = ds_list_create();
 
 // Scale
@@ -26,3 +27,4 @@ yscale = 1;
 key_left = false;
 key_right = false;
 key_jump = false;
+moveDir = 0; // moving right or left

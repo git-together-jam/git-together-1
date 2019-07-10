@@ -12,15 +12,14 @@ key_left = keyboard_check(LEFT_KEY) || keyboard_check(vk_left);
 key_right = keyboard_check(RIGHT_KEY) || keyboard_check(vk_right);
 key_jump = keyboard_check_pressed(JUMP_KEY) || keyboard_check_pressed(vk_up);
 
+moveDir = key_right - key_left;
+
 #endregion
 
 #region States
 switch (state) {
-	case PlayerState.idle:
-		player_state_idle();
-		break;
-	case PlayerState.walking:
-		player_state_walking();
+	case PlayerState.on_ground:
+		player_state_on_ground();
 		break;
 	case PlayerState.in_air:
 		player_state_in_air();
@@ -28,10 +27,27 @@ switch (state) {
 	case PlayerState.hurt:
 		player_state_hurt();
 		break;
-	case PlayerState.normal:
-		player_state_normal();
-		break;
 }
+#endregion
+
+#region Collisions
+	
+if (tile_meeting(x + hspd, y, "Tiles")) {
+	x = (hspd > 0) ? floor(x) : ceil(x);
+	var _sign = sign(hspd);
+	while (!tile_meeting(x + _sign, y, "Tiles")) x += _sign;
+	hspd = 0;
+}
+x += hspd;
+
+if (tile_meeting(x, y + vspd, "Tiles")) {
+	y = (vspd > 0) ? floor(y) : ceil(y);
+	var _sign = sign(vspd);
+	while (!tile_meeting(x, y + _sign, "Tiles")) y += _sign;
+	vspd = 0;
+}
+y += vspd;
+
 #endregion
 
 #region Player trails
@@ -55,5 +71,9 @@ if(_trailSize == 0 || distance_to_point(_trailEnd[? "x"], _trailEnd[? "y"]) > 16
 if (_trailSize > 10) ds_list_delete(trail, 0);
 #endregion
 
-// Animation
+#region Animation
 
+if (moveDir != 0) xscale = moveDir;
+else image_index = 0;
+
+#endregion

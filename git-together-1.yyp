@@ -178,7 +178,7 @@
             "Key": "27330c9a-5c96-4093-a7e4-dbe3e64fd94c",
             "Value": {
                 "id": "1febe91d-8a39-4002-a34a-380bb036ef97",
-                "resourcePath": "scripts\\player_state_walking\\player_state_walking.yy",
+                "resourcePath": "scripts\\player_state_on_ground\\player_state_on_ground.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -359,14 +359,6 @@
             }
         },
         {
-            "Key": "5593029c-378b-478f-a172-ceceb330a42c",
-            "Value": {
-                "id": "907a8ea1-a937-427c-b29a-7b524b0611d8",
-                "resourcePath": "scripts\\player_state_normal\\player_state_normal.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "5950cc71-9d1f-4aff-9bfa-61e3f9dba974",
             "Value": {
                 "id": "8f85bfa6-599e-4402-9e9f-3e823d9c1ea0",
@@ -468,6 +460,14 @@
                 "id": "f3fa1b26-38bd-4d03-ab4f-9b18ec36952c",
                 "resourcePath": "sprites\\spr_ed_jumping_right\\spr_ed_jumping_right.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "86918781-22fd-4fa7-851d-99c40f8180d5",
+            "Value": {
+                "id": "f0095379-cfef-4320-bc59-040d768bb45e",
+                "resourcePath": "scripts\\player_acceleration_friction\\player_acceleration_friction.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -644,14 +644,6 @@
                 "id": "b4da1134-93e8-4eec-8d00-45309f799acc",
                 "resourcePath": "sprites\\spr_ed_falling_right\\spr_ed_falling_right.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "ad280514-c494-46e3-ad4d-0c483101514e",
-            "Value": {
-                "id": "ea2b4ec2-c65b-45cd-b477-36ae6751d492",
-                "resourcePath": "scripts\\player_state_idle\\player_state_idle.yy",
-                "resourceType": "GMScript"
             }
         },
         {
@@ -1008,11 +1000,10 @@
         "4c2e351a-710b-4854-82d5-61d7c3c517ca",
         "1cd98ab4-8fe5-4c9f-8dee-93c1eb602dd1",
         "5107d469-316d-4f29-9876-b2ff7c43c95b",
-        "5593029c-378b-478f-a172-ceceb330a42c",
-        "ad280514-c494-46e3-ad4d-0c483101514e",
         "27330c9a-5c96-4093-a7e4-dbe3e64fd94c",
         "e5565980-a6ae-44d0-acae-b21a4607908a",
         "6fc86d13-4669-4322-9c84-22e1a869b34b",
+        "86918781-22fd-4fa7-851d-99c40f8180d5",
         "c4c5e5c9-0cd0-4c97-a8ed-b860fad992aa",
         "46397535-4223-4def-bf45-bf455d66a520",
         "3e8856ff-37c4-4c5a-a711-2030e55fccc3",
