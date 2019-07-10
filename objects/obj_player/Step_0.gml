@@ -73,7 +73,44 @@ if (_trailSize > 10) ds_list_delete(trail, 0);
 
 #region Animation
 
-if (moveDir != 0) xscale = moveDir;
+if (moveDir != 0) faceDir = moveDir;
 else image_index = 0;
+
+switch(state) {
+	case PlayerState.on_ground:
+		#region On ground	
+		if (moveDir == 0) {	
+			// Idle sprite
+			if (faceDir == 1)
+				sprite_index = spr_ed_idle_right
+			else if (faceDir == -1)
+				sprite_index = spr_ed_idle_left;		
+		} else {
+			// Walking sprite
+			if (faceDir == 1)
+				sprite_index = spr_ed_walking_right
+			else if (faceDir == -1)
+				sprite_index = spr_ed_walking_left;	
+		}		
+		break;
+		#endregion
+	case PlayerState.in_air:
+		#region In air
+		if (vspd <= 2.5) {
+			// Jumping sprite
+			if (faceDir == 1)
+				sprite_index = spr_ed_jumping_right
+			else if (faceDir == -1)
+				sprite_index = spr_ed_jumping_left;
+		} else {
+			// Falling sprite
+			if (faceDir == 1)
+				sprite_index = spr_ed_falling_right
+			else if (faceDir == -1)
+				sprite_index = spr_ed_falling_left;
+		}
+		break;
+		#endregion
+}
 
 #endregion

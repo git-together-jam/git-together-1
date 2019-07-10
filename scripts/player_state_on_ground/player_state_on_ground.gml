@@ -20,7 +20,8 @@ player_acceleration_friction(moveDir, _moveSpeed, _acc, _fric);
 
 // Check for jumping and switch to in_air state
 if (key_jump) {
+	player_set_state(PlayerState.in_air, true);
 	vspd = -jumpSpeed;
-	player_set_state(PlayerState.in_air);
-}
+} else if (!tile_meeting(x, y + 1, "Tiles"))
+	player_set_state(PlayerState.in_air, true);
 	

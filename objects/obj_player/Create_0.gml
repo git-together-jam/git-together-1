@@ -28,3 +28,4 @@ key_left = false;
 key_right = false;
 key_jump = false;
 moveDir = 0; // moving right or left
+faceDir = 0; // facing direction for animation
