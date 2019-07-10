@@ -11,15 +11,14 @@ var _acc = acc;
 var _fric = fric;
 
 if (_onGround) {
-	switch(tile_at_position(x, y + 1, "Tiles")) {
-		case Tile.slime:
-			_moveSpeed *= 0.5;
-			break;
-		case Tile.ice:
-			_moveSpeed += 0.1;
-			_acc = .2;
-			_fric = .124;
-			break;
+	var _groundTile = tile_at_position(x, y + 1, "Tiles");
+	if (array_search_linear(global.TilesSlime, _groundTile) > -1) {
+		_moveSpeed *= 0.5;
+	}
+	if (array_search_linear(global.TilesIce, _groundTile) > -1) {
+		_moveSpeed += 0.1;
+		_acc = .2;
+		_fric = .05;
 	}
 }
 
