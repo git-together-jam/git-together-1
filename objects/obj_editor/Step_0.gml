@@ -2,13 +2,15 @@
 if (global.GameState == GameState.play) {
 	
 	// Switch to edit mode.
-	if (mouse_check_button_pressed(EDIT_KEY)) {
+	if (mouse_check_button_pressed(EDIT_KEY) && dreams) {
 		with (obj_camera) {
 			//followMode = CamFollowMode.keyboard;
 			followTarget = false;
 		}
 		global.GameState = GameState.edit;
 		delayTimer = editModeDelay;
+		
+		dreams--;
 	}
 	
 } else if (global.GameState == GameState.edit) {
