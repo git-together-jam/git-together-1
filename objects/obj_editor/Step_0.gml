@@ -1,23 +1,34 @@
 // Toggle the editor on/off.
-if (keyboard_check_pressed(ord("P")) || keyboard_check_pressed(vk_space)) {
+if (global.GameState == GameState.play) {
 	
 	// Switch to edit mode.
-	if (global.GameState == GameState.play) {
+	if (mouse_check_button_pressed(EDIT_KEY)) {
 		with (obj_camera) {
-			followMode = CamFollowMode.keyboard;
+			//followMode = CamFollowMode.keyboard;
 			followTarget = false;
 		}
 		global.GameState = GameState.edit;
+		delayTimer = editModeDelay;
 	}
 	
+} else if (global.GameState == GameState.edit) {
+	
+	// Delay before switching back to play mode.
+	if (delayTimer > 0) delayTimer--;
+	
 	// Switch back to play mode.
-	else if (global.GameState == GameState.edit) {
+	if ((delayTimer == 0)
+	&& (keyboard_check(LEFT_KEY)
+	|| keyboard_check(RIGHT_KEY)
+	|| keyboard_check(JUMP_KEY))) {
 		with (obj_camera) {
 			followMode = CamFollowMode.smooth;
 			followTarget = true;
 		}
 		global.GameState = GameState.play;
+		delayTimer = -1;
 	}
+	
 }
 
 if (global.GameState != GameState.edit) return;
@@ -42,6 +53,6 @@ if (mouse_check_button(mb_left)) {
 }
 
 // Erase a tile.
-else if (mouse_check_button(mb_right)) {
+else if (mouse_check_button(mb_right) && delayTimer == 0) {
 	editor_erase_tile(cursor_positon_x, cursor_positon_y);
 }

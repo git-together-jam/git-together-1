@@ -25,16 +25,19 @@ enum CamFollowMode {
 // Player state
 enum PlayerState {
 	normal,
-	editing
 }
 
-//enum World
+// Controls
+#macro LEFT_KEY ord("A")
+#macro RIGHT_KEY ord("D")
+#macro JUMP_KEY ord("W")
+#macro EDIT_KEY mb_right
 
+//World
 #macro CELL_WIDTH 16
 #macro CELL_HEIGHT 16
 
 //Tiles
-
 enum Tile {
 	any,
 	wall,

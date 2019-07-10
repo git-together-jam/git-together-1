@@ -1,7 +1,7 @@
 // Input
-var key_right = keyboard_check(vk_right) || keyboard_check(ord("D"));
-var key_left = keyboard_check(vk_left ) || keyboard_check(ord("A"));
-var key_jump = keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W"));
+var key_left = keyboard_check(LEFT_KEY) || keyboard_check(vk_left);
+var key_right = keyboard_check(RIGHT_KEY) || keyboard_check(vk_right);
+var key_jump = keyboard_check_pressed(JUMP_KEY) || keyboard_check_pressed(vk_up);
 
 var _onGround = tile_meeting(x, y + 1, "Tiles");
 
@@ -17,8 +17,8 @@ if (_onGround) {
 			break;
 		case Tile.ice:
 			_moveSpeed += 0.1;
-			_acc *= 0.5;
-			_fric *= 0.1;
+			_acc = .2;
+			_fric = .124;
 			break;
 	}
 }

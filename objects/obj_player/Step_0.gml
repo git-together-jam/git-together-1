@@ -10,9 +10,6 @@ switch (state) {
 	case PlayerState.normal:
 		player_state_normal();
 		break;
-	case PlayerState.editing:
-		// editing state
-		break;
 }
 
 // Player trails

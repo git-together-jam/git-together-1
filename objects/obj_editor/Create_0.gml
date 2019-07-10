@@ -16,3 +16,7 @@ repeat (NUM_OF_TILES) ds_list_add(available_tiles, 0);
 disable_editable_areas = false;
 
 global.SelectedTile = undefined;
+
+// Delay for switching back to play mode
+editModeDelay = room_speed * .3;
+delayTimer = 0;
