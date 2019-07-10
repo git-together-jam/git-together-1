@@ -10,7 +10,7 @@ _xx = argument[0];
 _yy = argument[1];
 _layer = argument[2];
 if (argument_count > 3) _tileType = argument[3];
-else _tileType = Tile.any;
+else _tileType = 0;
 
 _tilemap = layer_tilemap_get_id(_layer);
 
@@ -24,7 +24,7 @@ x = _xx;
 y = _yy;
 
 //Check for collision on all four corners of the collision mask
-if (_tileType == Tile.any)
+if (_tileType == 0)
 	_meeting =	tilemap_get_at_pixel(_tilemap, bbox_left, bbox_top)
 				||
 				tilemap_get_at_pixel(_tilemap, bbox_left, bbox_bottom)
