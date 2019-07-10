@@ -1,10 +1,19 @@
-// Don't draw anything when not in edit mode.
-if (global.GameState != GameState.edit) return;
-
-// Draw all tiles.
 var offset_x = ui_padding;
 var offset_y = ui_padding;
 
+// Draw remaining dreams.
+for (var i = dreams - 1; i >= 0; i--) {
+	draw_sprite(
+		spr_dream_cloud, 0, 
+		display_get_gui_width() - offset_x - i*sprite_get_width(spr_dream_cloud)*0.8,
+		offset_y 
+	);
+}
+
+// Don't draw anything else when not in edit mode.
+if (global.GameState != GameState.edit) exit;
+
+// Draw all tiles.
 for (var tile_ind = 0; tile_ind < NUM_OF_TILES; tile_ind ++) {
 	var num = available_tiles[| tile_ind];
 	

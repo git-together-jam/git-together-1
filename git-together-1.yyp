@@ -687,6 +687,14 @@
             }
         },
         {
+            "Key": "bfe65e08-df97-40b3-b081-55cbc37d5be6",
+            "Value": {
+                "id": "6612583e-2e7a-464e-93ef-59e5ec28d52c",
+                "resourcePath": "sprites\\spr_dream_cloud\\spr_dream_cloud.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c313c643-f707-45d9-94a2-8345cc032192",
             "Value": {
                 "id": "cfc32dfb-93e6-423e-99ea-4eeb023822fb",
