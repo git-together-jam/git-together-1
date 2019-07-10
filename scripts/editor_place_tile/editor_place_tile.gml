@@ -8,6 +8,13 @@ if (is_undefined(global.SelectedTile)) return;
 var _canEdit = disable_editable_areas || tile_at_cell("Editable_Area", _x, _y);
 if (!_canEdit) return;
 
+// Player is in this cell, so stop!
+var _playerInCell = rectangle_in_rectangle(
+	PLAYER.bbox_left, PLAYER.bbox_top, PLAYER.bbox_right, PLAYER.bbox_bottom,
+	_x*CELL_WIDTH, _y*CELL_HEIGHT, (_x + 1)*CELL_WIDTH, (_y + 1)*CELL_HEIGHT
+);
+if (_playerInCell) return;
+
 // Get tile map data.
 var _lay_id = layer_get_id("Tiles");
 var _map_id = layer_tilemap_get_id(_lay_id);
