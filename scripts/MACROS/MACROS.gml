@@ -5,7 +5,8 @@
 // Game state
 enum GameState {
 	play,
-	edit
+	edit,
+	in_menu
 }
 
 // Camera stuff
