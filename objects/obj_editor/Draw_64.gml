@@ -2,7 +2,7 @@ var offset_x = ui_padding;
 var offset_y = ui_padding;
 
 // Draw remaining dreams.
-for (var i = dreams - 1; i >= 0; i--) {
+for (var i = 0; i < dreams; i++) {
 	draw_sprite(
 		spr_dream_cloud, 0, 
 		display_get_gui_width() - offset_x - i*sprite_get_width(spr_dream_cloud)*0.8,
