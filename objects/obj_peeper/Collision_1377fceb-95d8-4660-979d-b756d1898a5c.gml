@@ -1,7 +1,10 @@
 /// @description Boing!
-// You can write your code in this editor
 
-with (PLAYER) {
+with (other) {
+	player_set_state(PlayerState.in_air, true);
 	vspd = -other.bouncePower;
+	if (!audio_is_playing(snd_spring)) {
+		audio_play_sound(snd_spring, 10, false);
+	}
 }
 state = "bounce";

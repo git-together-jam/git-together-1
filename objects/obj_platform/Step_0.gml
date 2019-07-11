@@ -12,7 +12,7 @@ if (moveToggle) {
 	if (point_distance(x, y, _endX, _endY) > 1) {
 		var _toMoveX = lengthdir_x(moveSpeed, moveDir);
 		var _toMoveY = lengthdir_y(moveSpeed, moveDir);
-		if (place_meeting(x, y - 1, PLAYER)) with (PLAYER) {
+		with (PLAYER) if (place_meeting(x, (gravDir == 1) ? bbox_bottom + 1 : bbox_top - 1, other.id)) {
 			x += _toMoveX;
 			y += _toMoveY;
 		}
@@ -32,7 +32,7 @@ if (moveToggle) {
 	if (point_distance(x, y, startX, startY) > 1) {
 		var _toMoveX = -lengthdir_x(moveSpeed, moveDir);
 		var _toMoveY = -lengthdir_y(moveSpeed, moveDir);
-		if (place_meeting(x, y - 1, PLAYER))with (PLAYER) {
+		with (PLAYER) if (place_meeting(x, (gravDir == 1) ? bbox_bottom + 1 : bbox_top - 1, other.id)) {
 			x += _toMoveX;
 			y += _toMoveY;
 		}
