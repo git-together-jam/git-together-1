@@ -1,6 +1,6 @@
 /// @func array_set_multiple(array, indexes, value)
 /// @desc sets an array of indexes to a specified value of an array
-/// @array
+/// @arg array
 /// @arg indexes
 /// @arg value
 
