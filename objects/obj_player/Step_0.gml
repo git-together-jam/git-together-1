@@ -29,18 +29,18 @@ switch (state) {
 
 #region Collisions
 	
-if (tile_meeting(x + hspd, y, "Tiles")) {
+if (solid_meeting(x + hspd, y)) {
 	x = (hspd > 0) ? floor(x) : ceil(x);
 	var _sign = sign(hspd);
-	while (!tile_meeting(x + _sign, y, "Tiles")) x += _sign;
+	while (!solid_meeting(x + _sign, y)) x += _sign;
 	hspd = 0;
 }
 x += hspd;
 
-if (tile_meeting(x, y + vspd, "Tiles")) {
+if (solid_meeting(x, y + vspd)) {
 	y = (vspd > 0) ? floor(y) : ceil(y);
 	var _sign = sign(vspd);
-	while (!tile_meeting(x, y + _sign, "Tiles")) y += _sign;
+	while (!solid_meeting(x, y + _sign)) y += _sign;
 	vspd = 0;
 }
 y += vspd;
