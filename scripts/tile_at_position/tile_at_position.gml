@@ -20,5 +20,6 @@ if (tile_get_empty(_tile))
 	return -1;
 else {
 	var _index = tile_get_index(_tile);
+	if (_index > array_length_1d(global.TileTypesArray) - 1) return TileType.any;
 	return global.TileTypesArray[_index];
 }
