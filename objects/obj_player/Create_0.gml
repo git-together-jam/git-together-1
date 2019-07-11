@@ -19,7 +19,7 @@ vspd = 0;
 vspdMax = 12;
 
 // State
-state = PlayerState.in_air;
+state = PlayerState.on_ground;
 
 // Ds_list for player trail
 trail = ds_list_create();
