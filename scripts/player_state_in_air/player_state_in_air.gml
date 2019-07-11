@@ -32,5 +32,6 @@ if (_vspd * gravDir > 0) {
 
 // Check for ground and switch to on_ground state
 if (solid_meeting(x, (gravDir == 1) ? bbox_bottom + 1 : bbox_top - 1)) {
+	gravDirSmooth = gravDir;
 	player_set_state(PlayerState.on_ground, true);
 }

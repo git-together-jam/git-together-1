@@ -39,6 +39,7 @@ if (solid_meeting(x + hspd, y)) {
 x += hspd;
 
 if (solid_meeting(x, y + vspd)) {
+	//show_debug_message("Landed on ground");
 	y = (vspd > 0) ? floor(y) : ceil(y);
 	var _sign = sign(vspd);
 	while (!solid_meeting(x, y + _sign)) y += _sign;
@@ -72,8 +73,12 @@ if (_trailSize > 10) ds_list_delete(trail, 0);
 
 #region Animation
 
+// Face direction for animation
 if (moveDir != 0) faceDir = moveDir;
-else image_index = 0;
+
+// Flip the player when changing gravity direction
+if (image_yscale != gravDir && (vspd * gravDir > fallingTreshold))
+	image_yscale = gravDir;
 
 switch(state) {
 	case PlayerState.on_ground:
@@ -95,7 +100,7 @@ switch(state) {
 		#endregion
 	case PlayerState.in_air:
 		#region In air
-		if (vspd <= 2.5) {
+		if (vspd <= fallingTreshold) {
 			// Jumping sprite
 			if (faceDir == 1)
 				sprite_index = spr_ed_jumping_right;
