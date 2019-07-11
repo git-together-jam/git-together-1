@@ -1,8 +1,9 @@
-/// @desc tile_meeting(x, y, layer, tileType);
+/// @desc tile_meeting(x, y, layer [, tileType]);
 /// @func tile_meeting
 /// @arg x
 /// @arg y
 /// @arg layer
+/// @arg [tileType]
 
 var _xx, _yy, _layer, _tilemap, _tileType, _xp, _yp, _meeting;
 

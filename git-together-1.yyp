@@ -479,6 +479,14 @@
             }
         },
         {
+            "Key": "75ac291e-7061-4bcb-8e8a-3b3545332d41",
+            "Value": {
+                "id": "e5ef2578-1b8c-4b14-8187-ccc134951786",
+                "resourcePath": "options\\html5\\options_html5.yy",
+                "resourceType": "GMHtml5Options"
+            }
+        },
+        {
             "Key": "75bfc835-3e11-402c-aa42-f28ee0d1717f",
             "Value": {
                 "id": "cb173e34-45eb-4832-9394-5e204b7930b0",
@@ -1141,11 +1149,11 @@
         "a47d3ae5-2627-40a4-a511-b3e38c2a09c1",
         "a60e8fe1-8d7c-4095-a6cf-7e87e75ff310",
         "25579063-d4c6-4ebe-b9a7-01632a9d05f9",
+        "7b0dbb80-55ac-4c86-b764-eec28c37482d",
         "d63c5ea1-f8be-4587-b62a-51416d4a3b57",
         "d283da33-2212-4df9-91ba-4171a5423540",
         "9dc5469a-a276-44ca-9ae6-de94fe3a77bb",
-        "1afdebff-9214-49a7-8925-59ce0de83d4d",
-        "7b0dbb80-55ac-4c86-b764-eec28c37482d"
+        "1afdebff-9214-49a7-8925-59ce0de83d4d"
     ],
     "tutorial": ""
 }
