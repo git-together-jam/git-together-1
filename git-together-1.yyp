@@ -503,6 +503,14 @@
             }
         },
         {
+            "Key": "88c2d07f-3b16-4308-8e74-2b889c258540",
+            "Value": {
+                "id": "09e4e5ac-bc84-43a3-9f6c-42a7e0c6ce4f",
+                "resourcePath": "views\\88c2d07f-3b16-4308-8e74-2b889c258540.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "891ab182-1ece-473e-ad82-2c6167985a4b",
             "Value": {
                 "id": "2d8c6dc3-4763-4858-afd2-691f22d99530",
@@ -687,11 +695,27 @@
             }
         },
         {
+            "Key": "b5485993-24cf-485e-918a-c73a541442a3",
+            "Value": {
+                "id": "8b3f56f7-db78-482e-9c4e-48cb53d6fc7c",
+                "resourcePath": "sounds\\snd_music_theme\\snd_music_theme.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "b58c9ea4-bbed-4d20-960b-77f01fde2682",
             "Value": {
                 "id": "2b993935-1cf0-40f4-91ed-8bdea033ecee",
                 "resourcePath": "views\\b58c9ea4-bbed-4d20-960b-77f01fde2682.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "b7927d7a-dc76-4c55-ba02-39db750bf545",
+            "Value": {
+                "id": "0ad7aa56-0ada-4bd1-89aa-6d4329f485d5",
+                "resourcePath": "objects\\obj_music_player\\obj_music_player.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -839,6 +863,14 @@
             }
         },
         {
+            "Key": "d75b48e7-74b5-46e2-95a2-8d3987cb8040",
+            "Value": {
+                "id": "21664e08-3859-46f4-9b72-fbdea78f94c9",
+                "resourcePath": "sounds\\snd_music_dream\\snd_music_dream.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "d7b3abbc-d3f2-4006-a0d4-e4a11fa3bafa",
             "Value": {
                 "id": "8b809868-30e8-4f5f-b95f-d50d4f52740c",
@@ -876,6 +908,14 @@
                 "id": "678471cc-a4fb-4810-9f82-c682c5b5017b",
                 "resourcePath": "scripts\\editor_place_tile\\editor_place_tile.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "e68c5ad7-198a-40d2-9509-eafd8bbd6e20",
+            "Value": {
+                "id": "2460649d-ccd7-4645-b0d9-21278ad3b013",
+                "resourcePath": "views\\e68c5ad7-198a-40d2-9509-eafd8bbd6e20.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
