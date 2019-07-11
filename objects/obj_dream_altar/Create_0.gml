@@ -1,6 +1,6 @@
 ///@description Define dream num and part system
 
-dreams = 2;
+dreams = 3;
 
 
 
