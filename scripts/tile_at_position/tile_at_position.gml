@@ -19,5 +19,6 @@ _tile = tilemap_get_at_pixel(_tilemap, _xx, _yy);
 if (tile_get_empty(_tile))
 	return -1;
 else {
-	return tile_get_index(_tile);
+	var _index = tile_get_index(_tile);
+	return global.TileTypesArray[_index];
 }
