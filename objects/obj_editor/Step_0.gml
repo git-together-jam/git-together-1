@@ -1,60 +1,34 @@
-// Toggle the editor on/off.
-if (global.GameState == GameState.play) {
-	
-	// Switch to edit mode.
-	if (mouse_check_button_pressed(EDIT_KEY) && dreams) {
-		with (obj_camera) {
-			//followMode = CamFollowMode.keyboard;
-			followTarget = false;
-		}
-		global.GameState = GameState.edit;
-		delayTimer = editModeDelay;
-		
-		dreams--;
-	}
-	
-} else if (global.GameState == GameState.edit) {
-	
-	// Delay before switching back to play mode.
-	if (delayTimer > 0) delayTimer--;
-	
-	// Switch back to play mode.
-	if ((delayTimer == 0)
-	&& (keyboard_check(LEFT_KEY)
-	|| keyboard_check(RIGHT_KEY)
-	|| keyboard_check(JUMP_KEY))) {
-		with (obj_camera) {
-			followMode = CamFollowMode.smooth;
-			followTarget = true;
-		}
-		global.GameState = GameState.play;
-		delayTimer = -1;
-	}
-	
-}
-
+// Don't do anything when not in edit mode.
 if (global.GameState != GameState.edit) return;
 
 // Change the selected tile.
-if (keyboard_check_pressed(ord("Q")) || mouse_wheel_up()) {
+if (check_input(Input.select_previous)) {
 	editor_select_previous();
-} else if (keyboard_check_pressed(ord("E")) || mouse_wheel_down()) {
+} else if (check_input(Input.select_next)) {
 	editor_select_next();
 }
 
 // Update the cursor.
-var cursor_positon_x = floor(mouse_x / CELL_WIDTH);
-var cursor_positon_y = floor(mouse_y / CELL_HEIGHT);
-	
-cursor_x = lerp(cursor_x, cursor_positon_x, .3);
-cursor_y = lerp(cursor_y, cursor_positon_y, .3);
+
+if (!gp_enabled) {
+	cursor_grid_x = floor(mouse_x / CELL_WIDTH);
+	cursor_grid_y = floor(mouse_y / CELL_HEIGHT);
+	cursor_x = lerp(cursor_x, cursor_grid_x, .3);
+	cursor_y = lerp(cursor_y, cursor_grid_y, .3);
+} else {
+	cursor_x += lengthdir_x(global.GamepadAxisLen, global.GamepadAxisDir) * 4;
+	cursor_y += lengthdir_y(global.GamepadAxisLen, global.GamepadAxisDir) * 4;
+	cursor_grid_x = floor(cursor_x / CELL_WIDTH);
+	cursor_grid_y = floor(cursor_y / CELL_HEIGHT);
+}
+//show_debug_message(string(cursor_grid_x) + " > " + string(cursor_grid_y));
 
 // Place a tile.
-if (mouse_check_button(mb_left)) {
-	editor_place_tile(cursor_positon_x, cursor_positon_y);
+if (check_input(Input.primary_action)) {
+	editor_place_tile(cursor_grid_x, cursor_grid_y);
 }
 
 // Erase a tile.
-else if (mouse_check_button(mb_right) && delayTimer == 0) {
-	editor_erase_tile(cursor_positon_x, cursor_positon_y);
+else if (delayTimer == 0 && check_input(Input.secondary_action)) {
+	editor_erase_tile(cursor_grid_x, cursor_grid_y);
 }

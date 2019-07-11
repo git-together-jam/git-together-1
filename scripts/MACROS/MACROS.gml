@@ -26,14 +26,22 @@ enum CamFollowMode {
 enum PlayerState {
 	on_ground,
 	in_air,
-	hurt
+	hurt,
+	dead
 }
 
 // Controls
-#macro LEFT_KEY ord("A")
-#macro RIGHT_KEY ord("D")
-#macro JUMP_KEY ord("W")
-#macro EDIT_KEY mb_right
+enum Input {
+	move_left,
+	move_right,
+	jump,
+	primary_action,
+	secondary_action,
+	select_previous,
+	select_next,
+}
+
+#macro ALLOW_GAMEPAD true
 
 // World
 #macro CELL_WIDTH 16
@@ -47,5 +55,6 @@ enum TileType {
 	any,
 	wall,
 	ice,
-	slime
+	slime,
+	deadly
 }

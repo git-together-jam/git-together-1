@@ -6,7 +6,9 @@
     "children": [
         "460118cf-001b-45bc-a57f-e2f5bdc90bc4",
         "027d2a91-2450-423d-8517-9b901950d7d0",
-        "a15b46e4-55e6-4c79-86ee-416c33665b6b"
+        "a15b46e4-55e6-4c79-86ee-416c33665b6b",
+        "460118cf-001b-45bc-a57f-e2f5bdc90bc4",
+        "027d2a91-2450-423d-8517-9b901950d7d0"
     ],
     "filterType": "GMObject",
     "folderName": "UI",

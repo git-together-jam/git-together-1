@@ -8,7 +8,8 @@
         "449bd934-ef54-4955-ae54-57c0cd1d2c0e",
         "c3903fd3-334d-4cca-8acd-fc45948bac11",
         "6fc704a7-59e6-4413-80bc-6bbe560551f9",
-        "4fb85578-3a23-4c9a-ab47-c622ad159b9a"
+        "4fb85578-3a23-4c9a-ab47-c622ad159b9a",
+        "2e352ac2-8c61-49da-a08c-b7da6e0b7c7e"
     ],
     "filterType": "GMSprite",
     "folderName": "World",

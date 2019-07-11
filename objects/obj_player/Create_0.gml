@@ -1,6 +1,7 @@
 // Movement speed variables
 movementSpeed = 2.3;
 jumpSpeed = 6;
+fallSpeed = 1;
 
 acc = .4; // acceleration
 fric = .4; // base friction, used in air
@@ -24,12 +25,8 @@ xscale = 1;
 yscale = 1;
 
 // Input
-key_left = false;
-key_right = false;
-key_jump = false;
 moveDir = 0; // moving right or left
 faceDir = 0; // facing direction for animation
-
 // Checkpoint
 startX = x;
 startY = y;
