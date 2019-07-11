@@ -13,6 +13,13 @@ switch(tile_at_position(x, y + 1, "Tiles")) {
 		_moveSpeed += 0.1;
 		_fric = .124;
 		break;
+	case TileType.deadly:
+		hspd = 0;
+		sprite_index = spr_ed_hurt_right;
+		alarm[0] = room_speed;
+		player_set_state(PlayerState.dead, false);
+		audio_play_sound(snd_die, 800, false);
+		break;
 }
 
 // Acceleration and friction

@@ -31,7 +31,6 @@ if (solid_meeting(x + hspd, y)) {
 	while (!solid_meeting(x + _sign, y)) x += _sign;
 	hspd = 0;
 }
-x += hspd;
 
 if (solid_meeting(x, y + vspd)) {
 	y = (vspd > 0) ? floor(y) : ceil(y);
@@ -39,7 +38,11 @@ if (solid_meeting(x, y + vspd)) {
 	while (!solid_meeting(x, y + _sign)) y += _sign;
 	vspd = 0;
 }
-y += vspd;
+
+if (state != PlayerState.dead) {
+	x += hspd;
+	y += vspd;
+}
 
 #endregion
 

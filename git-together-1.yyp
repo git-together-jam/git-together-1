@@ -903,6 +903,14 @@
             }
         },
         {
+            "Key": "dce67cc5-069c-4f49-9b30-279198af239b",
+            "Value": {
+                "id": "bfd832b3-077d-4083-a21c-a0bfd3da372f",
+                "resourcePath": "sounds\\snd_die\\snd_die.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "de6f79a9-6e86-4692-8d4d-87a56e51ab40",
             "Value": {
                 "id": "b96d3829-c8bb-4906-9e24-cd00eb46a96e",

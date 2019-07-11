@@ -26,7 +26,8 @@ enum CamFollowMode {
 enum PlayerState {
 	on_ground,
 	in_air,
-	hurt
+	hurt,
+	dead
 }
 
 // Controls
@@ -54,5 +55,6 @@ enum TileType {
 	any,
 	wall,
 	ice,
-	slime
+	slime,
+	deadly
 }
