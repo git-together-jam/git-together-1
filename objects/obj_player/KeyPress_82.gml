@@ -1,3 +1,7 @@
 /// @desc Reset to the last checkpoint
 
-alarm[0] = 1;
+if (checkpoint != noone) {
+	var _resetter = instance_create_layer(0, 0, "Instances", obj_resetter);
+	_resetter.checkpoint = checkpoint;
+}
+room_restart();
