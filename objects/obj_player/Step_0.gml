@@ -39,7 +39,6 @@ if (solid_meeting(x + hspd, y)) {
 x += hspd;
 
 if (solid_meeting(x, y + vspd)) {
-	//show_debug_message("Landed on ground");
 	y = (vspd > 0) ? floor(y) : ceil(y);
 	var _sign = sign(vspd);
 	while (!solid_meeting(x, y + _sign)) y += _sign;

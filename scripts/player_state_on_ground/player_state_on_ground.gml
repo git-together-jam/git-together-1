@@ -30,7 +30,6 @@ if (tile_meeting(x, _groundY, "Tiles", TileType.gravity_change)) {
 	// Gravity change block
 	gravDir = -gravDir;
 	gravDirSmooth = 0;
-	vspd = -jumpSpeed * gravDir;
 	player_set_state(PlayerState.in_air, true);
 } else if (check_input(Input.jump)) {
 	// Jumping

@@ -21,6 +21,7 @@ enum CamFollowMode {
 
 // Player object
 #macro PLAYER obj_player
+#macro PLAYER_MIDDLE 6
 
 // Player state
 enum PlayerState {
