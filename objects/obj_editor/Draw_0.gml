@@ -2,10 +2,10 @@
 if (global.GameState != GameState.edit) return;
 
 // Draw the cursor.
-var mouse_down = mouse_check_button(mb_left) || mouse_check_button(mb_right);
+var is_active = check_input(Input.primary_action) || check_input(Input.secondary_action);
 draw_rect_outline(
-	cursor_x * CELL_WIDTH + mouse_down, 
-	cursor_y * CELL_HEIGHT + mouse_down, 
-	cursor_x * CELL_WIDTH + CELL_WIDTH - mouse_down, 
-	cursor_y * CELL_HEIGHT + CELL_HEIGHT - mouse_down
+	cursor_x * CELL_WIDTH + is_active, 
+	cursor_y * CELL_HEIGHT + is_active, 
+	cursor_x * CELL_WIDTH + CELL_WIDTH - is_active, 
+	cursor_y * CELL_HEIGHT + CELL_HEIGHT - is_active
 );

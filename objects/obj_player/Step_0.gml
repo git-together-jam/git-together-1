@@ -8,11 +8,7 @@ if (global.GameState != GameState.play) exit;
 
 #region Input
 
-key_left = keyboard_check(LEFT_KEY) || keyboard_check(vk_left);
-key_right = keyboard_check(RIGHT_KEY) || keyboard_check(vk_right);
-key_jump = keyboard_check_pressed(JUMP_KEY) || keyboard_check_pressed(vk_up);
-
-moveDir = key_right - key_left;
+moveDir = check_input(Input.move_right) - check_input(Input.move_left);
 
 #endregion
 

@@ -30,10 +30,15 @@ enum PlayerState {
 }
 
 // Controls
-#macro LEFT_KEY ord("A")
-#macro RIGHT_KEY ord("D")
-#macro JUMP_KEY ord("W")
-#macro EDIT_KEY mb_right
+enum Input {
+	move_left,
+	move_right,
+	jump,
+	primary_action,
+	secondary_action,
+	select_previous,
+	select_next,
+}
 
 // World
 #macro CELL_WIDTH 16
