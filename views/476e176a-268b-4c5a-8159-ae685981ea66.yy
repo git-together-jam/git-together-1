@@ -4,9 +4,8 @@
     "mvc": "1.1",
     "name": "476e176a-268b-4c5a-8159-ae685981ea66",
     "children": [
-        "27330c9a-5c96-4093-a7e4-dbe3e64fd94c",
-        "e5565980-a6ae-44d0-acae-b21a4607908a",
-        "6fc86d13-4669-4322-9c84-22e1a869b34b"
+        "794bb4a2-060e-4f09-8525-3e692e283a24",
+        "70a63d17-a0e5-4cc9-a2d1-ca661d09ec72"
     ],
     "filterType": "GMScript",
     "folderName": "States",

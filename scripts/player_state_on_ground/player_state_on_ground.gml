@@ -23,5 +23,4 @@ if (key_jump) {
 	player_set_state(PlayerState.in_air, true);
 	vspd = -jumpSpeed;
 } else if (!tile_meeting(x, y + 1, "Tiles"))
-	player_set_state(PlayerState.in_air, true);
-	
+player_set_state(PlayerState.in_air, true);
