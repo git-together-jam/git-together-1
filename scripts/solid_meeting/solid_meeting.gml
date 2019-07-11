@@ -4,4 +4,4 @@
 /// @param  y
 
 return tile_meeting(argument0, argument1, "Tiles") ||
-	place_meeting(argument0, argument1, obj_platform);
+	place_meeting(argument0, argument1, obj_solid);

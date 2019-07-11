@@ -1,6 +1,7 @@
 // Movement speed variables
 movementSpeed = 2.3;
 jumpSpeed = 6;
+fallSpeed = 1;
 
 acc = .4; // acceleration
 fric = .4; // base friction, used in air
