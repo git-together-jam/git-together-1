@@ -15,4 +15,4 @@ if (global.GameState == GameState.edit)
 }
 
 // Draw self with current xscale
-draw_sprite_ext(sprite_index, image_index, x, y, xscale, yscale, 0, c_white, 1);
+draw_sprite_ext(sprite_index, image_index, x, y, xscale, image_yscale, 0, c_white, 1);
