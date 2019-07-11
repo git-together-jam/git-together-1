@@ -8,8 +8,7 @@
         "42c34a55-9f16-4b9a-a9c9-8cd09ed3aec1",
         "891ab182-1ece-473e-ad82-2c6167985a4b",
         "4c2e351a-710b-4854-82d5-61d7c3c517ca",
-        "1cd98ab4-8fe5-4c9f-8dee-93c1eb602dd1",
-        "64ef52e1-f93f-455d-becc-7371d54b77e2"
+        "1cd98ab4-8fe5-4c9f-8dee-93c1eb602dd1"
     ],
     "filterType": "GMScript",
     "folderName": "World",
