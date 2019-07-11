@@ -56,5 +56,6 @@ enum TileType {
 	wall,
 	ice,
 	slime,
-	deadly
+	deadly,
+	gravity_change
 }

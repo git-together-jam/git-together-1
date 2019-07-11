@@ -4,8 +4,9 @@
 var _moveSpeed = movementSpeed;
 var _acc = acc;
 var _fric = fricGround;
+var _groundY = ((gravDir == 1) ? bbox_bottom + 1 : bbox_top - 1);
 
-switch(tile_at_position(x, y + 1, "Tiles")) {
+switch(tile_at_position(x, _groundY, "Tiles")) {
 	case TileType.slime:
 		_moveSpeed *= 0.5;
 		break;
@@ -24,10 +25,17 @@ switch(tile_at_position(x, y + 1, "Tiles")) {
 // Acceleration and friction
 player_acceleration_friction(moveDir, _moveSpeed, _acc, _fric);
 
-// Check for jumping and switch to in_air state
-if (check_input(Input.jump)) {
+// Check for gravity blocks and jumping
+if (tile_meeting(x, _groundY, "Tiles", TileType.gravity_change)) {
+	// Gravity change block
+	gravDir = -gravDir;
+	gravDirSmooth = 0;
 	player_set_state(PlayerState.in_air, true);
-	vspd = -jumpSpeed;
-} else if (!solid_meeting(x, y + 1)) {
+} else if (check_input(Input.jump)) {
+	// Jumping
+	player_set_state(PlayerState.in_air, true);
+	vspd = -jumpSpeed * gravDir;
+} else if (!solid_meeting(x, _groundY)) {
+	// In air
 	player_set_state(PlayerState.in_air, true);
 }
