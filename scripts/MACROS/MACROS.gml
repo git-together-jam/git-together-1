@@ -46,6 +46,6 @@ enum PlayerState {
 enum TileType {
 	any,
 	wall,
-	slime,
-	ice
+	ice,
+	slime
 }
