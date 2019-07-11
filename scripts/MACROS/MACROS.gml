@@ -24,7 +24,9 @@ enum CamFollowMode {
 
 // Player state
 enum PlayerState {
-	normal,
+	on_ground,
+	in_air,
+	hurt
 }
 
 // Controls
@@ -33,9 +35,17 @@ enum PlayerState {
 #macro JUMP_KEY ord("W")
 #macro EDIT_KEY mb_right
 
-//World
+// World
 #macro CELL_WIDTH 16
 #macro CELL_HEIGHT 16
 
 // There's not way to get the total number or tiles in the tile set, so here it is.
 #macro NUM_OF_TILES 24
+
+// Tiles
+enum TileType {
+	any,
+	wall,
+	slime,
+	ice
+}
