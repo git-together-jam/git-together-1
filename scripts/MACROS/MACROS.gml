@@ -40,6 +40,8 @@ enum Input {
 	select_next,
 }
 
+#macro ALLOW_GAMEPAD true
+
 // World
 #macro CELL_WIDTH 16
 #macro CELL_HEIGHT 16

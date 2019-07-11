@@ -1,9 +1,13 @@
 x = 0;
 y = 0;
 
+gp_enabled = obj_input_manager.gp_enabled;
+
 // Cursor position. Allows subpixels and eases toward mouse pointer every step.
 cursor_x = 0;
 cursor_y = 0;
+cursor_grid_x = 0;
+cursor_grid_y = 0;
 
 ui_padding = 5;
 
