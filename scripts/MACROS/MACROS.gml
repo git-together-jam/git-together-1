@@ -40,7 +40,7 @@ enum PlayerState {
 #macro CELL_HEIGHT 16
 
 // There's not way to get the total number or tiles in the tile set, so here it is.
-#macro NUM_OF_TILES 24
+#macro NUM_OF_TILES 32
 
 // Tiles
 enum TileType {
