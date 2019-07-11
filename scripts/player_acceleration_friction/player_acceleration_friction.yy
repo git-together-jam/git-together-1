@@ -1,8 +1,8 @@
 {
-    "id": "5107d469-316d-4f29-9876-b2ff7c43c95b",
+    "id": "86918781-22fd-4fa7-851d-99c40f8180d5",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "player_state_set",
+    "name": "player_acceleration_friction",
     "IsCompatibility": false,
     "IsDnD": false
 }
