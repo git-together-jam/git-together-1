@@ -36,6 +36,7 @@ if (tile_meeting(x, _groundY, "Tiles", TileType.gravity_change)) {
 	// Jumping
 	player_set_state(PlayerState.in_air, true);
 	vspd = -jumpSpeed * gravDir;
+	audio_play_sound(snd_jump, 10, false);
 } else if (!solid_meeting(x, _groundY)) {
 	// In air
 	player_set_state(PlayerState.in_air, true);
