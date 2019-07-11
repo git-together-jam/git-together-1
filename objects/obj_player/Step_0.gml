@@ -20,6 +20,10 @@ switch (state) {
 	case PlayerState.in_air:
 		player_state_in_air();
 		break;
+	case PlayerState.dead:
+		hspd = 0;
+		vspd = 0;
+		break;
 }
 #endregion
 
@@ -32,6 +36,8 @@ if (solid_meeting(x + hspd, y)) {
 	hspd = 0;
 }
 
+x += hspd;
+
 if (solid_meeting(x, y + vspd)) {
 	y = (vspd > 0) ? floor(y) : ceil(y);
 	var _sign = sign(vspd);
@@ -39,10 +45,7 @@ if (solid_meeting(x, y + vspd)) {
 	vspd = 0;
 }
 
-if (state != PlayerState.dead) {
-	x += hspd;
-	y += vspd;
-}
+y += vspd;
 
 #endregion
 
