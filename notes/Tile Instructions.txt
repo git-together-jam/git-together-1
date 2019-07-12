@@ -1,0 +1,35 @@
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+------------------------------- HOW TO CREATE A NEW TILE / BLOCK ---------------------------------------
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+-	In the TileType enum in MACROS, create a new entry for your tile type
+
+-	In tileset_main, draw a placerholder sprite in an empty tile (make sure to have the grid on) and
+	keep hold of its tile index by counting from the top-left tile and to the right, starting at 0
+	
+-	In scr_init, use array_set to specify what tile index the tile has from the tileset.
+
+	Example: array_set(global.TileTypesArray, index, TileType.name);
+	
+	If your block has multiple tile indexes corresponding to it you can use the array_set_multiple
+	script instead and specify and array of indexes instead of a single index
+	
+////////////////////////////////////////////////////////////////////////////////////////////////////
+	
+That's all the steps as far as preparing everything. To code the tiles you can use the tile_meeting
+and tile_at_position functions.
+
+tile_meeting works like place_meeting and can check for any tile if the last argument is left out,
+or for a specific type by using an entry in the Tiletype enum as the last argument.
+
+	Example: if (tile_meeting(x, y, "Tiles", TileType.ice)
+	would check for a collision with an ice type tile
+
+tile_at_position, on the other hand, only checks a single pixel and then returns the tile type at
+that position, or -1 if no tile was found, similar to instance_position
+
+	Example: if (tile_at_position(x, y, "Tiles") == TileType.ice)
+	would check if the tile at x, y is an ice type tile
+	
+	Note: if you want to check the tile the player is standing on you'll have to use
+	y + gravDir as the y argument due to the way gravity change is coded

@@ -375,6 +375,14 @@
             }
         },
         {
+            "Key": "4894d1b0-cc1b-43ca-abbf-5a636abf4516",
+            "Value": {
+                "id": "247f02d7-f5e6-44c4-8782-9d65f53bafd3",
+                "resourcePath": "notes\\Tile Instructions.yy",
+                "resourceType": "GMNotes"
+            }
+        },
+        {
             "Key": "4c2e351a-710b-4854-82d5-61d7c3c517ca",
             "Value": {
                 "id": "da8fa229-db95-481b-ab86-ce41db2ee7d2",
@@ -516,6 +524,14 @@
                 "id": "f354dd85-5286-40a8-a626-7cbf00084872",
                 "resourcePath": "views\/72ea7f1a-87a4-4bac-ae9c-d5fdff71a71b.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "75ac291e-7061-4bcb-8e8a-3b3545332d41",
+            "Value": {
+                "id": "21456927-9314-4e81-a202-7cc7f7a0135f",
+                "resourcePath": "options\\html5\\options_html5.yy",
+                "resourceType": "GMHtml5Options"
             }
         },
         {
