@@ -16,7 +16,7 @@ void main()
 	
 	if (gl_FragColor.rgb == vec3( R, G, B ))
 	{
-		gl_FragColor.b *= clamp(sin(time + (v_vPosition.x + v_vPosition.y) / 20.) * 20., 1., 1.5);
-		gl_FragColor.rgb *= vec3(clamp(sin(-time + (v_vPosition.x - v_vPosition.y) / 10.) * 15., 1., 1.5));
+		gl_FragColor.b *= clamp( sin( time + ( v_vPosition.x + v_vPosition.y ) / 20. ) * 20., 1., 1.5 );
+		gl_FragColor.rgb *= vec3( clamp( sin( -time + ( v_vPosition.x - v_vPosition.y ) / 10. ) * 15., 1., 1.5 ) );
 	}
 }

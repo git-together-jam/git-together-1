@@ -7,4 +7,20 @@ if (gp_enabled) {
 	} else if (abs(gamepad_axis_value(0, gp_axislv)) < 0.3) {
 		gp_flicked = false;
 	}
+	
+	// Alter buttons accordingly
+	var _press = check_input(Input.primary_action);
+	
+	with(obj_button_large) {
+		if (other.gp_choices[other.gp_selection] == id) {
+			mouse_over = true;
+			image_index = 1;
+			if (_press) {
+				event_perform(ev_mouse,ev_left_press);
+			}
+		} else {
+			mouse_over = false;
+			image_index = 0;
+		}
+	}
 }
