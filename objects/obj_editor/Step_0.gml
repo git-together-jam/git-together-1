@@ -1,5 +1,5 @@
 // Don't do anything when not in edit mode.
-if (global.GameState != GameState.edit) return;
+if (global.GameState != GameState.edit) exit;
 
 // Change the selected tile.
 if (check_input(Input.select_previous)) {
@@ -23,12 +23,19 @@ if (!gp_enabled) {
 }
 //show_debug_message(string(cursor_grid_x) + " > " + string(cursor_grid_y));
 
-// Place a tile.
-if (check_input(Input.primary_action)) {
-	editor_place_tile(cursor_grid_x, cursor_grid_y);
-}
+// Only place/remove tiles in the view
+if (cursor_grid_x > VIEW_X/CELL_WIDTH &&
+	cursor_grid_x < (VIEW_X + VIEW_WIDTH)/CELL_WIDTH - 1 &&
+	cursor_grid_y > VIEW_Y/CELL_HEIGHT &&
+	cursor_grid_y < (VIEW_Y + VIEW_HEIGHT)/CELL_HEIGHT - 1) {
+	
+	// Place a tile.
+	if (check_input(Input.primary_action)) {
+		editor_place_tile(cursor_grid_x, cursor_grid_y);
+	}
 
-// Erase a tile.
-else if (delayTimer == 0 && check_input(Input.secondary_action)) {
-	editor_erase_tile(cursor_grid_x, cursor_grid_y);
+	// Erase a tile.
+	else if (delayTimer == 0 && check_input(Input.secondary_action)) {
+		editor_erase_tile(cursor_grid_x, cursor_grid_y);
+	}
 }

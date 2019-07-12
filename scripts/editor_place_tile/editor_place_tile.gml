@@ -30,10 +30,11 @@ tilemap_set(
 	_x, _y
 );
 
-available_tiles[| global.SelectedTile] --;
+if (available_tiles[global.SelectedTile] != -1)
+	available_tiles[global.SelectedTile] --;
 
 // If available number of selected time hits zero, select another one.
-if (available_tiles[| global.SelectedTile] == 0) {
+if (available_tiles[global.SelectedTile] == 0) {
 	if (!editor_select_next() && !editor_select_previous()) {
 		global.SelectedTile = undefined;
 	}
