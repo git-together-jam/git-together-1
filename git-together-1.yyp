@@ -111,6 +111,14 @@
             }
         },
         {
+            "Key": "1172f794-dc71-4a9b-9d8c-41826e9154d2",
+            "Value": {
+                "id": "b4308261-6e5b-4858-ba75-07c66ef5079b",
+                "resourcePath": "scripts\\angle_in_range\\angle_in_range.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "11a203c1-b173-44e9-8fe6-9ca80a5e17c5",
             "Value": {
                 "id": "6e4ca304-a795-4f20-9ac5-ccfae8571b7f",
@@ -1505,6 +1513,7 @@
         "d283da33-2212-4df9-91ba-4171a5423540",
         "9dc5469a-a276-44ca-9ae6-de94fe3a77bb",
         "1afdebff-9214-49a7-8925-59ce0de83d4d",
+        "1172f794-dc71-4a9b-9d8c-41826e9154d2",
         "d4cd4d91-aed6-4f23-898b-d65d4c183ba5",
         "8c3405d7-6ef4-4dfb-9e27-0a5096ef14b1",
         "f572ac58-c7fb-457f-b6ff-13cf4bce3f23",

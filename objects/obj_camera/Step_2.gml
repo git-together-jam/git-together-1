@@ -36,6 +36,11 @@ switch (followMode) {
 			x = lerp(x, targetX, .1);
 			y = lerp(y, targetY, .1);
 		}
+		//Snap when close enough
+		if (point_distance(x, y, targetX, targetY) < .3) {
+			x = targetX;
+			y = targetY;
+		}
 		#endregion
 	break;
 	
