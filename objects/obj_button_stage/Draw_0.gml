@@ -1,3 +1,10 @@
+if (debug_mode and mouse_over) {
+	draw_set_color(c_white);
+	for (var i=0; i<ds_list_size(connected_stages); i++) {
+		draw_line_width(x, y, connected_stages[| i].x, connected_stages[| i].y, 2);
+	}
+}
+
 draw_self();
 
 if (mouse_over) {
