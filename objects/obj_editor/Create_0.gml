@@ -3,6 +3,9 @@ y = 0;
 
 gp_enabled = obj_input_manager.gp_enabled;
 
+// Autotile the editable area tile layer
+editAreaLayer = editable_area_autotile();
+
 // Cursor position. Allows subpixels and eases toward mouse pointer every step.
 cursor_x = 0;
 cursor_y = 0;

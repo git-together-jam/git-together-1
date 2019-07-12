@@ -831,6 +831,14 @@
             }
         },
         {
+            "Key": "adf42c36-3bb1-4ff2-974b-ef12f5f7027f",
+            "Value": {
+                "id": "132b3b85-b1ba-4801-9497-f31e96cfbfe6",
+                "resourcePath": "tilesets\\tileset_edit_2\\tileset_edit_2.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "b08fc549-b212-4e1c-98b5-b2ac04747e2f",
             "Value": {
                 "id": "e8968a95-a8f5-4f9d-9cdc-09e69f64529d",
@@ -1111,6 +1119,14 @@
             }
         },
         {
+            "Key": "ef1792f4-6eba-44a0-948e-e3e0f5563cbc",
+            "Value": {
+                "id": "4a2a6b51-57fa-4c95-ace5-fd6f24a5cf8a",
+                "resourcePath": "scripts\\editable_area_autotile\\editable_area_autotile.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f0582112-2882-4ce5-b3c3-064705997ed5",
             "Value": {
                 "id": "c12e597f-6a75-439e-9ea0-43a63dd54541",
@@ -1148,6 +1164,14 @@
                 "id": "909cc9cb-5e9a-4658-8380-84047234a403",
                 "resourcePath": "sounds\\snd_jump\\snd_jump.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "f294343e-ece9-4e52-a301-ae0410226c75",
+            "Value": {
+                "id": "8925691f-143a-4f22-b257-f3b93c2a4627",
+                "resourcePath": "sprites\\spr_tileset_edit_2\\spr_tileset_edit_2.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1227,6 +1251,7 @@
         "919b86d2-f449-4a44-a786-9b466a7826c6",
         "362c7306-f34d-4376-b9c8-6d0dec036763",
         "2e88e6f0-ab5a-4f0a-9a6f-834cb7c1bc8c",
+        "ef1792f4-6eba-44a0-948e-e3e0f5563cbc",
         "e662c4f4-8cde-451d-b691-8071fbce03e1",
         "42c34a55-9f16-4b9a-a9c9-8cd09ed3aec1",
         "891ab182-1ece-473e-ad82-2c6167985a4b",
