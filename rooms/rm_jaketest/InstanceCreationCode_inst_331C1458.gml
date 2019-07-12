@@ -1,0 +1,1 @@
+bouncePower = 10;
