@@ -34,3 +34,7 @@ delayTimer = 0;
 gp_flicked = false;
 gp_hold_time = 0;
 gp_loop_time = 0;
+
+// Shader
+layer_script_begin("Background",layer_techno_begin);
+layer_script_end("Background",layer_techno_end);

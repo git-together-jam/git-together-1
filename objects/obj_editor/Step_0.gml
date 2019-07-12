@@ -21,7 +21,7 @@ if (!gp_enabled) {
 		if (!gp_flicked) {
 			gp_flicked = true;
 			_move = true;
-		} else if (++gp_hold_time > 4 && ++gp_loop_time % 3 == 0) {
+		} else if (++gp_hold_time > 9 && ++gp_loop_time % 3 == 0) {
 			_move = true;
 		}
 	} else {
@@ -29,8 +29,8 @@ if (!gp_enabled) {
 		gp_hold_time = 0;
 	}
 	if (_move) {
-		cursor_x += (global.GamepadAxisH) * CELL_WIDTH;
-		cursor_y += (global.GamepadAxisV) * CELL_HEIGHT;
+		cursor_x += round(global.GamepadAxisH) * CELL_WIDTH;
+		cursor_y += round(global.GamepadAxisV) * CELL_HEIGHT;
 		cursor_grid_x = floor(cursor_x / CELL_WIDTH);
 		cursor_grid_y = floor(cursor_y / CELL_HEIGHT);
 	}

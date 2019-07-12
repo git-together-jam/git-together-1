@@ -69,3 +69,9 @@ enum TileType {
 	deadly,
 	gravity_change
 }
+
+// Shader
+#macro TECHNO_R 0.16862745098
+#macro TECHNO_G 0.35686274509
+#macro TECHNO_B 0.5294117647
+#macro TECHNO_TIME 1500
