@@ -839,6 +839,14 @@
             }
         },
         {
+            "Key": "99981dd6-05b3-4ed4-b64f-a1333a5818c3",
+            "Value": {
+                "id": "c3b040d5-50f2-4c34-ae03-d2f22752fe2d",
+                "resourcePath": "objects\\obj_progress\\obj_progress.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "9dc5469a-a276-44ca-9ae6-de94fe3a77bb",
             "Value": {
                 "id": "dd82f2d1-26a6-4856-bc24-a7dd1b9b616c",
