@@ -1063,6 +1063,14 @@
             }
         },
         {
+            "Key": "b663c739-a429-4f5f-85c7-59abd7084dea",
+            "Value": {
+                "id": "e0c22808-27ff-4a73-9504-4c0c2f1b51cb",
+                "resourcePath": "objects\\obj_stage_select_tree\\obj_stage_select_tree.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "b7927d7a-dc76-4c55-ba02-39db750bf545",
             "Value": {
                 "id": "0ad7aa56-0ada-4bd1-89aa-6d4329f485d5",
