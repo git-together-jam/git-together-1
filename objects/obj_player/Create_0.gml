@@ -11,7 +11,7 @@ grav = .55;
 gravDir = 1; // gravity direction
 gravDirSmooth = 1; //gravity direction for smooth gravity transitions
 gravChangeSpeed = 2 / (room_speed * 1.5); // How fast switching gravity direction is
-fallingTreshold = .5; // vspd treshold before flipping yscale
+fallingThreshold = .5; // vspd threshold before flipping yscale
 
 // Velocity
 hspd = 0;

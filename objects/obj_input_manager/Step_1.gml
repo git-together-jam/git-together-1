@@ -1,11 +1,11 @@
 // Move left.
 var move_left = keyboard_check(ord("A")) || keyboard_check(vk_left);
-if (gp_enabled && !move_left) move_left = gamepad_button_check(0, gp_padl) || gamepad_axis_value(0, gp_axislh) < -gp_treshold;
+if (gp_enabled && !move_left) move_left = gamepad_button_check(0, gp_padl) || gamepad_axis_value(0, gp_axislh) < -gp_threshold;
 ds_list_set(global.Input, Input.move_left, move_left);
 
 // Move right.
 var move_right = keyboard_check(ord("D")) || keyboard_check(vk_right);
-if (gp_enabled && !move_right) move_right = gamepad_button_check(0, gp_padr) || gamepad_axis_value(0, gp_axislh) > gp_treshold;
+if (gp_enabled && !move_right) move_right = gamepad_button_check(0, gp_padr) || gamepad_axis_value(0, gp_axislh) > gp_threshold;
 ds_list_set(global.Input, Input.move_right, move_right);
 
 // Jump.
@@ -45,7 +45,7 @@ if (!gp_enabled) exit;
 var haxis = gamepad_axis_value(0, gp_axislh);
 var vaxis = gamepad_axis_value(0, gp_axislv);
 
-if (abs(haxis) < gp_treshold && abs(vaxis) < gp_treshold) {
+if (abs(haxis) < gp_threshold && abs(vaxis) < gp_threshold) {
 	haxis = 0;
 	vaxis = 0;
 }
