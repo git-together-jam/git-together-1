@@ -7,6 +7,11 @@ if (dreams) {
 	}
 	dreams = 0;
 	
+	// Set tiles
+	if (is_array(myTiles)) {
+		obj_editor.available_tiles = myTiles;
+	}
+	
 	// Set checkpoint.
 	PLAYER.checkpoint = id;
 	
