@@ -9,5 +9,14 @@ uniform float time;
 void main()
 {
     gl_FragColor = v_vColour * texture2D( gm_BaseTexture, v_vTexcoord );
-	gl_FragColor.rgb += (sin(time) * 0.1)+0.1;
+	//if (gl_FragColor.rgba == vec4(1.,1.,0.,0.5) || gl_FragColor.rgba == vec4(0.,0.,0.,0.5))
+	//if (gl_FragColor.rgba == vec4(133./255.,127./255.,79./255.,1.))
+	//{
+	gl_FragColor.rgb += ( sin( time ) * .1 ) + .1;
+	if ( gl_FragColor.a == 0. )
+	{
+		gl_FragColor.rgba += vec4( 1., 1., 1., ( sin( time ) * -.1 ) + .1);
+		//gl_FragColor.rgba = vec4( 1., 1., 1. ,1. ); //debug
+	}
+	//}
 }

@@ -1311,6 +1311,14 @@
             }
         },
         {
+            "Key": "d13ab9fc-0d64-44b8-8cc2-1f37807a33f4",
+            "Value": {
+                "id": "54acfd34-e992-4faf-a258-11d2a544157c",
+                "resourcePath": "shaders\\shd_techno_lines_alt\\shd_techno_lines_alt.yy",
+                "resourceType": "GMShader"
+            }
+        },
+        {
             "Key": "d283da33-2212-4df9-91ba-4171a5423540",
             "Value": {
                 "id": "739ca675-f103-49e2-bba1-4a17b9e1d2c6",
