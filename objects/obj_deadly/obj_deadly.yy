@@ -36,6 +36,20 @@
             "value": "True",
             "varName": "check_player_bbox",
             "varType": 3
+        },
+        {
+            "id": "1456cd85-b6e1-4b30-9853-0c05546bd124",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "has_hit_player",
+            "varType": 3
         }
     ],
     "solid": false,

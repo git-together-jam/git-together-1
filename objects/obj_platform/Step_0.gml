@@ -1,5 +1,7 @@
 /// @description Movement logic
 
+if (global.GameState != GameState.play) exit;
+
 // Exit if not moving.
 if (!moving) exit;
 
