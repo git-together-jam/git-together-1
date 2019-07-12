@@ -33,4 +33,4 @@ draw_triangle(
 
 // Draw text
 draw_set_color(c_black);
-draw_text(x1 + _margin, y1 + _margin/2, text);
+draw_text(x1 + _margin, y1 + _margin, text);

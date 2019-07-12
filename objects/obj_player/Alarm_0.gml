@@ -8,4 +8,10 @@ if (checkpoint != noone) {
 	_resetter.checkpoint = checkpoint;
 }
 
+global.GameState = GameState.play;
+with (obj_camera) {
+	followMode = CamFollowMode.smooth;
+	followTarget = true;
+}
+
 room_restart();
