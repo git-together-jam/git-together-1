@@ -10,6 +10,7 @@ if (dreams) {
 	// Set tiles
 	if (is_array(myTiles)) {
 		obj_editor.available_tiles = myTiles;
+		with (obj_editor) editor_select_default();
 	}
 	
 	// Set checkpoint.

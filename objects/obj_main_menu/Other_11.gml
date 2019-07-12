@@ -1,3 +1,4 @@
-/// @description Quit game
+/// @description Tutorial
 
-game_end();
+global.GameState = GameState.play;
+room_goto(rm_tutorial);

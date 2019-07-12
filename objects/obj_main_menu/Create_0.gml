@@ -10,7 +10,7 @@ with (obj_camera) {
 var offset_x = 20;
 var offset_y = 70;
 var vspacing = 27;
-var _self = self;
+var _self = id;
 
 var start_btn = instance_create_layer(offset_x, offset_y, "Instances", obj_button_large)
 with (start_btn) {
@@ -23,6 +23,8 @@ offset_y += vspacing;
 var instructions_btn = instance_create_layer(offset_x, offset_y, "Instances", obj_button_large)
 with (instructions_btn) {
 	text = "How to play?";
+	scope = _self;
+	user_event = 1;
 }
 offset_y += vspacing;
 
@@ -30,7 +32,7 @@ var quit_btn = instance_create_layer(offset_x, offset_y, "Instances", obj_button
 with (quit_btn) {
 	text = "Quit";
 	scope = _self;
-	user_event = 1;
+	user_event = 2;
 }
 offset_y += 24;
 
