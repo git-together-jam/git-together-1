@@ -1,5 +1,6 @@
 ///@description Define dream num and part system
 
+myTiles = undefined;
 dreams = 3;
 
 
