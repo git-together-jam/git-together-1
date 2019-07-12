@@ -1,2 +1,2 @@
 moving = true;
-moveDir = 270;
+moveDir = 90;

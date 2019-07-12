@@ -20,6 +20,7 @@ for (var tile_ind = 0; tile_ind < NUM_OF_TILES; tile_ind ++) {
 	if (num == 0) continue;
 	
 	// Draw rectangle around it to indicate it's selected.
+	draw_set_color(c_white);
 	if (tile_ind == global.SelectedTile) if (global.GameState == GameState.edit) {
 		draw_rectangle(
 			offset_x - 2, offset_y - 2,
@@ -33,7 +34,6 @@ for (var tile_ind = 0; tile_ind < NUM_OF_TILES; tile_ind ++) {
 	draw_set_valign(fa_center);
 	draw_set_halign(fa_left);
 	draw_set_font(fnt_button);
-	draw_set_color(c_white);
 	if (num < 0) draw_sprite(spr_inf, 0, offset_x + 20, offset_y + 8);
 	else draw_text(offset_x + 20, offset_y + 8, string(num));
 	
