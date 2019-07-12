@@ -1629,6 +1629,14 @@
                 "resourcePath": "fonts\/fnt_button\/fnt_button.yy",
                 "resourceType": "GMFont"
             }
+        },
+        {
+            "Key": "fd246e6c-9f25-4ff9-acf0-9c0269554e01",
+            "Value": {
+                "id": "86693079-93f5-47b4-8735-eb7411a36215",
+                "resourcePath": "sprites\\spr_button_stage_completed\\spr_button_stage_completed.yy",
+                "resourceType": "GMSprite"
+            }
         }
     ],
     "script_order": [
