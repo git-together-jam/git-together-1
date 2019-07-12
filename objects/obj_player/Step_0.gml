@@ -76,7 +76,7 @@ if (_trailSize > 10) ds_list_delete(trail, 0);
 if (moveDir != 0) faceDir = moveDir;
 
 // Flip the player when changing gravity direction
-if (image_yscale != gravDir && (vspd * gravDir > fallingTreshold))
+if (image_yscale != gravDir && (vspd * gravDir > fallingThreshold))
 	image_yscale = gravDir;
 
 switch(state) {
@@ -99,7 +99,7 @@ switch(state) {
 		#endregion
 	case PlayerState.in_air:
 		#region In air
-		if (vspd <= fallingTreshold) {
+		if (vspd <= fallingThreshold) {
 			// Jumping sprite
 			if (faceDir == 1)
 				sprite_index = spr_ed_jumping_right;

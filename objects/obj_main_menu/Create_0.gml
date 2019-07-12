@@ -6,6 +6,7 @@ with (obj_camera) {
 	y = room_height div 2;
 }
 
+//Buttons
 var offset_x = 20;
 var offset_y = 70;
 var vspacing = 27;
@@ -32,3 +33,16 @@ with (quit_btn) {
 	user_event = 1;
 }
 offset_y += 24;
+
+// Controller Support
+gp_enabled = obj_input_manager.gp_enabled;
+
+if (gp_enabled) {
+	gp_choices = [
+		start_btn,
+		instructions_btn,
+		quit_btn,
+	];
+	gp_selection = 0;
+	gp_flicked = false;
+}

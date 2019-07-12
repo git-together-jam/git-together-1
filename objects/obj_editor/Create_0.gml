@@ -29,3 +29,15 @@ dreams = 3;
 // Delay for switching back to play mode
 editModeDelay = room_speed * .3;
 delayTimer = 0;
+
+// Controller support
+gp_flicked = false;
+gp_hold_time = 0;
+gp_loop_time = 0;
+
+// Shader
+layer_script_begin("Background",layer_techno_begin);
+layer_script_end("Background",layer_techno_end);
+
+layer_script_begin(editAreaLayer,layer_flash_begin);
+layer_script_end(editAreaLayer,layer_flash_end);

@@ -25,3 +25,15 @@ buttons = ds_list_create();
 ds_list_add(buttons, unpause_btn, quit_btn);
 
 instance_deactivate_object(obj_button_large);
+
+// Controller Support
+gp_enabled = obj_input_manager.gp_enabled;
+
+if (gp_enabled) {
+	gp_choices = [
+		unpause_btn,
+		quit_btn,
+	];
+	gp_selection = 0;
+	gp_flicked = false;
+}
