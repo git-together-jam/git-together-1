@@ -8,12 +8,14 @@ if (is_undefined(global.SelectedTile)) return;
 var _canEdit = disable_editable_areas || tile_at_cell("Editable_Area", _x, _y);
 if (!_canEdit) return;
 
-// Player is in this cell, so stop!
-var _playerInCell = rectangle_in_rectangle(
-	PLAYER.bbox_left, PLAYER.bbox_top, PLAYER.bbox_right, PLAYER.bbox_bottom,
-	_x*CELL_WIDTH, _y*CELL_HEIGHT, (_x + 1)*CELL_WIDTH, (_y + 1)*CELL_HEIGHT
-);
-if (_playerInCell) return;
+// Check for collision with any game objects.
+with (obj_game_object) {
+	var in_cell = rectangle_in_rectangle(
+		bbox_left, bbox_top, bbox_right, bbox_bottom,
+		_x*CELL_WIDTH, _y*CELL_HEIGHT, (_x + 1)*CELL_WIDTH, (_y + 1)*CELL_HEIGHT
+	);
+	if (in_cell) return;
+}
 
 // Get tile map data.
 var _lay_id = layer_get_id("Tiles");

@@ -12,7 +12,8 @@
         "65ceb436-3b6c-44b7-912e-149c2814c854",
         "5e472210-5bb2-44a7-9d53-5562badfdf6a",
         "cea89f0b-6578-486e-8332-73e15e15cba9",
-        "17468d18-46b1-4512-827f-79c1efe8581d"
+        "17468d18-46b1-4512-827f-79c1efe8581d",
+        "c1d1945d-53b9-4d0a-bfc9-364f518ba37b"
     ],
     "filterType": "GMObject",
     "folderName": "World",
