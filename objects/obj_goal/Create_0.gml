@@ -1,3 +1,7 @@
+// Do I progress the game for this stage?
+progressor = true;
+
+
 won = false;
 
 playerSpriteX = 0;
@@ -8,7 +12,6 @@ playerImageIndex = -1;
 
 playerAlpha = 1;
 doorClose = 0;
-
 
 
 systemDreamy = part_system_create();

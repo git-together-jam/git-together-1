@@ -16,7 +16,7 @@ ui_padding = 5;
 
 // available_tiles is an array with the indexes corresponding to the tile set indexes,
 // and the values telling how many of the tiles are available to be placed.
-available_tiles = array_create(NUM_OF_TILES, 0);
+available_tiles = array_create_tiles();
 
 // If set to true, the user won't be restricted to editable areas.
 disable_editable_areas = false;

@@ -12,9 +12,6 @@ for (var i = 0; i < dreams; i++) {
 	);
 }
 
-// Don't draw anything else when not in edit mode.
-if (global.GameState != GameState.edit) exit;
-
 // Draw all tiles.
 for (var tile_ind = 0; tile_ind < NUM_OF_TILES; tile_ind ++) {
 	var num = available_tiles[tile_ind];
@@ -23,7 +20,7 @@ for (var tile_ind = 0; tile_ind < NUM_OF_TILES; tile_ind ++) {
 	if (num == 0) continue;
 	
 	// Draw rectangle around it to indicate it's selected.
-	if (tile_ind == global.SelectedTile) {
+	if (tile_ind == global.SelectedTile) if (global.GameState == GameState.edit) {
 		draw_rectangle(
 			offset_x - 2, offset_y - 2,
 			offset_x + 16, offset_y + 16,
@@ -42,6 +39,9 @@ for (var tile_ind = 0; tile_ind < NUM_OF_TILES; tile_ind ++) {
 	
 	offset_y += 20;
 }
+
+// Don't draw anything else when not in edit mode.
+if (global.GameState != GameState.edit) exit;
 
 // Draw mouse instructions graphic.
 var graphic_x = obj_camera.width - sprite_get_width(spr_gui_mouse_tool) - ui_padding;
