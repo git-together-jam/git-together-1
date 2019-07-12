@@ -13,6 +13,11 @@ var jump = keyboard_check_pressed(vk_space) || keyboard_check_pressed(ord("W")) 
 if (gp_enabled && !jump) jump = gamepad_button_check_pressed(0, gp_face1);
 ds_list_set(global.Input, Input.jump, jump);
 
+// Jump hold.
+var jump_hold = keyboard_check(vk_space) || keyboard_check(ord("W")) || keyboard_check(vk_up);
+if (gp_enabled && !jump_hold) jump_hold = gamepad_button_check(0, gp_face1);
+ds_list_set(global.Input, Input.jump_hold, jump_hold);
+
 // Primary action.
 var primary_action = mouse_check_button(mb_left);
 if (gp_enabled && !primary_action) primary_action = gamepad_button_check_pressed(0, gp_face3);

@@ -43,6 +43,7 @@ enum Input {
 	move_left,
 	move_right,
 	jump,
+	jump_hold,
 	primary_action,
 	secondary_action,
 	select_previous,

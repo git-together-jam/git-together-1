@@ -19,6 +19,12 @@ switch(tile_at_position(bbox_right + 1, y, "Tiles")) {
 // Acceleration and friction
 player_acceleration_friction(moveDir, movementSpeed, acc, fric);
 
+// Variable jump height
+if (vspd < -jumpSpeed / 2 && !check_input(Input.jump_hold))
+	{
+	vspd = -jumpSpeed / 2;
+	}
+
 // Apply gravity
 gravDirSmooth = approach(gravDirSmooth, gravDir, gravChangeSpeed);
 var _vspd = clamp(vspd + grav * gravDirSmooth, -vspdMax, vspdMax);
