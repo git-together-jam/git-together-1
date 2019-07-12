@@ -1,3 +1,3 @@
-available_tiles[1] = 9;
+available_tiles[2] = 4;
 
 editor_select_default();
