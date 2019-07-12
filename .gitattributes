@@ -1,2 +1,4 @@
-# Git don't touch the line endings plx
-* -text
+# We're all gonna use windows line endings now, ok?
+*.yy    text eol=crlf
+*.gml    text eol=crlf
+*.yyp    text eol=crlf
