@@ -1,0 +1,1 @@
+text = "You can press R to reset if you make a mistake."
