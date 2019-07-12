@@ -114,7 +114,7 @@
             "Key": "1172f794-dc71-4a9b-9d8c-41826e9154d2",
             "Value": {
                 "id": "b4308261-6e5b-4858-ba75-07c66ef5079b",
-                "resourcePath": "scripts\\angle_in_range\\angle_in_range.yy",
+                "resourcePath": "scripts\\angle_between\\angle_between.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -228,6 +228,14 @@
                 "id": "28451e2a-d754-44c8-ad9d-97faa02c4feb",
                 "resourcePath": "rooms\/rm_debug2\/rm_debug2.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "2463862f-2857-42eb-b66d-4083cbaf8f11",
+            "Value": {
+                "id": "2992499d-639d-4a22-b482-93699890d9c1",
+                "resourcePath": "scripts\\angle_closest\\angle_closest.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1533,6 +1541,7 @@
         "f572ac58-c7fb-457f-b6ff-13cf4bce3f23",
         "0d74ee55-efc1-44f6-992f-2958e41c1c88",
         "1172f794-dc71-4a9b-9d8c-41826e9154d2",
+        "2463862f-2857-42eb-b66d-4083cbaf8f11",
         "1afdebff-9214-49a7-8925-59ce0de83d4d",
         "25579063-d4c6-4ebe-b9a7-01632a9d05f9",
         "7b0dbb80-55ac-4c86-b764-eec28c37482d",
