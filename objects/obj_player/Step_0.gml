@@ -1,5 +1,8 @@
 /// @desc Player logic
 
+// Die if below the map
+if (y - sprite_yoffset > room_height) player_die();
+
 // Stop animation when not in play mode
 image_speed = (global.GameState == GameState.play);
 
