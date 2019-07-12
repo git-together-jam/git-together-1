@@ -1183,6 +1183,14 @@
             }
         },
         {
+            "Key": "bf3614cc-d36e-43f3-8986-178b5c8bbd20",
+            "Value": {
+                "id": "a9635edf-212b-4254-8f81-d1cde52ad21e",
+                "resourcePath": "rooms\\rm_yosi\\rm_yosi.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "bfe65e08-df97-40b3-b081-55cbc37d5be6",
             "Value": {
                 "id": "6612583e-2e7a-464e-93ef-59e5ec28d52c",
