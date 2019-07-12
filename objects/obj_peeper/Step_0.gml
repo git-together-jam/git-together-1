@@ -1,6 +1,8 @@
 /// @description Steppystepp
 // You can write your code in this editor for only $99.99 a month!
 
+if (global.GameState != GameState.play) exit;
+
 var _fallSpeed = fallSpeed;
 
 image_xscale = snortdir;
