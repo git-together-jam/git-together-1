@@ -1,3 +1,5 @@
+if (global.GameState == GameState.paused) exit;
+
 var offset_x = ui_padding;
 var offset_y = ui_padding;
 

@@ -4,9 +4,10 @@
 
 // Game state
 enum GameState {
+	in_menu,
 	play,
 	edit,
-	in_menu
+	paused
 }
 
 // Camera stuff
@@ -46,6 +47,7 @@ enum Input {
 	secondary_action,
 	select_previous,
 	select_next,
+	pause_game
 }
 
 #macro ALLOW_GAMEPAD true

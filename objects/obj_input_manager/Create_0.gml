@@ -1,6 +1,6 @@
 // Create a global input list.
 global.Input = ds_list_create();
-repeat (10) ds_list_add(global.Input, false);
+repeat (20) ds_list_add(global.Input, false);
 
 // Gamepad support, hell yeah!
 gp_enabled = ALLOW_GAMEPAD && gamepad_is_supported() && gamepad_is_connected(0);

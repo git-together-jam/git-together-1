@@ -33,6 +33,11 @@ var select_next = keyboard_check_pressed(ord("E")) || mouse_wheel_down();
 if (gp_enabled && !select_next) select_next = gamepad_button_check_pressed(0, gp_shoulderr);
 ds_list_set(global.Input, Input.select_next, select_next);
 
+// Pause game.
+var pause_game = keyboard_check_pressed(vk_escape) || keyboard_check_pressed(vk_f1);
+if (gp_enabled && !pause_game) pause_game = gamepad_button_check_pressed(0, gp_start);
+ds_list_set(global.Input, Input.pause_game, pause_game);
+
 
 if (!gp_enabled) exit;
 	

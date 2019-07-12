@@ -13,15 +13,42 @@
         "f87bd118-eebf-4fd3-b3e0-4c5d4d202cc7",
         "ca0b1abb-78b7-436e-a0fb-736f1c3daa7a",
         "f0b2feac-b673-44e2-a97b-5fe8ffe5264e",
-        "b7665676-13ab-4ee5-b6a9-30b82bf520ba"
+        "b7665676-13ab-4ee5-b6a9-30b82bf520ba",
+        "0982628c-d8f7-469c-9826-325338fc85f8"
     ],
     "IsDnD": false,
     "layers": [
         {
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
+            "name": "Statics",
+            "id": "bec0866d-dc39-4a01-a946-3a61115e1994",
+            "depth": 0,
+            "grid_x": 32,
+            "grid_y": 32,
+            "hierarchyFrozen": false,
+            "hierarchyVisible": true,
+            "inheritLayerDepth": true,
+            "inheritLayerSettings": true,
+            "inheritSubLayers": true,
+            "inheritVisibility": true,
+            "instances": [
+{"name": "inst_26D35DF9","id": "0982628c-d8f7-469c-9826-325338fc85f8","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": true,"inheritItemSettings": true,"IsDnD": false,"m_originalParentID": "1b092bfb-36cf-4ce8-9213-2170f4204e68","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_26D35DF9","objId": "60cc4d40-aa01-4898-b977-9fa74ae887fb","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 0,"y": 32}
+            ],
+            "layers": [
+
+            ],
+            "m_parentID": "9ca4d778-92df-47d7-8b09-2ee5eb71acd7",
+            "m_serialiseFrozen": false,
+            "modelName": "GMRInstanceLayer",
+            "mvc": "1.0",
+            "userdefined_depth": false,
+            "visible": true
+        },
+        {
+            "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
             "name": "Instances",
             "id": "0e8d32c9-1a47-441a-b0fc-370ed0734b22",
-            "depth": 0,
+            "depth": 100,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -53,7 +80,7 @@
             "__type": "GMRTileLayer_Model:#YoYoStudio.MVCFormat",
             "name": "Tiles",
             "id": "65a0fde5-e27b-455b-a9ba-f65d91b7d86a",
-            "depth": 100,
+            "depth": 200,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -128,7 +155,7 @@
             "__type": "GMRTileLayer_Model:#YoYoStudio.MVCFormat",
             "name": "Editable_Area",
             "id": "f8d78676-ec1e-4f78-94bf-24973cd94ba1",
-            "depth": 200,
+            "depth": 300,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -206,7 +233,7 @@
             "animationFPS": 15,
             "animationSpeedType": "0",
             "colour": { "Value": 4294967295 },
-            "depth": 300,
+            "depth": 400,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
