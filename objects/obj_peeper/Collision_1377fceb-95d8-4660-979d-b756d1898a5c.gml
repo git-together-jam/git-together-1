@@ -1,5 +1,7 @@
 /// @description Boing!
 
+if (global.GameState != GameState.play) exit;
+
 with (other) {
 	player_set_state(PlayerState.in_air, true);
 	vspd = -other.bouncePower;
