@@ -31,7 +31,7 @@ ds_list_set(global.Input, Input.select_previous, select_previous);
 // Select next.
 var select_next = keyboard_check_pressed(ord("E")) || mouse_wheel_down();
 if (gp_enabled && !select_next) select_next = gamepad_button_check_pressed(0, gp_shoulderr);
-ds_list_set(global.Input, Input.select_next, Input.select_next);
+ds_list_set(global.Input, Input.select_next, select_next);
 
 
 if (!gp_enabled) exit;
