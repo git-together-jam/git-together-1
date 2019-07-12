@@ -1,5 +1,5 @@
-ds_list_set(available_tiles, 5, 2);
-ds_list_set(available_tiles, 18, 5);
+available_tiles[1] = 3;
+available_tiles[2] = -1;
 
 disable_editable_areas = true;
 

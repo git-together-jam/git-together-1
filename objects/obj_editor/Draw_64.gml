@@ -15,7 +15,7 @@ if (global.GameState != GameState.edit) exit;
 
 // Draw all tiles.
 for (var tile_ind = 0; tile_ind < NUM_OF_TILES; tile_ind ++) {
-	var num = available_tiles[| tile_ind];
+	var num = available_tiles[tile_ind];
 	
 	// Don't draw the tile if none are available.
 	if (num == 0) continue;
@@ -35,7 +35,8 @@ for (var tile_ind = 0; tile_ind < NUM_OF_TILES; tile_ind ++) {
 	draw_set_halign(fa_left);
 	draw_set_font(fnt_button);
 	draw_set_color(c_white);
-	draw_text(offset_x + 20, offset_y + 8, string(num));
+	if (num < 0) draw_sprite(spr_inf, 0, offset_x + 20, offset_y + 8);
+	else draw_text(offset_x + 20, offset_y + 8, string(num));
 	
 	offset_y += 20;
 }

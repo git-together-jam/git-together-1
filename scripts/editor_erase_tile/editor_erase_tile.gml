@@ -17,7 +17,8 @@ var previous_block_id = _ind;
 tilemap_set(_map_id, tile_set_index(_data, 0), _x, _y);
 
 // Make the erased tile available again.
-available_tiles[| previous_block_id] ++;
+if (available_tiles[previous_block_id] != -1)
+	available_tiles[previous_block_id] ++;
 
 // And select it if needed.
 if (is_undefined(global.SelectedTile)) {

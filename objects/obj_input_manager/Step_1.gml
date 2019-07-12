@@ -14,22 +14,22 @@ if (gp_enabled && !jump) jump = gamepad_button_check_pressed(0, gp_face1);
 ds_list_set(global.Input, Input.jump, jump);
 
 // Primary action.
-var primary_action = mouse_check_button_pressed(mb_left) || keyboard_check_pressed(ord("E"));
+var primary_action = mouse_check_button(mb_left);
 if (gp_enabled && !primary_action) primary_action = gamepad_button_check_pressed(0, gp_face3);
 ds_list_set(global.Input, Input.primary_action, primary_action);
 
 // Secondary action.
-var secondary_action = mouse_check_button_pressed(mb_right) || keyboard_check_pressed(ord("Q"));
+var secondary_action = mouse_check_button(mb_right);
 if (gp_enabled && !secondary_action) secondary_action = gamepad_button_check_pressed(0, gp_face2);
 ds_list_set(global.Input, Input.secondary_action, secondary_action);
 
 // Select previous.
-var select_previous = keyboard_check_pressed(ord("W")) || keyboard_check_pressed(vk_up) || mouse_wheel_up();
+var select_previous = keyboard_check_pressed(ord("Q")) || mouse_wheel_up();
 if (gp_enabled && !select_previous) select_previous = gamepad_button_check_pressed(0, gp_shoulderl);
 ds_list_set(global.Input, Input.select_previous, select_previous);
 
 // Select next.
-var select_next = keyboard_check_pressed(ord("S")) || keyboard_check_pressed(vk_down) || mouse_wheel_down();
+var select_next = keyboard_check_pressed(ord("E")) || mouse_wheel_down();
 if (gp_enabled && !select_next) select_next = gamepad_button_check_pressed(0, gp_shoulderr);
 ds_list_set(global.Input, Input.select_next, Input.select_next);
 

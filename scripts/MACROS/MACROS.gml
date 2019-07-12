@@ -13,6 +13,12 @@ enum GameState {
 #macro VIEW_INDEX 0
 #macro VIEW view_camera[VIEW_INDEX]
 
+#macro VIEW_X camera_get_view_x(VIEW)
+#macro VIEW_Y camera_get_view_y(VIEW)
+
+#macro VIEW_WIDTH camera_get_view_width(VIEW)
+#macro VIEW_HEIGHT camera_get_view_height(VIEW)
+
 enum CamFollowMode {
 	smooth,
 	screenClamp,
@@ -49,7 +55,7 @@ enum Input {
 #macro CELL_HEIGHT 16
 
 // There's not way to get the total number or tiles in the tile set, so here it is.
-#macro NUM_OF_TILES 32
+#macro NUM_OF_TILES 34
 
 // Tiles
 enum TileType {
