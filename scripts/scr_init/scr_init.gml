@@ -1,6 +1,8 @@
 /// Initialize global variables
 gml_pragma("global", "scr_init()");
 
+progress_load();
+
 global.GameState = GameState.in_menu;
 
 global.TileTypesArray = array_create(NUM_OF_TILES, TileType.wall);
