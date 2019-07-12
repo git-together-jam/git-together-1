@@ -1,3 +1,3 @@
 PLAYER.x = checkpoint.x;
-PLAYER.y = checkpoint.y - PLAYER_MIDDLE;
+PLAYER.y = checkpoint.bbox_bottom - PLAYER_MIDDLE;
 instance_destroy();

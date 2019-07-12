@@ -3,6 +3,8 @@ if (global.GameState == GameState.play) {
 	
 	// Switch to edit mode.
 	if (dreams && check_input(Input.secondary_action)) {
+		// Bring editable area up
+		layer_depth(editAreaLayer, layer_get_depth(layer_get_id("Tiles") - 1));
 		
 		// Set cursor starting position.
 		if (!gp_enabled) {
@@ -39,6 +41,9 @@ if (global.GameState == GameState.play) {
 	else do_exit = check_input(Input.jump)
 	
 	if (do_exit) {
+		// Knock editable area down
+		layer_depth(editAreaLayer, layer_get_depth(layer_get_id("Tiles") + 1));
+		
 		with (obj_camera) {
 			followMode = CamFollowMode.smooth;
 			followTarget = true;
