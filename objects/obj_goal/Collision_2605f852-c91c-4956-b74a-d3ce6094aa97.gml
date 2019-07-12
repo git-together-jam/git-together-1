@@ -9,4 +9,3 @@ playerSpriteIndex = other.sprite_index;
 playerImageIndex = other.image_index;
 
 instance_destroy(other);
-alarm[0] = room_speed;

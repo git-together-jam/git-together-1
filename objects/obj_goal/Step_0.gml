@@ -29,8 +29,8 @@ else switch (won) {
 		if (bbox_top + doorClose < bbox_bottom) {
 			doorClose += 1.8;
 		} else {
-			instance_destroy();
-			// Victory code needed
+			alarm[0] = 45;
+			won++;
 		}
 		break;
 }
