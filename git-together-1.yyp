@@ -1159,6 +1159,14 @@
             }
         },
         {
+            "Key": "cab0016d-7a12-44f0-b620-b0e5fc6173cb",
+            "Value": {
+                "id": "622467af-a9ed-46a4-afa1-cb3f7e3c0c90",
+                "resourcePath": "objects\\obj_git_together\\obj_git_together.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "cb188b7d-9913-471e-94a8-12c3d621b33c",
             "Value": {
                 "id": "8f942d3e-2829-4493-a46e-bf9104ad7292",
