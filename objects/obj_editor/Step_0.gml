@@ -16,10 +16,24 @@ if (!gp_enabled) {
 	cursor_x = lerp(cursor_x, cursor_grid_x, .3);
 	cursor_y = lerp(cursor_y, cursor_grid_y, .3);
 } else {
-	cursor_x += lengthdir_x(global.GamepadAxisLen, global.GamepadAxisDir) * 4;
-	cursor_y += lengthdir_y(global.GamepadAxisLen, global.GamepadAxisDir) * 4;
-	cursor_grid_x = floor(cursor_x / CELL_WIDTH);
-	cursor_grid_y = floor(cursor_y / CELL_HEIGHT);
+	var _move = false;
+	if (global.GamepadAxisLen > 0.7){
+		if (!gp_flicked) {
+			gp_flicked = true;
+			_move = true;
+		} else if (++gp_hold_time > 4 && ++gp_loop_time % 3 == 0) {
+			_move = true;
+		}
+	} else {
+		gp_flicked = false;
+		gp_hold_time = 0;
+	}
+	if (_move) {
+		cursor_x += (global.GamepadAxisH) * CELL_WIDTH;
+		cursor_y += (global.GamepadAxisV) * CELL_HEIGHT;
+		cursor_grid_x = floor(cursor_x / CELL_WIDTH);
+		cursor_grid_y = floor(cursor_y / CELL_HEIGHT);
+	}
 }
 //show_debug_message(string(cursor_grid_x) + " > " + string(cursor_grid_y));
 

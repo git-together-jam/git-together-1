@@ -29,3 +29,8 @@ dreams = 3;
 // Delay for switching back to play mode
 editModeDelay = room_speed * .3;
 delayTimer = 0;
+
+// Controller support
+gp_flicked = false;
+gp_hold_time = 0;
+gp_loop_time = 0;

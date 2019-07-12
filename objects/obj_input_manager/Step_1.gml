@@ -47,13 +47,12 @@ ds_list_set(global.Input, Input.pause_game, pause_game);
 if (!gp_enabled) exit;
 	
 // Gamepad axis.
-var haxis = gamepad_axis_value(0, gp_axislh);
-var vaxis = gamepad_axis_value(0, gp_axislv);
+global.GamepadAxisH = gamepad_axis_value(0, gp_axislh);
+global.GamepadAxisV = gamepad_axis_value(0, gp_axislv);
 
-if (abs(haxis) < gp_threshold && abs(vaxis) < gp_threshold) {
-	haxis = 0;
-	vaxis = 0;
+if (abs(global.GamepadAxisH) >= gp_threshold  || abs(global.GamepadAxisV) >= gp_threshold) {
+	global.GamepadAxisDir = point_direction(0, 0, global.GamepadAxisH, global.GamepadAxisV);
+	global.GamepadAxisLen = point_distance(0 ,0, global.GamepadAxisH, global.GamepadAxisV);
+} else {
+	global.GamepadAxisLen = 0;
 }
-	
-global.GamepadAxisDir = point_direction(0, 0, haxis, vaxis);
-global.GamepadAxisLen = point_distance(0 ,0, haxis, vaxis);

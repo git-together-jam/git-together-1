@@ -9,3 +9,5 @@ gp_threshold = .2;
 // Store gamepad axis direction and length.
 global.GamepadAxisDir = 0;
 global.GamepadAxisLen = 0;
+global.GamepadAxisH = 0;
+global.GamepadAxisV = 0;
