@@ -1,0 +1,1 @@
+global.GameState = GameState.play;
