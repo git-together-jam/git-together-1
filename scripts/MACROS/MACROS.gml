@@ -2,6 +2,8 @@
 #macro GAME_WIDTH  320
 #macro GAME_HEIGHT 180
 
+#macro PROGRESS_FILE_NAME "lskajdafldnslfvd.dat"
+
 // Game state
 enum GameState {
 	in_menu,
