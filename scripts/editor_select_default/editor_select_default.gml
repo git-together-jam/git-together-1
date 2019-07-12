@@ -1,5 +1,5 @@
 /// @desc Set the default selected tile. Returns true if selected tile has changed.
-show_message("RESET");
+
 // If already set, no need to do anything.
 if (!is_undefined(global.SelectedTile)) return false;
 
