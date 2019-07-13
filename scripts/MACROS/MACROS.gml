@@ -3,7 +3,7 @@
 #macro GAME_HEIGHT 180
 
 #macro PROGRESS_FILE_NAME "lskajdafldnslfvd.dat"
-#macro NUM_OF_STAGES 8
+#macro NUM_OF_STAGES 9
 
 // Game state
 enum GameState {
@@ -32,6 +32,7 @@ enum CamFollowMode {
 // Player object
 #macro PLAYER obj_player
 #macro PLAYER_MIDDLE 6
+#macro PLAYER_DIE_TIME 80
 
 // Player state
 enum PlayerState {
@@ -72,6 +73,14 @@ enum TileType {
 	deadly,
 	gravity_change
 }
+
+// Blocks.
+#macro FALLING_BLOCK_DELAY 20
+#macro PUSH_BLOCK_FORCE 12
+
+// Progress bar.
+#macro PROGRESS_BAR_BG make_color_rgb(52, 52, 52)
+#macro PROGRESS_BAR make_color_rgb(106, 180, 23)
 
 // Shader
 #macro TECHNO_R 0.16862745098

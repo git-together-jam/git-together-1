@@ -9,7 +9,8 @@
         "2eb1ce31-f6e6-438e-bf0e-ee99b13ade05",
         "3498aaac-7ca5-4a7e-8150-0b0ae36d698e",
         "b9fc6051-5067-468e-913c-8e0cc621fb53",
-        "c313c643-f707-45d9-94a2-8345cc032192"
+        "c313c643-f707-45d9-94a2-8345cc032192",
+        "ce999448-ca9c-4bd1-865e-5ca3776dcfc1"
     ],
     "filterType": "GMSprite",
     "folderName": "Ed",
