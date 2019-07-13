@@ -23,8 +23,8 @@ disable_editable_areas = false;
 
 global.SelectedTile = undefined;
 
-// Number of "dreams" avalible
-dreams = 3;
+// Number of "dreams" available
+dreams = 4;
 
 // Delay for switching back to play mode
 editModeDelay = room_speed * .3;
