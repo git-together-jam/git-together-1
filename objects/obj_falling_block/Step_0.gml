@@ -9,7 +9,7 @@ if (!breaking_down && instance_exists(PLAYER)) {
 	
 	// Check if player is over block.
 	var dif_x = player_x - x;
-	if (dif_x < 0 || dif_x > CELL_WIDTH) exit;
+	if (dif_x < -6 || dif_x > 20) exit;
 	
 	var dif_y = y - player_y;
 	if (dif_y > 0 && dif_y < 9) {
