@@ -25,8 +25,8 @@ disable_editable_areas = false;
 
 global.SelectedTile = undefined;
 
-// Number of "dreams" available
-dreams = 4;
+// Number of "dreams" avalible
+dreams = 3;
 didDream = false;
 
 // Delay for switching back to play mode
