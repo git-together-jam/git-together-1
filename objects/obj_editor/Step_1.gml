@@ -51,6 +51,9 @@ if (global.GameState == GameState.play) {
 			followTarget = true;
 		}
 		
+		if (!didDream) dreams++;
+		didDream = false;
+		
 		delayTimer = -1;
 		global.GameState = GameState.play;
 	}
