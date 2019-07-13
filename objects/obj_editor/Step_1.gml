@@ -4,15 +4,17 @@ if (global.GameState == GameState.play) {
 	// Switch to edit mode.
 	if (dreams && check_input(Input.secondary_action)) {
 		// Bring editable area up
-		layer_depth(editAreaLayer, layer_get_depth(layer_get_id("Tiles") - 1));
+		//layer_depth(editAreaLayer, layer_get_depth(layer_get_id("Tiles") - 1));
 		
 		// Set cursor starting position.
 		if (!gp_enabled) {
 			cursor_x = floor(mouse_x / CELL_WIDTH);
 			cursor_y = floor(mouse_y / CELL_WIDTH);
 		} else {
-			cursor_x = obj_player.x;
-			cursor_y = obj_player.y;
+			cursor_x = (obj_player.x div CELL_WIDTH) * CELL_WIDTH;
+			cursor_y = (obj_player.y div CELL_HEIGHT) * CELL_HEIGHT;
+			cursor_grid_x = floor(cursor_x / CELL_WIDTH);
+			cursor_grid_y = floor(cursor_y / CELL_HEIGHT);
 		}
 		
 		// Reset gampad enabled. Will be disabled once user moves mouse.
@@ -42,12 +44,15 @@ if (global.GameState == GameState.play) {
 	
 	if (do_exit) {
 		// Knock editable area down
-		layer_depth(editAreaLayer, layer_get_depth(layer_get_id("Tiles") + 1));
+		//layer_depth(editAreaLayer, layer_get_depth(layer_get_id("Tiles") + 1));
 		
 		with (obj_camera) {
 			followMode = CamFollowMode.smooth;
 			followTarget = true;
 		}
+		
+		if (!didDream) dreams++;
+		didDream = false;
 		
 		delayTimer = -1;
 		global.GameState = GameState.play;

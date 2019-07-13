@@ -25,6 +25,7 @@ global.SelectedTile = undefined;
 
 // Number of "dreams" available
 dreams = 4;
+didDream = false;
 
 // Delay for switching back to play mode
 editModeDelay = room_speed * .3;
