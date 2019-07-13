@@ -1,3 +1,3 @@
-available_tiles[2] = 24;
+available_tiles[2] = 22;
 
 editor_select_default();
