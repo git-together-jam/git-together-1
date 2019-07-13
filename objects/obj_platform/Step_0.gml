@@ -1,5 +1,9 @@
 /// @description Movement logic
 
+// Exit if I have a switch that's off.
+if (!is_undefined(mySwitch)) if (!mySwitch.on) exit;
+
+// Exit if not in play mode.
 if (global.GameState != GameState.play) exit;
 
 // Exit if not moving.

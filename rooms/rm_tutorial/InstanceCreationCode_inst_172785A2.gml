@@ -1,1 +1,1 @@
-text = "You can press R to reset if you make a mistake."
+text = "You can press R to reset if you make a mistake,\nF4 to enter fullscreen and ESC to pause."
