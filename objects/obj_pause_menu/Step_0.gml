@@ -20,7 +20,7 @@ if (check_input(Input.pause_game)) {
 	var offset_x, offset_y;
 	with (obj_camera) {
 		offset_x = x - 55;
-		offset_y = y - 24;
+		offset_y = y - 32;
 	}
 	
 	var num_of_buttons = ds_list_size(buttons);
