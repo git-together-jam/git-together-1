@@ -1,5 +1,5 @@
 event_inherited();
 
-name = undefined;
+name = "UNTITLED";
 
 connected_stages = ds_list_create();
