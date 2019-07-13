@@ -1,8 +1,5 @@
 /// @desc Player logic
 
-// Don't do anything when dying.
-if (state == PlayerState.dead) exit;
-
 // Die if fallen out of the map
 if (y - sprite_yoffset > room_height || y - sprite_height < 0) {
 	player_die();
