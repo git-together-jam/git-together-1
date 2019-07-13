@@ -1,1 +1,1 @@
-text = "That gap is pretty wide, but if you use the right mouse\nbutton you can probably dream up a way to get across it.\nWhile you're dreaming, you can place blocks with the left\nmouse button and pick them up with the right mouse button."
+text = "That gap is pretty wide, but if you use the right mouse\nbutton you can probably dream up a way to get across it.\nWhile you're dreaming, you can place blocks with the left\nmouse button and pick them up with the right mouse button.";

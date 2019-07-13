@@ -1,0 +1,1 @@
+text = "That's all for now.\nGood luck Ed, I belive in you!";;
