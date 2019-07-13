@@ -45,11 +45,11 @@ if (cursor_grid_x > VIEW_X/CELL_WIDTH &&
 	
 	// Place a tile.
 	if (check_input(Input.primary_action)) {
-		editor_place_tile(cursor_grid_x, cursor_grid_y);
+		if (editor_place_tile(cursor_grid_x, cursor_grid_y)) didDream = true;
 	}
 
 	// Erase a tile.
 	else if (delayTimer == 0 && check_input(Input.secondary_action)) {
-		editor_erase_tile(cursor_grid_x, cursor_grid_y);
+		if (editor_erase_tile(cursor_grid_x, cursor_grid_y)) didDream = true;
 	}
 }
