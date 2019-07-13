@@ -807,6 +807,14 @@
             }
         },
         {
+            "Key": "8427047f-9ef8-4c77-89f3-9c20623d07b6",
+            "Value": {
+                "id": "152a2aac-90ad-452c-8434-62b3cd484bc9",
+                "resourcePath": "options\\ios\\options_ios.yy",
+                "resourceType": "GMiOSOptions"
+            }
+        },
+        {
             "Key": "862329dc-039f-4066-aecd-81f5c8d97a6e",
             "Value": {
                 "id": "f3fa1b26-38bd-4d03-ab4f-9b18ec36952c",
@@ -919,6 +927,14 @@
             }
         },
         {
+            "Key": "93566aad-c3b3-48a9-8fa7-9c5ee19f74ac",
+            "Value": {
+                "id": "a99d9ab0-54e4-4861-aac0-48fcd7446c6d",
+                "resourcePath": "options\\tvos\\options_tvos.yy",
+                "resourceType": "GMtvOSOptions"
+            }
+        },
+        {
             "Key": "9450b462-e6cb-4262-95d6-3b90ac171e5c",
             "Value": {
                 "id": "540cd175-78f0-4550-b162-463fa1c2ec00",
@@ -988,6 +1004,14 @@
                 "id": "2a9e46b5-11bc-468f-9cc4-8ee1ea49f5b3",
                 "resourcePath": "scripts\/player_die\/player_die.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "a128950b-5063-4876-b4a6-b99dbd2ea6d1",
+            "Value": {
+                "id": "5e6baff4-247b-4715-8994-322db3326572",
+                "resourcePath": "options\\amazonfire\\options_amazonfire.yy",
+                "resourceType": "GMAmazonFireOptions"
             }
         },
         {
@@ -1399,11 +1423,27 @@
             }
         },
         {
+            "Key": "e42bf5cc-3f46-4d67-a6d0-a4885a11ac3f",
+            "Value": {
+                "id": "86ee6846-499b-45c0-bb80-a1e098451126",
+                "resourcePath": "options\\android\\options_android.yy",
+                "resourceType": "GMAndroidOptions"
+            }
+        },
+        {
             "Key": "e5eeb8c3-9851-4284-9746-c8c280927f8d",
             "Value": {
                 "id": "370b4e54-3a29-4c30-86ca-3476e969783d",
                 "resourcePath": "sounds\/snd_speaker\/snd_speaker.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "e650144e-7f76-4e53-970a-e5f9aaa78f26",
+            "Value": {
+                "id": "6c8e5eb3-d957-4577-9e0e-7430c5a67581",
+                "resourcePath": "rooms\\rm_qst0\\rm_qst0.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -1655,7 +1695,9 @@
         "d4cd4d91-aed6-4f23-898b-d65d4c183ba5",
         "8c3405d7-6ef4-4dfb-9e27-0a5096ef14b1",
         "f572ac58-c7fb-457f-b6ff-13cf4bce3f23",
-        "0d74ee55-efc1-44f6-992f-2958e41c1c88"
+        "0d74ee55-efc1-44f6-992f-2958e41c1c88",
+        "7a481e44-f30d-42bf-874c-fd1d7bca5d39",
+        "f3beadfc-2a09-46fa-befd-61a24be35e6b"
     ],
     "tutorial": ""
 }
