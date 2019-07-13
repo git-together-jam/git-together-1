@@ -855,6 +855,14 @@
             }
         },
         {
+            "Key": "86815278-79ba-476a-b4fa-9af949918dfd",
+            "Value": {
+                "id": "a17543f7-9ea1-426f-a4a8-0836f07ca6ca",
+                "resourcePath": "objects\\obj_gate\\obj_gate.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "87b33bb9-fe13-4e33-bcb8-c726a400ac88",
             "Value": {
                 "id": "750be4d9-1ae4-4db5-9eee-582cdff948cb",
@@ -972,6 +980,14 @@
                 "id": "6a298c59-5528-4236-bf20-843eda65f233",
                 "resourcePath": "sounds\/snd_music_dream_reverse\/snd_music_dream_reverse.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "955f98bd-fbf0-4e87-aab5-35ebce3bbb69",
+            "Value": {
+                "id": "b31889d7-51f5-4ced-9aac-b26304e2dbf6",
+                "resourcePath": "objects\\obj_gate_segment\\obj_gate_segment.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1156,6 +1172,14 @@
                 "id": "0ad7aa56-0ada-4bd1-89aa-6d4329f485d5",
                 "resourcePath": "objects\/obj_music_player\/obj_music_player.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "b88b3347-628c-4c1e-9c98-4c42c69e4b58",
+            "Value": {
+                "id": "f38c1aeb-dde0-4c09-9a60-f3867feb4b56",
+                "resourcePath": "sounds\\snd_gate\\snd_gate.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -1620,6 +1644,14 @@
                 "id": "b4951c04-b2ac-4b68-b051-e59f7b56dbd8",
                 "resourcePath": "views\/f64febc6-fb36-4c02-ac42-ab1cb719c8a0.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "f675eaf9-a6ad-4639-8ec2-35884ca01096",
+            "Value": {
+                "id": "71d795d7-5611-4684-b00c-52efd03dc269",
+                "resourcePath": "sprites\\spr_gate\\spr_gate.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
