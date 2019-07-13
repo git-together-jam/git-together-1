@@ -19,6 +19,9 @@ switch(tile_at_position(x, _groundY, "Tiles")) {
 // Acceleration and friction
 player_acceleration_friction(moveDir, _moveSpeed, _acc, _fric);
 
+// Check for deadly objects
+if (player_check_deadly_objects()) exit;
+
 // Check for gravity blocks and jumping
 if (tile_meeting(x, _groundY, "Tiles", TileType.gravity_change)) {
 	// Gravity change block
