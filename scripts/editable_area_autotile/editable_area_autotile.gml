@@ -3,7 +3,7 @@ var _th = room_height div CELL_HEIGHT;
 
 // Create new tile layer
 var _lay_id = layer_get_id("Editable_Area");
-var _layerId = layer_create(layer_get_depth(_lay_id));
+var _layerId = layer_create(argument0);
 var _newTiles = layer_tilemap_create(_layerId, 0, 0, tileset_edit_2, _tw, _th);
 
 var _coordArr = [1, 0, -1, 0];

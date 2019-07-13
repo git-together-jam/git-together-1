@@ -1,5 +1,17 @@
-// Don't do anything when not in edit mode.
+// Set alpha of editable area layers
+var _changeRate = .03;
+if (global.GameState == GameState.edit) {
+	if (global.edBottomAlpha > 0) global.edBottomAlpha -= _changeRate;
+	if (global.edTopAlpha < 1) global.edTopAlpha += _changeRate;
+} else if (global.GameState == GameState.play) {
+	if (global.edBottomAlpha < 1) global.edBottomAlpha += _changeRate;
+	if (global.edTopAlpha > 0) global.edTopAlpha -= _changeRate;
+}
+
+// Don't do anything else when not in edit mode.
 if (global.GameState != GameState.edit) exit;
+
+// Increase alpha of top editable area and decrease bottom
 
 // Change the selected tile.
 if (check_input(Input.select_previous)) {
