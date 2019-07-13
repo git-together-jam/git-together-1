@@ -1,4 +1,4 @@
-/// @description Controller Support
+/// @description Controller Support / Buttons
 if (gp_enabled) {
 	if (abs(gamepad_axis_value(0, gp_axislv)) > 0.7 && !gp_flicked) {
 		gp_flicked = true;
@@ -22,5 +22,14 @@ if (gp_enabled) {
 			mouse_over = false;
 			image_index = 0;
 		}
+	}
+}
+
+//Move buttons
+with(obj_button_large) {
+	if (mouse_over) {
+		x = lerp(x, xstart + 10, .1);
+	} else {
+		x = lerp(x, xstart, .2);
 	}
 }
