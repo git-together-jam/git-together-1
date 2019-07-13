@@ -1183,6 +1183,14 @@
             }
         },
         {
+            "Key": "bae4615e-25ff-498a-87e0-941b332ccd43",
+            "Value": {
+                "id": "101a492c-4d9f-4685-9448-d24b082ad53d",
+                "resourcePath": "scripts\\player_checkpoint_restart\\player_checkpoint_restart.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "bb9e7132-e0c2-47bc-b704-1be4fa5cbdd5",
             "Value": {
                 "id": "7a142e29-1786-4a80-a38e-fe891e4662ef",
@@ -1718,6 +1726,7 @@
         "6ace8cd1-246b-4746-8723-d1576869d1d2",
         "7a481e44-f30d-42bf-874c-fd1d7bca5d39",
         "f3beadfc-2a09-46fa-befd-61a24be35e6b",
+        "bae4615e-25ff-498a-87e0-941b332ccd43",
         "9f216623-3853-4b71-919d-b21c143f1099",
         "794bb4a2-060e-4f09-8525-3e692e283a24",
         "70a63d17-a0e5-4cc9-a2d1-ca661d09ec72",
