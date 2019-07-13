@@ -215,6 +215,14 @@
             }
         },
         {
+            "Key": "21124a3d-f8a0-49ce-b70a-99e852022ba8",
+            "Value": {
+                "id": "e5e254a5-05b5-4424-91f0-b3213f031f93",
+                "resourcePath": "rooms\\rm_bauk_tower\\rm_bauk_tower.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "2224da7f-f72e-4cb7-b508-1a0399c1473b",
             "Value": {
                 "id": "4f67812a-8b97-47b5-93f7-532d33f0673f",

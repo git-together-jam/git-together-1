@@ -3,7 +3,7 @@
 #macro GAME_HEIGHT 180
 
 #macro PROGRESS_FILE_NAME "lskajdafldnslfvd.dat"
-#macro NUM_OF_STAGES 8
+#macro NUM_OF_STAGES 9
 
 // Game state
 enum GameState {
