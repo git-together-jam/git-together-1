@@ -74,6 +74,9 @@ enum TileType {
 	gravity_change
 }
 
+// Falling blocks.
+#macro FALLING_BLOCK_DELAY 20
+
 // Progress bar.
 #macro PROGRESS_BAR_BG make_color_rgb(52, 52, 52)
 #macro PROGRESS_BAR make_color_rgb(106, 180, 23)

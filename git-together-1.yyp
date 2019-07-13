@@ -4,7 +4,7 @@
     "mvc": "1.0",
     "IsDnDProject": false,
     "configs": [
-
+        
     ],
     "option_ecma": false,
     "parentProject": {
@@ -25,7 +25,7 @@
             }
         ],
         "hiddenResources": [
-
+            
         ],
         "projectPath": "${base_project}"
     },
@@ -587,6 +587,14 @@
             "Value": {
                 "id": "f069e4d2-38f7-4829-b2c0-1d040a876edb",
                 "resourcePath": "objects\/obj_pause_menu\/obj_pause_menu.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "63be1cf4-a144-4f3c-8c70-e39fc158531d",
+            "Value": {
+                "id": "8772db36-c0fd-4a74-82af-732b37690a97",
+                "resourcePath": "objects\\obj_falling_block\\obj_falling_block.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1164,6 +1172,14 @@
                 "id": "028a0764-3963-47a4-be92-6c02bdec739d",
                 "resourcePath": "objects\/obj_mine\/obj_mine.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "c312a330-7244-43d2-ad38-d08b835d5fcd",
+            "Value": {
+                "id": "ba3f7b0e-ced1-481c-8fb5-5abd6c927fdd",
+                "resourcePath": "sprites\\spr_falling_block\\spr_falling_block.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
