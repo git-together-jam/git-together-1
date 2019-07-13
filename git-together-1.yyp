@@ -591,6 +591,14 @@
             }
         },
         {
+            "Key": "659ade82-0cb6-4e23-8900-4c8296840b57",
+            "Value": {
+                "id": "d6f44d6f-0bbf-4e6f-9d74-0bbfe7d5cd28",
+                "resourcePath": "objects\\obj_dying_spirit\\obj_dying_spirit.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "65ceb436-3b6c-44b7-912e-149c2814c854",
             "Value": {
                 "id": "daf603ab-9742-4b29-8d8a-ebef733c2ad2",
@@ -1212,6 +1220,14 @@
                 "id": "e898d047-73bb-4324-a41c-da1ccd4445dd",
                 "resourcePath": "scripts\/player_set_sprite\/player_set_sprite.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "ce999448-ca9c-4bd1-865e-5ca3776dcfc1",
+            "Value": {
+                "id": "565de3aa-648d-4e26-8fe8-48dde24c0498",
+                "resourcePath": "sprites\\spr_ed_dying_spirit\\spr_ed_dying_spirit.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

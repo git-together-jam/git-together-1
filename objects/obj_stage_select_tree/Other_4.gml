@@ -37,8 +37,6 @@ for(var i=0; i<num_stages; i++) {
 			if(ds_list_find_index(room_b.connected_stages, room_a) == -1) {
 				ds_list_add(room_b.connected_stages, room_a)
 			}
-						
-			show_debug_message("connected " + string(i) + " to " + string(j))
 		}
 	}
 }
