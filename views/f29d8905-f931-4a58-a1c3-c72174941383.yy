@@ -12,7 +12,8 @@
         "dce67cc5-069c-4f49-9b30-279198af239b",
         "89e7fe86-b4ee-45e9-a298-f6f1f79b2241",
         "0cf5dcd0-1975-498e-bafa-f0f7551586f5",
-        "e5eeb8c3-9851-4284-9746-c8c280927f8d"
+        "e5eeb8c3-9851-4284-9746-c8c280927f8d",
+        "7e29bcbb-b8a1-4288-8d58-fe6d12f7ba7f"
     ],
     "filterType": "GMSound",
     "folderName": "fx",

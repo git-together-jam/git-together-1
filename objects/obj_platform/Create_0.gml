@@ -8,3 +8,5 @@ moveSpeed = 1;
 
 moving = false;
 moveDelay = 120;
+
+mySwitch = undefined;
