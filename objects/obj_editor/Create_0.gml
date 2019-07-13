@@ -4,7 +4,9 @@ y = 0;
 gp_enabled = obj_input_manager.gp_enabled;
 
 // Autotile the editable area tile layer
-editAreaLayer = editable_area_autotile();
+var _baseD = layer_get_depth(layer_get_id("Tiles"));
+editAreaBottom = editable_area_autotile(_baseD + 1);
+editAreaTop = editable_area_autotile(_baseD - 1);
 
 // Cursor position. Allows subpixels and eases toward mouse pointer every step.
 cursor_x = 0;
@@ -40,5 +42,8 @@ gp_loop_time = 0;
 layer_script_begin("Background",layer_techno_begin);
 layer_script_end("Background",layer_techno_end);
 
-layer_script_begin(editAreaLayer,layer_flash_begin);
-layer_script_end(editAreaLayer,layer_flash_end);
+layer_script_begin(editAreaBottom,layer_alpha_begin);
+layer_script_end(editAreaBottom,layer_alpha_end);
+
+layer_script_begin(editAreaTop,layer_flash_begin);
+layer_script_end(editAreaTop,layer_flash_end);

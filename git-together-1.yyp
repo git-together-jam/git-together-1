@@ -479,6 +479,14 @@
             }
         },
         {
+            "Key": "470f8c67-77aa-4662-a30f-253aef404a51",
+            "Value": {
+                "id": "1425634b-c2ff-4d50-84c4-d7185299ba47",
+                "resourcePath": "scripts\\layer_alpha_begin\\layer_alpha_begin.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "476e176a-268b-4c5a-8159-ae685981ea66",
             "Value": {
                 "id": "cb837447-ea5e-44bf-9126-a543cb09ee0b",
@@ -1063,6 +1071,14 @@
             }
         },
         {
+            "Key": "a84629e5-3000-4e61-801e-4e93b0fac65c",
+            "Value": {
+                "id": "fab2aa9c-3e29-45e6-a3a7-18f0da783cc2",
+                "resourcePath": "scripts\\layer_alpha_end\\layer_alpha_end.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
             "Value": {
                 "id": "75a9e6d9-bbf0-4470-a576-51bceb055c30",
@@ -1267,6 +1283,14 @@
             "Value": {
                 "id": "8f942d3e-2829-4493-a46e-bf9104ad7292",
                 "resourcePath": "shaders\/shd_flash\/shd_flash.yy",
+                "resourceType": "GMShader"
+            }
+        },
+        {
+            "Key": "cbd307cf-0911-425b-bd8c-b38c17765c7e",
+            "Value": {
+                "id": "4bc6a823-3f57-4978-8a7c-9a0a246d19a8",
+                "resourcePath": "shaders\\shd_alpha\\shd_alpha.yy",
                 "resourceType": "GMShader"
             }
         },
@@ -1674,6 +1698,8 @@
         "bf049444-2655-4000-96fa-27b6676d6aa4",
         "527bf673-ed01-4872-b5f9-a075fa4a2edd",
         "b3b3218c-0fa4-4e95-8652-5487d645ca8b",
+        "470f8c67-77aa-4662-a30f-253aef404a51",
+        "a84629e5-3000-4e61-801e-4e93b0fac65c",
         "d4cd4d91-aed6-4f23-898b-d65d4c183ba5",
         "8c3405d7-6ef4-4dfb-9e27-0a5096ef14b1",
         "f572ac58-c7fb-457f-b6ff-13cf4bce3f23",

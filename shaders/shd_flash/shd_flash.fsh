@@ -5,6 +5,7 @@ varying vec2 v_vTexcoord;
 varying vec4 v_vColour;
 
 uniform float time;
+uniform float alpha;
 
 void main()
 {
@@ -19,4 +20,5 @@ void main()
 		//gl_FragColor.rgba = vec4( 1., 1., 1. ,1. ); //debug
 	}
 	//}
+	gl_FragColor.a *= alpha;
 }
