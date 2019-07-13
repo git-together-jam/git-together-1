@@ -19,6 +19,9 @@ switch(tile_at_position(bbox_right + 1, y, "Tiles")) {
 // Acceleration and friction
 player_acceleration_friction(moveDir, movementSpeed, acc, fric);
 
+// Check for deadly objects
+if (player_check_deadly_objects()) exit;
+
 // Variable jump height
 if (vspd * gravDir < -1 && !check_input(Input.jump_hold)) {
 	vspd = lerp(vspd, -1, 0.45);

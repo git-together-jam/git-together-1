@@ -703,6 +703,14 @@
             }
         },
         {
+            "Key": "7a481e44-f30d-42bf-874c-fd1d7bca5d39",
+            "Value": {
+                "id": "61a1ecd9-0476-4157-bda1-e18525d8cf2d",
+                "resourcePath": "scripts\\player_check_deadly_objects\\player_check_deadly_objects.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "7aed1ec7-becb-44a5-8f0a-0ef0ed24aeab",
             "Value": {
                 "id": "5e1c2750-8e40-432f-8de6-3f85948327df",
@@ -1455,6 +1463,14 @@
             }
         },
         {
+            "Key": "f3beadfc-2a09-46fa-befd-61a24be35e6b",
+            "Value": {
+                "id": "1a210d64-9eee-4ae3-ae3d-4a5dd1e0c539",
+                "resourcePath": "scripts\\player_stop_movement\\player_stop_movement.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f418569b-3bdd-4706-a0e4-364317f54032",
             "Value": {
                 "id": "6e81b281-0478-4df7-a1a5-498a217bf1f8",
@@ -1551,6 +1567,8 @@
         "9f216623-3853-4b71-919d-b21c143f1099",
         "794bb4a2-060e-4f09-8525-3e692e283a24",
         "70a63d17-a0e5-4cc9-a2d1-ca661d09ec72",
+        "7a481e44-f30d-42bf-874c-fd1d7bca5d39",
+        "f3beadfc-2a09-46fa-befd-61a24be35e6b",
         "c4c5e5c9-0cd0-4c97-a8ed-b860fad992aa",
         "46397535-4223-4def-bf45-bf455d66a520",
         "3e8856ff-37c4-4c5a-a711-2030e55fccc3",

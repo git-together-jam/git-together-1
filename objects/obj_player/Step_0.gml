@@ -32,25 +32,6 @@ switch (state) {
 }
 #endregion
 
-#region Death collision check
-
-// Player is already dead, so stop!
-if (state == PlayerState.dead) return;
-
-// If the check_player_bbox flag is set on the other, bbox collision will be used (default).
-// Else, only check for meeting with the player object's origin.
-
-if (state != PlayerState.dead) {
-	var _deadlyObj = instance_place(x, y, obj_deadly);
-
-	if (_deadlyObj != noone && (_deadlyObj.check_player_bbox || position_meeting(x, y, _deadlyObj))) {
-		_deadlyObj.has_hit_player = true;
-		player_die();
-	}
-}
-
-#endregion
-
 #region Collisions
 	
 if (solid_meeting(x + hspd, y)) {
