@@ -74,6 +74,10 @@ enum TileType {
 	gravity_change
 }
 
+// Progress bar.
+#macro PROGRESS_BAR_BG make_color_rgb(52, 52, 52)
+#macro PROGRESS_BAR make_color_rgb(106, 180, 23)
+
 // Shader
 #macro TECHNO_R 0.16862745098
 #macro TECHNO_G 0.35686274509

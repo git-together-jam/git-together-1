@@ -63,6 +63,14 @@
             }
         },
         {
+            "Key": "0a60e5c0-526f-4b1f-9d9e-8d86b1efdd81",
+            "Value": {
+                "id": "71276954-7773-4c90-bfee-37cc8ed7a828",
+                "resourcePath": "sprites\\spr_progress_bar\\spr_progress_bar.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0c02c3e3-00a4-4efd-a7d2-e254dcf5abc8",
             "Value": {
                 "id": "043624c4-3281-4dfb-a8a6-bc5218112804",
