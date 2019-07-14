@@ -11,8 +11,9 @@ switch(tile_at_position(x, _groundY, "Tiles")) {
 		_moveSpeed *= 0.5;
 		break;
 	case TileType.ice:
-		_moveSpeed += 0.1;
-		_fric = .124;
+		_moveSpeed = 2.4;
+		_fric = .05;
+		_acc = 0.3;
 		break;
 }
 

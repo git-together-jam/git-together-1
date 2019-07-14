@@ -9,8 +9,8 @@ wallJumpDelay = 6;
 wallJumpTimer = 0;
 
 acc = .4; // acceleration
-fric = .1; // base friction, used in air
-fricGround =.4; // base ground friction
+fric = .04; // base friction, used in air
+fricGround =.3; // base ground friction
 
 grav = .35;
 gravDir = 1; // gravity direction
