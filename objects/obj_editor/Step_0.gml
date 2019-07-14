@@ -50,10 +50,12 @@ if (!gp_enabled) {
 //show_debug_message(string(cursor_grid_x) + " > " + string(cursor_grid_y));
 
 // Only place/remove tiles in the view
-if (cursor_grid_x > VIEW_X/CELL_WIDTH &&
-	cursor_grid_x < (VIEW_X + VIEW_WIDTH)/CELL_WIDTH - 1 &&
-	cursor_grid_y > VIEW_Y/CELL_HEIGHT &&
-	cursor_grid_y < (VIEW_Y + VIEW_HEIGHT)/CELL_HEIGHT - 1) {
+if (cursor_grid_x > VIEW_X/CELL_WIDTH - 1 &&
+	cursor_grid_x < (VIEW_X + VIEW_WIDTH)/CELL_WIDTH &&
+	cursor_grid_y > VIEW_Y/CELL_HEIGHT - 1 &&
+	cursor_grid_y < (VIEW_Y + VIEW_HEIGHT)/CELL_HEIGHT &&
+	cursor_grid_x < room_width/CELL_WIDTH && cursor_grid_x > 0 &&
+	cursor_grid_y < room_height/CELL_HEIGHT && cursor_grid_y > 0) {
 	
 	// Place a tile.
 	if (check_input(Input.primary_action)) {
