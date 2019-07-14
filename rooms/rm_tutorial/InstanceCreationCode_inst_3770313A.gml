@@ -1,0 +1,1 @@
+text = "You can also jump if you're sliding down\na slimy wall to climb up it.";
