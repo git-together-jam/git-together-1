@@ -1,0 +1,1 @@
+disable_editable_areas = true;
