@@ -1,2 +1,3 @@
 moving = true;
-moveDir = 90;
+moveDir = 270;
+moveRange = 145;
