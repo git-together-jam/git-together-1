@@ -21,3 +21,4 @@ ds_list_add(global.credits, ["Bauke Regnerus", "Bouncing block\nprogrammer"]);
 ds_list_add(global.credits, ["Jacob S.", "..."]);
 ds_list_add(global.credits, ["Nicholas Smith", "..."]);
 ds_list_add(global.credits, ["Yosi", "..."]);
+ds_list_add(global.credits, ["Ahmed Yasir", "Level Designer"]);
