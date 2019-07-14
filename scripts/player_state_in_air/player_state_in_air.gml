@@ -45,8 +45,8 @@ if (check_input(Input.jump) && (_slimeWallDir != 0 || wallJumpTimer > 0)) {
 }
 
 // Variable jump height
-if (vspd * gravDir < -1 && !check_input(Input.jump_hold)) {
-	vspd = lerp(vspd, -1, 0.45);
+if (vspd * gravDir < -jumpSpeedMin && !check_input(Input.jump_hold)) {
+	vspd = lerp(vspd, -jumpSpeedMin * gravDir, 0.45);
 }
 
 // Apply gravity
@@ -63,5 +63,6 @@ if (_vspd * gravDir > 0) {
 // Check for ground and switch to on_ground state
 if (solid_meeting(x, (gravDir == 1) ? bbox_bottom + 1 : bbox_top - 1)) {
 	gravDirSmooth = gravDir;
+	jumpSpeedMin = startJumpSpeedMin;
 	player_set_state(PlayerState.on_ground, true);
 }

@@ -1,6 +1,8 @@
 // Movement speed variables
 movementSpeed = 2.1;
 jumpSpeed = 5;
+startJumpSpeedMin = 1;
+jumpSpeedMin = startJumpSpeedMin;
 fallSpeed = 1; // gravity multiplier
 
 wallJumpSpeed_x = 2;

@@ -143,6 +143,14 @@
             }
         },
         {
+            "Key": "135c9705-c526-479b-a453-e60790fc1532",
+            "Value": {
+                "id": "0f4a92cc-8c8f-4972-80cf-59d518fb7e00",
+                "resourcePath": "sprites\\spr_peeper_topmask\\spr_peeper_topmask.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "17468d18-46b1-4512-827f-79c1efe8581d",
             "Value": {
                 "id": "981b24f3-e0d7-4888-a98b-385d9579eb49",
@@ -804,6 +812,14 @@
                 "id": "f354dd85-5286-40a8-a626-7cbf00084872",
                 "resourcePath": "views\/72ea7f1a-87a4-4bac-ae9c-d5fdff71a71b.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "75ac291e-7061-4bcb-8e8a-3b3545332d41",
+            "Value": {
+                "id": "60d0dbe2-9996-4e8b-b2d6-f7285de8baa9",
+                "resourcePath": "options\\html5\\options_html5.yy",
+                "resourceType": "GMHtml5Options"
             }
         },
         {

@@ -5,6 +5,7 @@
 // RIP Tooty.
 
 bouncePower = 7; // Bounce power
+bouncePowerMin = 4;
 
 stoptime = 20; // Time to stand still after shooting the player into the sky
 s_countdown = 0;
@@ -24,3 +25,5 @@ grav = .55;
 // Variables specific to this enemy
 snortdir = -1; // Preferred direction to walk and snort in
 state = "walk"; // What state the little buddy is in
+
+playedSound = false;
