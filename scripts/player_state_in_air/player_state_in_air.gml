@@ -29,10 +29,19 @@ player_acceleration_friction(moveDir, movementSpeed, acc, fric);
 // Check for deadly objects
 if (player_check_deadly_objects()) exit;
 
-// Wall jump
-if (_slimeWallDir != 0 && check_input(Input.jump)) {
+// Wall jump delay timer
+if (_slimeWallDir != 0)
+	wallJumpTimer = -1;
+else if (wallJumpTimer == -1)
+	wallJumpTimer = wallJumpDelay;
+
+if (wallJumpTimer > 0) wallJumpTimer--;
+
+// Wall jumping
+if (check_input(Input.jump) && (_slimeWallDir != 0 || wallJumpTimer > 0)) {
 	hspd = -_slimeWallDir * wallJumpSpeed_x;
 	vspd = -wallJumpSpeed_y * gravDir;
+	wallJumpTimer = 0;
 }
 
 // Variable jump height

@@ -2,8 +2,11 @@
 movementSpeed = 2.1;
 jumpSpeed = 5;
 fallSpeed = 1; // gravity multiplier
+
 wallJumpSpeed_x = 2;
 wallJumpSpeed_y = 4.5;
+wallJumpDelay = 6;
+wallJumpTimer = 0;
 
 acc = .4; // acceleration
 fric = .1; // base friction, used in air
