@@ -874,7 +874,7 @@
             "Key": "86815278-79ba-476a-b4fa-9af949918dfd",
             "Value": {
                 "id": "a17543f7-9ea1-426f-a4a8-0836f07ca6ca",
-                "resourcePath": "objects\\obj_gate\\obj_gate.yy",
+                "resourcePath": "objects\/obj_gate\/obj_gate.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1002,7 +1002,7 @@
             "Key": "955f98bd-fbf0-4e87-aab5-35ebce3bbb69",
             "Value": {
                 "id": "b31889d7-51f5-4ced-9aac-b26304e2dbf6",
-                "resourcePath": "objects\\obj_gate_segment\\obj_gate_segment.yy",
+                "resourcePath": "objects\/obj_gate_segment\/obj_gate_segment.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1194,7 +1194,7 @@
             "Key": "b88b3347-628c-4c1e-9c98-4c42c69e4b58",
             "Value": {
                 "id": "f38c1aeb-dde0-4c09-9a60-f3867feb4b56",
-                "resourcePath": "sounds\\snd_gate\\snd_gate.yy",
+                "resourcePath": "sounds\/snd_gate\/snd_gate.yy",
                 "resourceType": "GMSound"
             }
         },
@@ -1210,7 +1210,7 @@
             "Key": "bae4615e-25ff-498a-87e0-941b332ccd43",
             "Value": {
                 "id": "101a492c-4d9f-4685-9448-d24b082ad53d",
-                "resourcePath": "scripts\\player_checkpoint_restart\\player_checkpoint_restart.yy",
+                "resourcePath": "scripts\/player_checkpoint_restart\/player_checkpoint_restart.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1463,6 +1463,14 @@
             }
         },
         {
+            "Key": "d81b230d-74af-40e6-ae11-4a3b1b710b20",
+            "Value": {
+                "id": "06f9decd-a5eb-4fb7-b3c1-608f5c36becc",
+                "resourcePath": "rooms\/rm_giraffe\/rm_giraffe.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "d8d7437a-9757-4e5e-a1d2-643ff310a2e6",
             "Value": {
                 "id": "433a6aaa-10b0-4d96-973e-7c6bb5a31b55",
@@ -1674,7 +1682,7 @@
             "Key": "f675eaf9-a6ad-4639-8ec2-35884ca01096",
             "Value": {
                 "id": "71d795d7-5611-4684-b00c-52efd03dc269",
-                "resourcePath": "sprites\\spr_gate\\spr_gate.yy",
+                "resourcePath": "sprites\/spr_gate\/spr_gate.yy",
                 "resourceType": "GMSprite"
             }
         },

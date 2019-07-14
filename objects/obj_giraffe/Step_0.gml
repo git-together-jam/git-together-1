@@ -50,16 +50,19 @@ switch(tile_at_position(bbox_right+1, y, "Tiles")) { // Right check
 	break;
 }
 
-switch(tile_at_position(bbox_left-1, bbox_bottom+1, "Tiles")) { // Downleft check
-	case -1:
+if(tile_at_position(x,bbox_bottom+1, "Tiles") == -1){
+	switch(tile_at_position(bbox_left-1, bbox_bottom+1, "Tiles")) { // Downleft check
+		case -1:
 		snortdir = 1;
-	break;
-}
-switch(tile_at_position(bbox_right+1, bbox_bottom+1, "Tiles")) { // Downright check
-	case -1:
+		break;
+	}
+	switch(tile_at_position(bbox_right+1, bbox_bottom+1, "Tiles")) { // Downright check
+		case -1:
 		snortdir = -1;
-	break;
+		break;
+	}
 }
+
 
 #region // The not-interesting stuff
 
