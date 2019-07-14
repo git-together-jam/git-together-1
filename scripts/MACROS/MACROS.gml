@@ -75,7 +75,7 @@ enum TileType {
 }
 
 // Blocks.
-#macro FALLING_BLOCK_DELAY 20
+#macro FALLING_BLOCK_DELAY 30
 #macro PUSH_BLOCK_FORCE 12
 
 // Progress bar.

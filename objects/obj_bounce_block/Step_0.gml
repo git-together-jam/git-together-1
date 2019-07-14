@@ -15,7 +15,7 @@ if (instance_exists(PLAYER)) {
 	var player_push_x = 0;
 	var player_push_y = 0;
 	if (abs(dif_x) > abs(dif_y)) {
-		player_push_x = sign(dif_x) * PUSH_BLOCK_FORCE;
+		player_push_x = sign(dif_x) * PUSH_BLOCK_FORCE / 2;
 	} else {
 		player_push_y = sign(dif_y) * PUSH_BLOCK_FORCE;
 	}
