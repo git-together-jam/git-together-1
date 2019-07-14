@@ -88,3 +88,9 @@ enum TileType {
 #macro TECHNO_B 0.5294117647
 #macro TECHNO_TIME 1500
 #macro FLASH_TIME 600
+
+// Credits.
+#macro CREDIT_INTERVAL 240
+#macro CREDIT_DISTANCE 100
+#macro CREDIT_SPEED .2
+#macro CREDIT_FADE_SPEED .02
