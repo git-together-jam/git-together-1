@@ -1,1 +1,1 @@
-alarm[0] = 1;
+player_checkpoint_restart();

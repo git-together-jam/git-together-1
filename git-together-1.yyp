@@ -871,6 +871,14 @@
             }
         },
         {
+            "Key": "86815278-79ba-476a-b4fa-9af949918dfd",
+            "Value": {
+                "id": "a17543f7-9ea1-426f-a4a8-0836f07ca6ca",
+                "resourcePath": "objects\\obj_gate\\obj_gate.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "87b33bb9-fe13-4e33-bcb8-c726a400ac88",
             "Value": {
                 "id": "750be4d9-1ae4-4db5-9eee-582cdff948cb",
@@ -988,6 +996,14 @@
                 "id": "6a298c59-5528-4236-bf20-843eda65f233",
                 "resourcePath": "sounds\/snd_music_dream_reverse\/snd_music_dream_reverse.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "955f98bd-fbf0-4e87-aab5-35ebce3bbb69",
+            "Value": {
+                "id": "b31889d7-51f5-4ced-9aac-b26304e2dbf6",
+                "resourcePath": "objects\\obj_gate_segment\\obj_gate_segment.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1175,11 +1191,27 @@
             }
         },
         {
+            "Key": "b88b3347-628c-4c1e-9c98-4c42c69e4b58",
+            "Value": {
+                "id": "f38c1aeb-dde0-4c09-9a60-f3867feb4b56",
+                "resourcePath": "sounds\\snd_gate\\snd_gate.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "b9fc6051-5067-468e-913c-8e0cc621fb53",
             "Value": {
                 "id": "7e34ed45-f834-4f2a-b0c0-656235a392a4",
                 "resourcePath": "views\/b9fc6051-5067-468e-913c-8e0cc621fb53.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "bae4615e-25ff-498a-87e0-941b332ccd43",
+            "Value": {
+                "id": "101a492c-4d9f-4685-9448-d24b082ad53d",
+                "resourcePath": "scripts\\player_checkpoint_restart\\player_checkpoint_restart.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1639,6 +1671,14 @@
             }
         },
         {
+            "Key": "f675eaf9-a6ad-4639-8ec2-35884ca01096",
+            "Value": {
+                "id": "71d795d7-5611-4684-b00c-52efd03dc269",
+                "resourcePath": "sprites\\spr_gate\\spr_gate.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f71820e7-cc2b-4050-a251-20360753c4a5",
             "Value": {
                 "id": "6ac31795-a4a9-42cd-9edc-9371338d92c7",
@@ -1718,6 +1758,7 @@
         "6ace8cd1-246b-4746-8723-d1576869d1d2",
         "7a481e44-f30d-42bf-874c-fd1d7bca5d39",
         "f3beadfc-2a09-46fa-befd-61a24be35e6b",
+        "bae4615e-25ff-498a-87e0-941b332ccd43",
         "9f216623-3853-4b71-919d-b21c143f1099",
         "794bb4a2-060e-4f09-8525-3e692e283a24",
         "70a63d17-a0e5-4cc9-a2d1-ca661d09ec72",

@@ -12,6 +12,14 @@ with (unpause_btn) {
 	depth = _btn_depth;
 }
 
+var restart_btn = instance_create_layer(0, 0, "Statics", obj_button_large)
+with (restart_btn) {
+	text = "Restart checkpoint";
+	scope = _self;
+	user_event = 2;
+	depth = _btn_depth;
+}
+
 var quit_btn = instance_create_layer(0, 0, "Statics", obj_button_large)
 with (quit_btn) {
 	text = "Back to main menu";
@@ -22,7 +30,7 @@ with (quit_btn) {
 
 // Store all buttons in a local list.
 buttons = ds_list_create();
-ds_list_add(buttons, unpause_btn, quit_btn);
+ds_list_add(buttons, unpause_btn, restart_btn, quit_btn);
 
 instance_deactivate_object(obj_button_large);
 
