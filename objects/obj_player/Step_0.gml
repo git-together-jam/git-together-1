@@ -4,7 +4,7 @@
 if (state == PlayerState.dead) exit;
 
 // Die if fallen out of the map
-if (y - sprite_yoffset > room_height || y - sprite_height < 0) {
+if (bbox_bottom > room_height || bbox_top < 0) {
 	player_die();
 }
 
