@@ -25,4 +25,8 @@ if (instance_exists(PLAYER)) {
 		vspd = player_push_y;
 	}
 	
+	if (abs(player_push_x) + abs(player_push_y)) {
+		audio_play_sound(snd_spring, 10, false);
+	}
+	
 }
