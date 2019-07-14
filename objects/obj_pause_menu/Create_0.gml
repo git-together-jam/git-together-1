@@ -6,7 +6,7 @@ var _btn_depth = depth - 1;
 
 var unpause_btn = instance_create_layer(0, 0, "Statics", obj_button_large)
 with (unpause_btn) {
-	text = "Continue game";
+	text = "Continue";
 	scope = _self;
 	user_event = 0;
 	depth = _btn_depth;
@@ -14,7 +14,7 @@ with (unpause_btn) {
 
 var restart_btn = instance_create_layer(0, 0, "Statics", obj_button_large)
 with (restart_btn) {
-	text = "Restart checkpoint";
+	text = "Last Checkpoint";
 	scope = _self;
 	user_event = 2;
 	depth = _btn_depth;
@@ -22,7 +22,7 @@ with (restart_btn) {
 
 var quit_btn = instance_create_layer(0, 0, "Statics", obj_button_large)
 with (quit_btn) {
-	text = "Back to main menu";
+	text = "Main Menu";
 	scope = _self;
 	user_event = 1;
 	depth = _btn_depth;
