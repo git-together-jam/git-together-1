@@ -15,12 +15,17 @@ global.edTopAlpha = 0;
 
 // Credits.
 global.credits = ds_list_create();
-ds_list_add(global.credits, ["Leo Jansson", "..."]);
+ds_list_add(global.credits, ["Leo Jansson", "Code"]);
 ds_list_add(global.credits, ["Casey MacNeil", "Visuals"]);
 ds_list_add(global.credits, ["Bauke Regnerus", "Bouncy Block\nProgrammer"]);
 ds_list_add(global.credits, ["Jacob S.", "Art, NPCs"]);
 ds_list_add(global.credits, ["Nicholas Smith", "Code, Visuals,\nSound, Tutorial"]);
 ds_list_add(global.credits, ["Yosi", "Code,\nShaders"]);
 ds_list_add(global.credits, ["Ahmed Yasir", "Level Design"]);
-ds_list_add(global.credits, ["SurgDev", "..."]);
+ds_list_add(global.credits, ["SurgDev", "Slime & Ice"]);
 ds_list_add(global.credits, ["Mason Young", "Music"]);
+ds_list_add(global.credits, ["Katsaii", "Concept"]);
+ds_list_add(global.credits, ["Sohom Sahaun", "Organization"]);
+ds_list_add(global.credits, ["TonyStr", "Dream Mode"]);
+ds_list_add(global.credits, ["nut4985", "Switch Art"]);
+ds_list_add(global.credits, ["King Cubing", "Moral Support"]);
