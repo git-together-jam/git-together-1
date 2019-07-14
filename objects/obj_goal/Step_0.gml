@@ -27,7 +27,7 @@ else switch (won) {
 		won++;
 	case 5:
 		if (bbox_top + doorClose < bbox_bottom) {
-			doorClose += 1.8;
+			doorClose += 1.6;
 		} else {
 			alarm[0] = 45;
 			won++;
