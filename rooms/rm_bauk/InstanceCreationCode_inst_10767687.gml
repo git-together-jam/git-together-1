@@ -1,3 +1,3 @@
 moving = true;
 moveDir = 180;
-moveRange = 90;
+moveRange = 56;
