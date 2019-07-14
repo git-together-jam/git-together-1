@@ -2,8 +2,8 @@
 #macro GAME_WIDTH  320
 #macro GAME_HEIGHT 180
 
-#macro PROGRESS_FILE_NAME "lskajdafldnslfvd.dat"
-#macro NUM_OF_STAGES 9
+#macro PROGRESS_FILE_NAME "ed-it.sav"
+#macro NUM_OF_STAGES 7
 
 // Game state
 enum GameState {
