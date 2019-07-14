@@ -775,6 +775,14 @@
             }
         },
         {
+            "Key": "70492ea5-10a4-484a-9b22-485e55308def",
+            "Value": {
+                "id": "d58cf51a-75d5-4566-94be-25555ccf1fef",
+                "resourcePath": "rooms\\rm_London_bridge\\rm_London_bridge.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "70a63d17-a0e5-4cc9-a2d1-ca661d09ec72",
             "Value": {
                 "id": "71944559-19a5-489c-8f2a-e830175c8b51",
