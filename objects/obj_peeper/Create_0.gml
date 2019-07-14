@@ -4,7 +4,7 @@
 // The snort stuff is from the previous enemy with similar code that got deleted.
 // RIP Tooty.
 
-bouncePower = 8.6; // Bounce power
+bouncePower = 7; // Bounce power
 
 stoptime = 20; // Time to stand still after shooting the player into the sky
 s_countdown = 0;
