@@ -1,1 +1,1 @@
-name = "Level X:\nWay-through->"
+name = "Way-through->"

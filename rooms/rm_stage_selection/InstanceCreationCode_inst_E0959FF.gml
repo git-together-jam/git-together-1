@@ -1,1 +1,1 @@
-name = "Level X:\nNemo's Dream Tower"
+name = "Nemo's Dream Tower"

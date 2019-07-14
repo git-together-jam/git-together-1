@@ -1,1 +1,1 @@
-name = "Level X:\nLondon bridge"
+name = "London bridge"

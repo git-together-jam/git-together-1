@@ -1,1 +1,1 @@
-name = "Level X:\nAhmed 3"
+name = "Ahmed 3"

@@ -1,1 +1,1 @@
-name = "Level X:\nThe Nightmare Room"
+name = "The Nightmare Room"
