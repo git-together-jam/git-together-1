@@ -29,3 +29,7 @@ ds_list_add(global.credits, ["Sohom Sahaun", "Organization"]);
 ds_list_add(global.credits, ["TonyStr", "Dream Mode"]);
 ds_list_add(global.credits, ["nut4985", "Switch Art"]);
 ds_list_add(global.credits, ["King Cubing", "Moral Support"]);
+
+// Sound gain
+global.MusicGain = 1;
+global.FxGain = 0.4;

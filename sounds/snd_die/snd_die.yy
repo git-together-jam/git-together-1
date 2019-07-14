@@ -3,7 +3,7 @@
     "modelName": "GMSound",
     "mvc": "1.0",
     "name": "snd_die",
-    "audioGroupGuid": "7b2c4976-1e09-44e5-8256-c527145e03bb",
+    "audioGroupGuid": "4c00c487-ee3f-4034-b0dd-824d66812800",
     "bitDepth": 1,
     "bitRate": 128,
     "kind": 0,

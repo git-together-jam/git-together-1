@@ -9,3 +9,6 @@ scope = noone;
 
 // Controller Support
 gp_enabled = obj_input_manager.gp_enabled;
+
+
+lerpy = true;

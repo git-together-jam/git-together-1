@@ -2,13 +2,13 @@
 
 // Center the camera.
 with (obj_camera) {
-	x = room_width div 2;
+	x = room_width div 4;
 	y = room_height div 2;
 }
 
 //Buttons
 var offset_x = 20;
-var offset_y = 70;
+var offset_y = 63;
 var vspacing = 27;
 var _self = id;
 
@@ -17,6 +17,14 @@ with (start_btn) {
 	text = "Start game";
 	scope = _self;
 	user_event = 0;
+}
+offset_y += vspacing;
+
+var opt_btn = instance_create_layer(offset_x, offset_y, "Instances", obj_button_large)
+with (opt_btn) {
+	text = "Options";
+	scope = _self;
+	user_event = 3;
 }
 offset_y += vspacing;
 
@@ -35,6 +43,14 @@ with (quit_btn) {
 	user_event = 2;
 }
 offset_y += 24;
+
+var menu_btn = instance_create_layer(425, 120, "Instances", obj_button_large)
+with (menu_btn) {
+	text = "Main Menu";
+	scope = _self;
+	user_event = 4;
+	lerpy = false;
+}
 
 // Controller Support
 gp_enabled = obj_input_manager.gp_enabled;

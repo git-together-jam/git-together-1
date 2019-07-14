@@ -27,7 +27,7 @@ if (gp_enabled) {
 
 //Move buttons
 with(obj_button_large) {
-	if (mouse_over) {
+	if (mouse_over && lerpy) {
 		x = lerp(x, xstart + 10, .1);
 	} else {
 		x = lerp(x, xstart, .2);
