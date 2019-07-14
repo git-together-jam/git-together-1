@@ -15,15 +15,16 @@ draw_set_font(fnt_mini);
 var _txw = string_width(text);
 var _txh = string_height(text);
 
-var x1, y1, x2, y2;
+var x1, y1, x2, y2, _horzShift;
 x1 = x - _txw/2 - _margin;
 x2 = x + _txw/2 + _margin;
 y2 = y - sprite_yoffset - _triHeight - _margin;
 y1 = y2 - _txh - _margin;
+_horzShift = (x1 < 0)*(abs(x1) + _margin) - (x2 > room_width)*(x2 - room_width + _margin);
 
 // Draw textbox
 draw_set_color(c_white);
-draw_rectangle(x1, y1, x2, y2, false);
+draw_rectangle(x1 + _horzShift, y1, x2 + _horzShift, y2, false);
 draw_triangle(
 	x, y - sprite_yoffset - _margin,
 	x + _triWidth/2, y2,
@@ -33,4 +34,4 @@ draw_triangle(
 
 // Draw text
 draw_set_color(c_black);
-draw_text(x1 + _margin, y1 + _margin, text);
+draw_text(x1 + _margin + _horzShift, y1 + _margin, text);

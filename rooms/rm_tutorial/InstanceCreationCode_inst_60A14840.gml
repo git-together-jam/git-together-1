@@ -1,0 +1,1 @@
+text = "When I find you, I'm gonna shove a stick up\nyour butt, cover you in batter, deep fry\nyou, and munch on you like a corndog.\n                              <3 Chrono Vortex";

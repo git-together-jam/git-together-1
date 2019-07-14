@@ -8,4 +8,6 @@ gateSegments[currentIndex] = instance_create_layer(
 gateSegments[currentIndex].image_index = horizontal;
 currentIndex++;
 
-audio_play_sound(snd_gate, 10, false);
+if (point_distance(x, y, PLAYER.x, PLAYER.y) < 180) {
+	audio_play_sound(snd_gate, 10, false);
+}
