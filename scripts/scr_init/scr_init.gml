@@ -15,7 +15,7 @@ global.edTopAlpha = 0;
 
 // Credits.
 global.credits = ds_list_create();
-ds_list_add(global.credits, ["Leo Jansson", "Code"]);
+ds_list_add(global.credits, ["Leo Jansson", "Code,\nLevel Design"]);
 ds_list_add(global.credits, ["Casey MacNeil", "Visuals"]);
 ds_list_add(global.credits, ["Bauke Regnerus", "Bouncy Block\nProgrammer"]);
 ds_list_add(global.credits, ["Jacob S.", "Art, NPCs"]);
