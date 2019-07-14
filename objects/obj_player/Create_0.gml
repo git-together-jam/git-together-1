@@ -2,9 +2,11 @@
 movementSpeed = 2.1;
 jumpSpeed = 5;
 fallSpeed = 1; // gravity multiplier
+wallJumpSpeed_x = 2;
+wallJumpSpeed_y = 4.5;
 
 acc = .4; // acceleration
-fric = .3; // base friction, used in air
+fric = .1; // base friction, used in air
 fricGround =.4; // base ground friction
 
 grav = .35;
@@ -16,7 +18,8 @@ fallingThreshold = .5; // vspd threshold before flipping yscale
 // Velocity
 hspd = 0;
 vspd = 0;
-vspdMax = 8;
+vspdMax = 9;
+vspdMax_slime = 5;
 
 // State
 state = PlayerState.on_ground;
