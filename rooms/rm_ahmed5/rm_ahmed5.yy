@@ -111,7 +111,7 @@
             "inheritLayerDepth": true,
             "inheritLayerSettings": true,
             "inheritSubLayers": true,
-            "inheritVisibility": true,
+            "inheritVisibility": false,
             "instances": [
 {"name": "inst_10002D7B","id": "7735a13d-b7f3-4637-9ed0-5694bdf433d9","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": ".gml","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": true,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "85e996d4-3203-4a12-9186-44eac3859af2","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_10002D7B","objId": "65ceb436-3b6c-44b7-912e-149c2814c854","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 488,"y": 544},
 {"name": "inst_34A59216","id": "a4f22dff-7ca7-4e03-ab83-cb2c0232e89d","colour": { "Value": 4294967295 },"creationCodeFile": "InstanceCreationCode_inst_34A59216.gml","creationCodeType": ".gml","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "fd7072d5-aca4-4300-afdf-9e8f5f5d85e5","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_34A59216","objId": "65ceb436-3b6c-44b7-912e-149c2814c854","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 1048,"y": 480},
@@ -146,8 +146,8 @@
             "m_parentID": "55166c9a-cc2a-4018-99f0-be572bf37309",
             "m_serialiseFrozen": false,
             "modelName": "GMRTileLayer",
-            "prev_tileheight": 0,
-            "prev_tilewidth": 0,
+            "prev_tileheight": 16,
+            "prev_tilewidth": 16,
             "mvc": "1.0",
             "tiles": {
                 "SerialiseData": null,
@@ -210,7 +210,7 @@
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
-            "hierarchyVisible": true,
+            "hierarchyVisible": false,
             "inheritLayerDepth": true,
             "inheritLayerSettings": true,
             "inheritSubLayers": true,
@@ -221,8 +221,8 @@
             "m_parentID": "0869e3c8-195a-4ab0-8f34-01ca3c06fdd6",
             "m_serialiseFrozen": false,
             "modelName": "GMRTileLayer",
-            "prev_tileheight": 0,
-            "prev_tilewidth": 0,
+            "prev_tileheight": 16,
+            "prev_tilewidth": 16,
             "mvc": "1.0",
             "tiles": {
                 "SerialiseData": null,
@@ -273,7 +273,7 @@
             },
             "tilesetId": "bd4ea8c6-becd-4e1f-9882-50f80e041780",
             "userdefined_depth": false,
-            "visible": true,
+            "visible": false,
             "x": 0,
             "y": 0
         },
